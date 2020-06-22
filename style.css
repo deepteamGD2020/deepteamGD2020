@@ -1,0 +1,410 @@
+div {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+@font-face {
+    font-family: Chalga;
+    src: url(ChalgaTypewriter-Regular.otf);
+}
+body {background-color: rgb(250,250,250);}
+
+
+
+
+/*     BASICS     */
+
+    .absolute {position: absolute;}
+    .fixed {position: fixed;}
+
+    .text {font: 16px Chalga;}
+    .italic {font-style: italic; font-size: 20px;}
+    .pureitalic {font-style: italic;}
+
+    .top {top: 20px !important; margin-top: 0% !important;}
+    .left {left: 20px;}
+    .right {right: 20px; text-align: right;}
+
+    .center {width: calc(50vw - 40px); text-align: center; left: calc(25vw + 20px);}
+
+    .top20 {top: 20vh;}
+    .top50 {top: 50vh;}
+    .bottom {bottom: 20px;}
+    .bottom11 {bottom: 11vh;}
+    .bottom15 {bottom: 15vh;}
+    .bottom5020 {bottom: calc(80vh + 20px);}
+
+    section {-webkit-overflow-scrolling: touch;}
+
+
+
+
+/*     CLASSLIST     */
+
+    .classlist {
+        position: fixed;
+        left: 0px;
+        width: calc(14vw - 40px);
+        max-height: 100vh;
+        bottom: 0px;
+        top: 0px;
+        overflow: scroll;
+        padding: 20px;
+        z-index: 1;
+        background-color: rgb(250,250,250);
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .classlist a {cursor: e-resize !important;}
+
+    .classlist::-webkit-scrollbar {display: none;}
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    a:hover {
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    .topbutton {
+        z-index: 2; 
+        background-color: rgba(250, 250, 250, .8); 
+        width: 14vw; 
+        padding-top: 20px; 
+        top: 0px;
+        cursor: n-resize;
+    }
+    .mobile { display: none; }
+    .close {display: none;}
+    .show {display: none;}
+
+
+
+
+/*     "COVER"     */
+
+    /*.title {font-size: 48px;}*/
+    .trafficlight {
+        max-height: 20vh !important; 
+        float: center;
+    }
+
+    
+    .red {color: red;}
+    .yellow {color: yellow;}
+    .green {color: green;}
+
+    .intro {
+        position: absolute;
+        top: 0vh;
+        width: 100vw;
+        left: 0vw;
+        height: 110vh;
+        z-index: 3;
+        background: linear-gradient(rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,0));    
+    }
+
+    .arrowdown {
+        width: calc(14vw - 40px); 
+        text-align: center;
+        font: 40px Chalga;
+    
+      animation-name: arrow;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes arrow {
+      0%   {color:red; top:20vh; font-size: 20px;}
+      5%   {color:red;}
+      45%  {color:yellow;}
+      90%  {color:green;}
+      100%   {color:green; top:86vh; font-size: 100px;}
+    }
+    
+
+    .covertitle {
+        font: 100px Chalga;
+        left: calc(14vw - 40px);
+        left: 0vw;
+        right: 20px;
+        text-align: right; 
+        top: 20vh;
+        line-height: 95px;
+
+        animation-name: colorchange;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes colortitle {
+      0%   {color:black;}
+      5%   {color:black;}
+      45%  {color:black;}
+      90%  {color:black;}
+      100%   {color:black;}
+    }
+
+
+
+
+/* FUNDRAISER  */
+     .introFund {
+        position: absolute;
+        top: 0vh;
+        width: 100vw;
+        left: 0vw;
+        z-index: 3;
+        background: linear-gradient(rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,0));    
+    }
+
+    .fundraiserVid {
+        position: relative;
+        margin-top: 20%;
+        left: 20px;
+        width: calc(100vw - 40px);
+        height: calc(100vh - 40px);
+    }
+
+    .textDescription {
+        position: relative;
+        margin-top: 10%;
+        width: calc(100vw - 40px);
+        margin-bottom: 20%;
+        text-align: left;
+
+        font: 20px Chalga;
+
+        -webkit-overflow-scrolling: touch;
+    }
+    .textDescriptionTop {
+        position: relative;
+        margin-top: 10%;
+        width: calc(100vw - 40px);
+        margin-bottom: 0%;
+        text-align: left;
+
+        font: 20px Chalga;
+    }
+
+       
+    .relative {
+        position: relative;
+    }
+    .logo {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        height: 30%; 
+        z-index: 2;
+
+        animation: spin;
+        transition-timing-function: ease-in-out;
+        animation-duration: 20s;
+        animation-iteration-count: 3;
+
+        transform: rotate(0deg);
+    }
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      15% {transform: rotate(0deg);}
+      25% {transform: rotate(-90deg);}
+      35% {transform: rotate(-90deg);}
+      50% {transform: rotate(-180deg);}
+      60% {transform: rotate(-180deg);}
+      70% {transform: rotate(-270deg);}
+      90% {transform: rotate(-270deg);}
+      100% {transform: rotate(-360deg);}
+    }
+
+
+/*     "SECTIONS"     */
+
+    .departmenttitle {
+        position: relative;
+        top: 0%;
+        width: 86vw;
+        left: 0vw;
+        height: 50vh;
+
+
+        font: 20px Chalga;
+        text-align: center;
+
+        -webkit-overflow-scrolling: touch;
+    }
+    .top30 {top: 30%; position: absolute; width: 100%;}
+
+
+    .docus {
+        top: 110vh;
+        right: 0vw;
+        width: 86vw;
+        left: 14vw;
+        height: auto;
+        background-color: rgb(250,250,250);
+    }
+
+    .docu {
+        position: relative;
+        top: 0%;
+        width: 86vw;
+        left: 0vw;
+        height: 100vh;
+
+        -webkit-overflow-scrolling: touch;
+
+        /*background: linear-gradient(rgb(250,250,250), rgb(255,255,255));*/
+    }
+
+
+   
+     .video2 {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: calc(86vw - 40px);
+        height: 80vh;
+    }
+
+    .aboutvideo {
+        bottom: auto;
+        top: calc(80vh + 40px);
+        /*border-right: 1px solid black;
+        border-bottom: 1px solid black;*/
+        z-index: 9;
+
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    .about {
+        display: none;
+        z-index: 9;
+        text-align: justify;
+        float: left;
+        max-height: calc(100vh - 60px);
+        overflow: scroll;
+        font-family: ortica;
+        font-size: 18px;
+    }
+    .thesislink:hover {
+        font-style: normal;
+        text-decoration: underline;
+        font-size: 16px;
+        cursor: ne-resize;
+    }
+    .aboutvideo:hover .about {
+        display: inline;
+    }
+    .aboutvideo:hover .more {
+        display: none;
+    }
+    .aboutvideo:hover {
+        background-color: rgb(250,250,250);
+        width: calc(40vw - 30px);
+        padding-left: 30px;
+        padding-top: 30px;
+        border-top-left-radius: 10px;
+    }
+    .aboutvideonln:hover {
+        top: auto;
+        bottom: 0px;
+    }
+
+
+
+
+
+@media screen and (max-width: 800px){
+
+    /* FUNDRAISER */
+        .logo {
+            position: relative;
+            width: calc(100vw - 40px);
+            left: 20px;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+    /*     CLASSLIST     */
+        .classlist {
+            width: calc(100vw - 40px);
+            background-color: rgba(250,250,250,.9);
+            height: 100vh;
+            top: 0vh;
+            bottom: 0vh;
+        }
+        .topbutton {
+            display: none;
+        }
+        .close {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: inline;
+            z-index: 1;
+        }
+        .mobile {
+            display: inline;
+        }
+        .show {
+            z-index: 3;
+            top: 0px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: rgba(250,250,250,.8);
+            left: 0px;
+            right: 0px;
+            padding-left: 20px;
+        }
+
+
+
+    /*     "COVER"     */
+        .date {
+            position: relative;
+            max-width: calc(100vw - 40px);
+            right: auto;
+            left: 20px !important;
+            text-align: left;
+        }
+
+        .covertitle {
+            font: 50px Chalga;
+            line-height: 45px;
+        }
+
+        @keyframes arrow {
+          0%   {color:red; top:20vh; font-size: 20px;}
+          5%   {color:red;}
+          45%  {color:yellow;}
+          90%  {color:green;}
+          100%   {color:green; top:86vh; font-size: 50px;}
+        }
+        
+
+    /*     "SECTIONS"     */
+
+    .docus {
+        width: 100vw;
+        left: 0vw;
+    }
+
+    .docu {width: 100vw;}
+
+    .video2 {
+        width: calc(100vw - 40px);
+        top: 60px;
+        height: calc(80vh - 40px);
+    }
+
+
+}
+
+@media screen and (min-width: 800px){
+    .classlist {
+            display: inline !important;
+        }
+}
