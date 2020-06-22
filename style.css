@@ -162,7 +162,6 @@ body {background-color: rgb(250,250,250);}
     .covertitleFund {
         position: relative;
         font: 80px Chalga;
-        left: calc(14vw - 40px);
         left: 0vw;
         right: 20px; 
         line-height: 95px;
@@ -357,11 +356,19 @@ body {background-color: rgb(250,250,250);}
         .covertitleFund {
             font: 40px Chalga;
             line-height: 45px;
-            
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            width: calc(100vw - 40px);
+            padding-top: 5vh;
+            text-align: center;
         }
         .textDescriptionBottom {
             position: relative;
             margin-top: 10% !important;
+        }
+        .textDescription {
+            margin-bottom: 30%;
         }
         
 
