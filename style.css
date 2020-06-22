@@ -361,14 +361,13 @@ body {background-color: rgb(250,250,250);}
             left: 20px;
             width: calc(100vw - 40px);
             padding-top: 5vh;
-            text-align: center;
         }
         .textDescriptionBottom {
             position: relative;
             margin-top: 10% !important;
         }
         .textDescription {
-            margin-bottom: 30%;
+            margin-bottom: 40vh;
         }
         
 
