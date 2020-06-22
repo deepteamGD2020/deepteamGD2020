@@ -159,6 +159,14 @@ body {background-color: rgb(250,250,250);}
         z-index: 3;
         background: linear-gradient(rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,1), rgba(250,250,250,0));    
     }
+    .covertitleFund {
+        font: 80px Chalga;
+        left: calc(14vw - 40px);
+        left: 0vw;
+        right: 20px; 
+        line-height: 95px;
+        text-transform: uppercase;
+    }
 
     .fundraiserVid {
         position: relative;
@@ -218,6 +226,13 @@ body {background-color: rgb(250,250,250);}
       90% {transform: rotate(-270deg);}
       100% {transform: rotate(-360deg);}
     }
+    /*.otherpic {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 100vw;
+        z-index: -1;
+    }*/
 
 
 /*     "SECTIONS"     */
@@ -372,6 +387,10 @@ body {background-color: rgb(250,250,250);}
         }
 
         .covertitle {
+            font: 50px Chalga;
+            line-height: 45px;
+        }
+        .covertitleFund {
             font: 50px Chalga;
             line-height: 45px;
         }
