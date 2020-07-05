@@ -7,7 +7,7 @@ div {
 
 @font-face {
     font-family: Chalga;
-    src: url(ChalgaTypewriter-Regular.otf);
+    src: url(Chalga/Chalga-Regular.otf);
 }
 @font-face {
     font-family: Sambo;
@@ -49,17 +49,17 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
 /*     CLASSLIST     */
 
     a {
-        color: black;
+        color: blue;
         text-decoration: none;
     }
     a:hover {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid blue;
     }
 
     a.covertitleFund:hover {
         text-decoration: none;
-        /*border-top: 1px solid black;*/
-        border-bottom: 2px solid black;
+        /*border-top: 1px solid blue;*/
+        border-bottom: 2px solid blue;
         margin-bottom: 20px;
     }
 
@@ -84,20 +84,10 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         z-index: 2;
     }
 
-    .fundraiserVid {
-        position: relative;
-        margin-top: calc(30vh + 45px);
-        left: 20px;
-        width: calc(100vw - 40px);
-        /*height: calc(100vh - 40px);*/
-        height: calc((100vw - 40px) * 0.5625);
-    }
-    /* width="560" height="315" */
-
     .textDescription {
         position: relative;
-        margin-top: 10%;
-        width: calc(100vw - 40px);
+        margin-top: 100vh;
+        width: calc(56vw - 40px);
         margin-bottom: 20%;
         text-align: left;
 
@@ -105,24 +95,36 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         line-height: 27px;
 
         -webkit-overflow-scrolling: touch;
+
+        color: blue;
     }
     .textDescriptionBottom {
-        position: relative;
-        bottom: 20px; 
+        position: absolute;
+        /*top: 20px; */
+        top: 5px;
         right: 20px; 
-        left: auto !important; 
-        top: auto !important; 
+        /*left: auto !important; 
+        top: auto !important; */
         text-align: right; 
-        float: right; 
-        margin-bottom: 0px !important;
-        margin-top: 5vh;
+        /*margin-bottom: 0px !important;
+        margin-top: 5vh;*/
         line-height: 23px;
-        /*font-family: Sambo;
-        font-size: 30px;
-        line-height: 32px;*/
 
         font: 20px Chalga;
         line-height: 27px;
+        color: blue;
+        z-index: 12;
+    }
+    .textDescriptionTop {
+        position: fixed;
+        right: 20px; 
+        bottom: 20px; 
+        top: auto;
+        
+        font: 20px Chalga;
+        line-height: 27px;
+        color: blue;
+        z-index: 11;
     }
     .numbers {
         font-family: Sambo;
@@ -133,16 +135,24 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         font-family: Sambo;
         font-size: 28px;
     }
+    .name:hover {
+        font-family: Sambo;
+        font-size: 28px;
+        cursor: pointer;
+    }
     .onlyDesktop {display: inline;}
     .onlyMobile {display: none;}
 
 
     .logo {
         position: fixed;
-        top: 20px;
-        right: 20px;
-        height: 30vh; 
+        top: calc(20px + 5vh);
+        left: calc(20px + 5vw);
+        /*height: 30vh; */
+        width: calc(44vw - 40px);
+        height: auto;
         z-index: 2;
+        z-index: 11;
 
         animation: spin;
         transition-timing-function: ease-in-out;
@@ -150,6 +160,8 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         animation-iteration-count: infinite;
 
         transform: rotate(0deg);
+
+        transition: 0.5s;
     }
     @keyframes spin {
       0% {transform: rotate(0deg);}
@@ -163,8 +175,48 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
       100% {transform: rotate(-360deg);}
     }
 
+    .smaller {
+        height: 30vh; 
+        width: auto;
+
+        top: 20px;
+        left: 20px;
+    }
 
 
+
+    .imgScroll {
+        position: absolute;
+        right: 0%;
+        top: 100vh;
+        width: 44%;
+    }
+    .image {
+        position: relative;
+        width: 100%;
+        display: inline;
+    }
+    .fullscreenOne {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background: white;
+        background-image: url(imgs/6.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 10;
+
+        font: 20px Chalga;
+        line-height: 27px;
+
+        -webkit-overflow-scrolling: touch;
+
+        color: blue;
+        display: none;
+    }
 
 
 
