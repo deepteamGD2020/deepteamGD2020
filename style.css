@@ -99,15 +99,16 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         color: blue;
     }
     .textDescriptionBottom {
-        position: absolute;
-        /*top: 20px; */
-        top: 5px;
+        position: relative;
+        top: 20px; 
+        /*top: 5px;*/
         right: 20px; 
         /*left: auto !important; 
         top: auto !important; */
         text-align: right; 
-        /*margin-bottom: 0px !important;
-        margin-top: 5vh;*/
+        margin-bottom: 20px !important;
+        /*margin-top: 5vh;
+        margin-bottom: 70px;*/
         line-height: 23px;
 
         font: 20px Chalga;
@@ -118,8 +119,8 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
     .textDescriptionTop {
         position: fixed;
         right: 20px; 
-        bottom: 20px; 
-        top: auto;
+        top: 20px; 
+        
         
         font: 20px Chalga;
         line-height: 27px;
@@ -161,7 +162,7 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
 
         transform: rotate(0deg);
 
-        transition: 0.5s;
+        transition: 1s !important;
     }
     @keyframes spin {
       0% {transform: rotate(0deg);}
@@ -179,9 +180,21 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         height: 30vh; 
         width: auto;
 
-        top: 20px;
+        bottom: 20px;
+        top: auto;
         left: 20px;
     }
+
+    .spin2 {
+        transform: rotate(0deg);
+        /*animation-play-state: paused;*/
+        animation: none;
+    }
+
+    .spin3 {transform: rotate(-90deg);}
+    .spin4 {transform: rotate(-180deg);}
+    .spin5 {transform: rotate(-270deg);}
+    .spin6 {transform: rotate(-360deg);}
 
 
 
@@ -218,6 +231,9 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         display: none;
     }
 
+    .abstractOne, .abstractTwo {display: inline;}
+    .nameOne:hover + .abstractOne {display: inline;}
+    .nameTwo:hover + .abstractTwo {display: inline;}
 
 
 
