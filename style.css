@@ -231,7 +231,7 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         display: none;
     }
 
-    .abstractOne, .abstractTwo {display: inline;}
+    .abstractOne, .abstractTwo {display: none;}
     .nameOne:hover + .abstractOne {display: inline;}
     .nameTwo:hover + .abstractTwo {display: inline;}
 
