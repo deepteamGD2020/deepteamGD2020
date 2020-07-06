@@ -36,44 +36,63 @@
         <span class="Sambo">00</span>:<span class="Sambo">00</span>:<span class="Sambo">00</span>:<span class="Sambo">00<span>
     </div>
 
+    <div class="text textDescriptionTop left overview">
+        <span class="name">Overview</span>
+    </div>
 
+
+    <img class="logo" src="logoblue.png">
+    <div class="imgScroll">
+        <img class="image imageOne" src="imgs/6.jpg">
+
+        <div class="textDescriptionHover textOne">
+            <p>
+                <span class="name nameOne">Anastasia Umpeleva</span><br>
+                <span class="abstract"><span class="Sambo"><br>Loud Softness: the Art of Gentle Protest</span>. Activism often conjures up quick transactional signing of petitions, loud and aggressive ways to demand justice outside on streets. For people from the Quiet World most forms of traditional activism are uncomfortable, stressful, and sometimes terrifying. Is it even possible for introverts using their gentle voices to create big change? How different personality types call for change?“ <span class="Sambo">Loud Softness: the Art of Gentle Protest"</span> invites you to the place where craft marry activism. Through the web archive and tapestry Anastasia would like to manifest and draw attention to the idea that a creative gentle approach to activism can be even more world-changing both personally and politically.<br></span><br>
+            </p>
+        </div>
+
+        <img class="image imageTwo" src="imgs/1.png">
+
+        <div class="textDescriptionHover textTwo">
+            <p>
+                <span class="name nameTwo">Anna Moschioni</span><br>
+                <span class="abstract"><span class="Sambo"><br>Domestic Tales – Odes to Triviality...</span><br>The scraggly charm bracelet you can’t find the courage to throw out, the random knick-knacks that deposited on the shelves, the calendars received every Christmas from your mother, the rocks picked up while walking, the old pile of rags mended over and over again... By letting owners speak about their mundane belongings and to what they remind them of, <span class="Sambo">Domestic Tales – Odes to Triviality</span> is a collection of short stories that invites the reader to reconsider the value of the often diminished ordinary.  The house turns into a theatre where oral narratives and memories come to life, depicting different aspects of people’s lives. The project dives into humans’ intimate relations with the realm of objects through both audio and written form. It functions as a platform for sharing and shows the grounding role of domesticity.<br></span><br>
+            </p>
+        </div>
+
+        <img class="image" src="imgs/2.png">
+        <img class="image" src="imgs/3.png">
+        <img class="image" src="imgs/4.png">
+        <img class="image" src="imgs/5.png">
+
+        <div class="text textDescriptionBottom">
+            <p>
+                <a href="https://www.kabk.nl/en/events/graduation-2020?d=3eb304cf" target="_blank">Graduation Festival <span class="numbers">2020</span></a><br>
+                <a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" target="_blank">Graphic Design&nbsp;(BA)</a> + <a href="https://www.kabk.nl/en/programmes/master/non-linear-narrative" target="_blank">Non&nbsp;Linear Narrative&nbsp;(MA)</a><br>
+                <a href="https://www.kabk.nl/en/" target="_blank">Royal Academy of Art, The Hague</a>
+            </p>
+            <p>
+                Thursday <span class="numbers">10</span>th of September &ndash; Sunday <span class="numbers">13</span>th of September
+            </p>
+            Free Entrance
+        </div>
+
+
+        
+    </div>
+
+
+    <div class="fullscreenOne">
+        <p class="closeFullscreenOne" style="text-align: center; line-height: 29px;"><span class="name" style="border-bottom: 2px solid blue;">Back</span><br>Anastasia Umpeleva</p>
+
+        <div class="text textDescriptionTop">
+            <br>
+            + <span class="Sambo">20</span>:<span class="Sambo">00</span>:<span class="Sambo">00<span>
+        </div>
+    </div>
 
     <section class="introFund">
-        <img class="logo" src="logoblue.png">
-        <!--<a href="" class="covertitleFund">Support us</a>-->
-        <div class="imgScroll">
-            <img class="image" src="imgs/6.jpg">
-            <img class="image" src="imgs/1.png">
-            <img class="image" src="imgs/2.png">
-            <img class="image" src="imgs/3.png">
-            <img class="image" src="imgs/4.png">
-            <img class="image" src="imgs/5.png">
-
-            <div class="text textDescriptionBottom">
-                <p>
-                    <a href="https://www.kabk.nl/en/events/graduation-2020?d=3eb304cf" target="_blank">Graduation Festival <span class="numbers">2020</span></a><br>
-                    <a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" target="_blank">Graphic Design&nbsp;(BA)</a> + <a href="https://www.kabk.nl/en/programmes/master/non-linear-narrative" target="_blank">Non&nbsp;Linear Narrative&nbsp;(MA)</a><br>
-                    <a href="https://www.kabk.nl/en/" target="_blank">Royal Academy of Art, The Hague</a>
-                </p>
-                <p>
-                    Thursday <span class="numbers">10</span>th of September &ndash; Sunday <span class="numbers">13</span>th of September
-                </p>
-                Free Entrance
-            </div>
-        </div>
-
-
-
-
-        <div class="fullscreenOne">
-            <p class="closeFullscreenOne" style="text-align: center; line-height: 29px;"><span class="name" style="border-bottom: 2px solid blue;">Back</span><br>Anastasia Umpeleva</p>
-
-            <div class="text textDescriptionTop">
-                <br>
-                + <span class="Sambo">20</span>:<span class="Sambo">00</span>:<span class="Sambo">00<span>
-            </div>
-        </div>
-
 
         <div class="textDescription left right">
             <p style="text-align: center; line-height: 29px;"><a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" target="_blank"><span style="border-bottom: 2px solid blue;">Graphic Design (BA)</span></a></p>
@@ -141,6 +160,18 @@
     });
     $(".closeFullscreenOne").click(function(){
         $(".fullscreenOne").hide();
+    });
+
+    $(".imageOne").click(function(){
+        $(".fullscreenOne").show();
+    });
+
+
+    $(".overview").click(function(){
+        $(".introFund").show();
+    });
+    $(".introFund").click(function(){
+        $(".introFund").hide();
     });
   });
 
