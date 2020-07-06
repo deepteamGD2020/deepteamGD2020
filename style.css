@@ -234,7 +234,10 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         position: relative;
         width: 100%;
         display: inline;
+
+        cursor: pointer;
     }
+    .overview {right: auto;}
     .fullscreenOne {
         position: fixed;
         top: 0%;
