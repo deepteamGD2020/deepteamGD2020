@@ -13,8 +13,8 @@ div {
     font-family: Sambo;
     src: url(Sambo-Regular.otf);
 }
-html {overflow-x: hidden;}
-body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
+html {overflow-x: hidden; height: 100%; width: 100%;}
+body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
 
 
@@ -44,7 +44,33 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
     section {-webkit-overflow-scrolling: touch;}
 
 
+    .Chalga {
+        font: 20px Chalga;
+        line-height: 27px;
+        /*line-height: 29px;*/
+    }
 
+    .underline {border-bottom: 2px solid blue;}
+
+/*
+::-webkit-scrollbar {
+  height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+*/
 
 /*     CLASSLIST     */
 
@@ -73,100 +99,43 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         width: 100vw;
         left: 0vw;
         z-index: 3;
-
-        display: none;
-    }
-    .covertitleFund {
-        position: fixed;
-        font: 80px Chalga;
-        left: 12px;
-        bottom: 0px;
-        line-height: 95px;
-        text-transform: uppercase;
-        z-index: 2;
     }
 
     .textDescription {
         position: relative;
         margin-top: 100vh;
-        width: calc(56vw - 40px);
+        width: 100vw;
+        left: 0px;
         margin-bottom: 20%;
         text-align: left;
 
-        font: 20px Chalga;
-        line-height: 27px;
+        font: 18px Chalga;
+        /*line-height: 27px;*/
+        line-height: 26px;
+        text-align: center;
 
         -webkit-overflow-scrolling: touch;
 
         color: blue;
     }
-    .textDescriptionHover {
-        position: fixed;
-        margin-top: 0vh;
-        width: calc(56vw - 40px);
-        margin-bottom: 20%;
-        text-align: left;
-
-        left: 0%;
-        top: 20%;
-
-        font: 20px Chalga;
-        line-height: 27px;
-
-        -webkit-overflow-scrolling: touch;
-
-        color: blue;
-
-        z-index: 9999;
-        text-align: center; 
-        line-height: 29px;
-    }
-    .textOne, .textTwo {display: none;}
     .imageOne:hover + .textOne, .imageTwo:hover + .textTwo {display: inline;}
 
-    .textDescriptionBottom {
-        position: relative;
-        top: 20px; 
-        /*top: 5px;*/
-        right: 20px; 
-        /*left: auto !important; 
-        top: auto !important; */
-        text-align: right; 
-        margin-bottom: 20px !important;
-        /*margin-top: 5vh;
-        margin-bottom: 70px;*/
-        line-height: 23px;
-
-        font: 20px Chalga;
-        line-height: 27px;
-        color: blue;
-        z-index: 12;
-    }
     .textDescriptionTop {
         position: fixed;
         right: 20px; 
         top: 20px; 
         
         
-        font: 20px Chalga;
+        font: 18px Chalga;
         line-height: 27px;
         color: blue;
         z-index: 11;
     }
-    .numbers {
-        font-family: Sambo;
-        font-size: 23px;
-        line-height: 23px;
-    }
     .Sambo {
         font-family: Sambo;
-        font-size: 28px;
+        font-size: 25px;
     }
-    .name:hover {
-        font-family: Sambo;
-        font-size: 28px;
-        cursor: pointer;
-    }
+    
     .onlyDesktop {display: inline;}
     .onlyMobile {display: none;}
 
@@ -206,7 +175,7 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
         height: 30vh; 
         width: auto;
 
-        bottom: 20px;
+        bottom: calc(50vh - 15vh + 40px);
         top: auto;
         left: 20px;
     }
@@ -224,47 +193,122 @@ body {background-color: rgb(250,250,250); width: 100vw; overflow-x: hidden;}
 
 
 
-    .imgScroll {
-        position: absolute;
-        right: 0%;
-        top: 100vh;
-        width: 44%;
+    .name {
+        text-transform: lowercase;
+        /*font-family: Chalga;
+        font-size: 18px;*/
+        font-family: Sambo;
+        font-size: 28px;
     }
-    .image {
-        position: relative;
-        width: 100%;
-        display: inline;
-
+    .name:hover {
+        font-family: Sambo;
+        font-size: 28px;
         cursor: pointer;
     }
-    .overview {right: auto;}
-    .fullscreenOne {
-        position: fixed;
-        top: 0%;
+    .larger {
+        font-family: Sambo;
+        font-size: 28px;
+    }
+    
+    .content {
+        position: relative;
+        min-height: 70vh;
         left: 0%;
-        height: 100%;
         width: 100%;
-        background: white;
-        background-image: url(imgs/6.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        z-index: 10;
 
-        font: 20px Chalga;
-        line-height: 27px;
-
-        -webkit-overflow-scrolling: touch;
-
-        color: blue;
         display: none;
     }
 
-    .abstractOne, .abstractTwo {display: none;}
-    .nameOne:hover + .abstractOne {display: inline;}
-    .nameTwo:hover + .abstractTwo {display: inline;}
+    .abstract {
+        position: relative;
+        padding-left: 22vw;
+        padding-right: 22vw;
+        width: 56vw !important;
+
+        overflow-x: scroll;
+    }
+
+    .horizontalScroll {
+        position: absolute;
+        height: 70vh;
+        top: 0%;
+        width: 17vw;
+        padding-left: 83vw;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        z-index: 2;
+
+        display: flex;
+    }
 
 
+    .image {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        /*width: max-content;*/
+        left: 0vw;
+        top: 0%;
+        padding-right: 20px;
+
+        cursor: pointer;
+    }
+    .websitelink {
+        background-color: blue;
+        /*border: blue 2px solid;*/
+        text-align: center;
+        height: calc(100% - 4px);
+        margin-right: 20px;
+        border-radius: 20px;
+
+    }
+    .linkcircle {
+        position: relative;
+        /*border-radius: 50%;*/
+        /*height: calc(100% - 404px);*/
+        height: 100%;
+        top: 40%;
+        padding-left: 50px;
+        padding-right: 50px;
+        color: white;
+    }
+    .videoAnna {
+        height: 70vh;
+        width: calc(70vh / 0.5671875);
+    }
+
+    .blueBanner {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: calc(30px + 27px);
+        background: blue;
+        z-index: 9999999;
+        cursor: pointer;
+
+        transition: 0.5s !important;
+    }
+    .textInBannerLeft {
+        position: relative;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+        color: white !important;
+    }
+    .textInBannerLeft a {color: white !important;}
+    .fullscreen {height: 100%; cursor: auto;}
+    .blueScreenClose {
+        display: none; 
+        z-index: 9999999999999;
+
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    .blueScreenOpen {display: none; color: white;}
 
 
 
