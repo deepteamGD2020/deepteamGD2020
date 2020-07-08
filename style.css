@@ -297,6 +297,14 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
     }
     .textInBannerLeft a {color: white !important;}
+    .textInBannerRight {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        margin-bottom: 15px;
+        float: right;
+        color: white !important;
+    }
     .fullscreen {height: 100%; cursor: auto;}
     .blueScreenClose {
         display: none; 
