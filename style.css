@@ -131,6 +131,20 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: blue;
         z-index: 11;
     }
+    .textDescriptionBottom {
+        position: absolute;
+        text-align: right;
+        right: 20px; 
+        bottom: calc(30px + 27px + 20px); 
+        
+        
+        font: 18px Chalga;
+        line-height: 27px;
+        color: blue;
+        z-index: 11;
+
+        text-transform: lowercase;
+    }
     .Sambo {
         font-family: Sambo;
         font-size: 25px;
@@ -351,12 +365,12 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
             bottom: 10px;
             width: calc(100vw - 40px);
         }
-        .textDescriptionBottom {
+        /*.textDescriptionBottom {
             position: relative;
             margin-top: 10% !important;
             padding-bottom: 20vh;
             margin-left: 25px;
-        }
+        }*/
         .textDescription {
             margin-bottom: 40vh;
         }
