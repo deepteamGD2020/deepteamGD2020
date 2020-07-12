@@ -99,7 +99,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         right: 20px;
         width: 45%;
         bottom: calc(30px + 27px + 20px);
-        background: blue;
+        background: pink;
         border-radius: 20px;
     }
     .introText {
@@ -130,12 +130,27 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
     }
 
 
+    .overviewButton:hover {
+        font-family: Sambo;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .overviewButton-hide {
+        z-index: 999999;
+        display: none;
+    }
+
+
 
     .usAll {
-        position: absolute;
+        position: relative;
+        position: fixed;
+        z-index: 9999;
         top: 20px;
+        top: calc(30px + 27px + 20px);
         left: 20px;
         right: 20px;
+        width: calc(100vw - 40px);
         height: calc(100vh - ((30px + 27px + 20px) * 2));
         /*border: 2px solid blue;*/
 
@@ -146,6 +161,9 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         justify-content: space-around;
         flex-wrap: wrap;
         flex-direction: row;
+    }
+    .hide {
+        display: none;
     }
     .person {
         position: relative;
@@ -236,7 +254,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
     .textDescription {
         position: relative;
-        margin-top: 100vh;
+        margin-top: 0vh;
         width: 100vw;
         left: 0px;
         margin-bottom: 20%;

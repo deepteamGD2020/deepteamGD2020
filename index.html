@@ -36,6 +36,13 @@
         <span class="Sambo">00</span>:<span class="Sambo">00</span>:<span class="Sambo">00</span>:<span class="Sambo">00</span>
     </div>
 
+    <div class="text left textDescriptionTop overviewButton overviewButton-show">
+        overview
+    </div>
+    <div class="text left textDescriptionTop overviewButton overviewButton-hide">
+        overview
+    </div>
+
     <div class="introbox">
         <div class="text introText">
             graduation festival <span class="introSambo">2020</span><br>
@@ -60,7 +67,7 @@
         <img class="image" src="imgs/5.png">        
     </div>-->
     <section class="introFund">
-        <div class="usAll">
+        <div class="usAll hide">
             <div class="person person-one"></div>
             <div class="person person-two"></div>
             <div class="person person-three"></div>
@@ -101,6 +108,7 @@
             <div class="person person-one"></div>
             <div class="person person-two"></div>
             <div class="person person-three"></div>
+            <div class="person person-four"></div>
             <div class="person person-four"></div>
             
         </div>
@@ -525,6 +533,21 @@
 
     $(".imageOne").click(function(){
         $(".fullscreenOne").show();
+    });
+
+
+
+
+
+    $(".overviewButton-show").click(function(){
+        $(".usAll").removeClass('hide');
+        $(".overviewButton-hide").show();
+        $(".overviewButton-show").hide();
+    });
+    $(".overviewButton-hide").click(function(){
+        $(".usAll").addClass('hide');
+        $(".overviewButton-hide").hide();
+        $(".overviewButton-show").show();
     });
 
 
