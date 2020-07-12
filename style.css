@@ -99,7 +99,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         right: 20px;
         width: 45%;
         bottom: calc(30px + 27px + 20px);
-        background: gold;
+        background: blue;
         border-radius: 20px;
     }
     .introText {
