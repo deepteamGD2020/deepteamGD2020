@@ -99,8 +99,9 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         right: 20px;
         width: 45%;
         bottom: calc(30px + 27px + 20px);
-        background: pink;
+        background: blue;
         border-radius: 20px;
+        z-index: 11;
     }
     .introText {
         position: absolute;
@@ -162,9 +163,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         flex-wrap: wrap;
         flex-direction: row;
     }
-    .hide {
-        display: none;
-    }
+    .hide {display: none;}
     .person {
         position: relative;
         display: inline-block;
@@ -219,7 +218,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         position: absolute;
         top: calc(30px + 27px + 20px);
         left: calc(30px + 27px + 20px);
-        right: 30%;
+        right: calc(25% + (30px + 27px + 20px));
         height: calc(100vh - ((30px + 27px + 20px) * 2));
         /*border: 2px solid blue;*/
 
@@ -236,8 +235,8 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         display: inline-block;
         top: 0px;
         left: 0px;
-        width: 50%;
-        height: 50%;
+        max-width: 50%;
+        min-width: calc(50% - 2px);
 
         flex: flex-grow;
         flex-grow: 2;
@@ -248,6 +247,69 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         background-size: cover;
         margin: 0px;
         padding: 0px;
+
+        cursor: pointer;
+    }
+    .personquatro:hover {border: 2px solid blue;}
+
+    .chat {
+        position: fixed;
+        right: 0px;
+        width: 25%;
+        top: 0px;
+        bottom: calc(30px + 27px);
+    }
+    .blobBox {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        right: 20px;
+        background: yellow;
+        height: auto;
+    }
+    .blob {
+        position: relative;
+        width: calc(100% - 40px);
+        background: blue;
+        border-radius: 20px;
+        border-bottom-left-radius: 0px;
+
+        color: white;
+        text-align: left;
+        padding: 20px;
+    }
+    .blob-one {display: none;}
+    .popup {
+        position: fixed;
+        right: 25%;
+        left: 0px;
+        top: 0px;
+        bottom: calc(30px + 27px);
+        background: rgb(253,253,253);
+        z-index: 999999999;
+
+        display: none;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .popupPerson-Close {
+        position: fixed;
+        top: 20px;
+        right: calc(25% + 20px);
+        z-index: 2;
+        cursor: pointer;
+    }
+    .imageVertical {
+        position: relative;
+        display: inline;
+        height: 100%;
+        /*width: max-content;*/
+        left: 0vw;
+        top: 0%;
+        padding-right: 20px;
+
+        cursor: pointer;
     }
 
 
@@ -282,6 +344,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: blue;
         z-index: 11;
     }
+    .overviewButton {right: auto;}
     
     .Sambo {
         font-family: Sambo;
@@ -299,8 +362,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         /*height: 30vh; */
         width: calc(44vw - 40px);
         height: auto;
-        z-index: 2;
-        z-index: 11;
+        z-index: 9999999;
 
         animation: spin;
         transition-timing-function: ease-in-out;
@@ -381,7 +443,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         overflow-x: scroll;
     }
 
-    .horizontalScroll {
+    /*.horizontalScroll {
         position: absolute;
         height: 70vh;
         top: 0%;
@@ -399,13 +461,12 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         position: relative;
         display: inline-block;
         height: 100%;
-        /*width: max-content;*/
         left: 0vw;
         top: 0%;
         padding-right: 20px;
 
         cursor: pointer;
-    }
+    }*/
     .websitelink {
         background-color: blue;
         /*border: blue 2px solid;*/
