@@ -255,7 +255,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
     .chat {
         position: fixed;
         right: 0px;
-        width: 25%;
+        width: calc(25% - 20px);
         top: 0px;
         bottom: calc(30px + 27px);
     }
