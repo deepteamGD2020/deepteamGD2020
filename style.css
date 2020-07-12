@@ -93,13 +93,146 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
 
 /* FUNDRAISER  */
+    .introbox {
+        position: absolute;
+        top:  calc(30px + 27px + 20px);
+        right: 20px;
+        width: 45%;
+        bottom: calc(30px + 27px + 20px);
+        background: gold;
+        border-radius: 20px;
+    }
+    .introText {
+        position: absolute;
+        text-align: center;
+        right: 20px; 
+         
+        
+        bottom: 20px;
+        font: 38px Chalga;
+        font-size: 38px !important;
+        line-height: 47px;
+        color: white;
+        z-index: 11;
+        text-transform: lowercase;
+    }
+    .introSambo {
+        font-family: Sambo;
+        font-size: 45px;
+    }
+
      .introFund {
         position: absolute;
-        top: 0vh;
+        top: 100vh;
         width: 100vw;
         left: 0vw;
         z-index: 3;
     }
+
+
+
+    .usAll {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        height: calc(100vh - ((30px + 27px + 20px) * 2));
+        /*border: 2px solid blue;*/
+
+        align-content: stretch;
+        display: flex;
+        display: space-between;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .person {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        left: 0px;
+        min-width: 200px;
+        height: auto;
+
+        flex: flex-grow;
+        flex-grow: 2;
+        flex-basis: auto;
+        order: 1;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+    }
+    .person:hover {
+        border: 2px solid blue;
+    }
+    .person-one {background-image: url(imgs/us/berglind.png);}
+    .person-two {background-image: url(imgs/us/cristina.png);}
+    .person-three {background-image: url(imgs/us/trang.png);}
+    .person-four {background-image: url(imgs/us/kihyeon.png);}
+
+
+
+    .graduateGroup {
+        position: relative;
+        margin-top: 0vh;
+        width: 100vw;
+        left: 0px;
+        margin-bottom: 20%;
+        text-align: left;
+
+        font: 18px Chalga;
+        /*line-height: 27px;*/
+        line-height: 26px;
+        text-align: center;
+
+        -webkit-overflow-scrolling: touch;
+
+        color: blue;
+
+        height: 100vh;
+
+        /*background: yellow;*/
+
+    }
+    .quatro {
+        position: absolute;
+        top: calc(30px + 27px + 20px);
+        left: calc(30px + 27px + 20px);
+        right: 30%;
+        height: calc(100vh - ((30px + 27px + 20px) * 2));
+        /*border: 2px solid blue;*/
+
+        align-content: stretch;
+        display: flex;
+        display: space-between;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .personquatro {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 50%;
+
+        flex: flex-grow;
+        flex-grow: 2;
+        flex-basis: auto;
+        order: 1;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
 
     .textDescription {
         position: relative;
@@ -131,20 +264,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: blue;
         z-index: 11;
     }
-    .textDescriptionBottom {
-        position: absolute;
-        text-align: right;
-        right: 20px; 
-        bottom: calc(30px + 27px + 20px); 
-        
-        
-        font: 18px Chalga;
-        line-height: 27px;
-        color: blue;
-        z-index: 11;
-
-        text-transform: lowercase;
-    }
+    
     .Sambo {
         font-family: Sambo;
         font-size: 25px;
@@ -172,6 +292,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         transform: rotate(0deg);
 
         transition: 1s !important;
+        pointer-events: none;
     }
     @keyframes spin {
       0% {transform: rotate(0deg);}
@@ -311,6 +432,27 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
     }
     .textInBannerLeft a {color: white !important;}
+    .textInBannerCenter {
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        left: 0px;
+        float: center;
+        text-align: center;
+        color: white !important;
+    }
+    .textInBannerCenterClose {
+        position: fixed;
+        top: 15px;
+        right: 0px;
+        left: 0px;
+        float: center;
+        text-align: center;
+        color: white !important;
+        z-index: 9999999999999;
+        display: none;
+        cursor: pointer;
+    }
     .textInBannerRight {
         position: absolute;
         top: 15px;
@@ -320,16 +462,6 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
     }
     .fullscreen {height: 100%; cursor: auto;}
-    .blueScreenClose {
-        display: none; 
-        z-index: 9999999999999;
-
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        color: white;
-        cursor: pointer;
-    }
     .blueScreenOpen {display: none; color: white;}
 
 
