@@ -89,6 +89,95 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         margin-bottom: 20px;
     }
 
+    .overviewButton:hover {
+        font-family: Sambo;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .overviewButton-hide {
+        z-index: 999999;
+        display: none;
+    }
+
+
+
+    .usAll {
+        position: relative;
+        position: fixed;
+        z-index: 9999;
+        top: 20px;
+        top: calc(30px + 27px + 20px);
+        left: 20px;
+        right: 20px;
+        width: calc(100vw - 40px);
+        height: calc(100vh - ((30px + 27px + 20px) * 2));
+        /*border: 2px solid blue;*/
+
+        align-content: stretch;
+        display: flex;
+        display: space-between;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .hide {display: none;}
+    .person {
+        position: relative;
+        display: inline-block;
+        top: 0px;
+        left: 0px;
+        min-width: 200px;
+        height: auto;
+
+        flex: flex-grow;
+        flex-grow: 2;
+        flex-basis: auto;
+        order: 1;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0px;
+        padding: 0px;
+
+        border: 2px solid rgba(0,0,0,0);
+        cursor: pointer;
+    }
+    .person:hover {
+        border: 2px solid blue;
+    }
+    .person-one {background-image: url(imgs/anastasiia/front.png);}
+    .person-two {background-image: url(imgs/anna/front.jpg);}
+    .person-three {background-image: url(imgs/berglind/pagessmaller.png);}
+    .person-four {background-image: url(imgs/brechje/front.png);}
+    .person-five {background-image: url(imgs/clara/1_Lezla.png);}
+    .person-six {background-image: url(imgs/dana/1.png);}
+    .person-seven {background-image: url(imgs/denise/1.png);}
+    .person-eight {background-image: url(imgs/edward/Posters-min.jpg);}
+    .person-nine {background-image: url(imgs/emily/);}
+    .person-ten {background-image: url(imgs/fien/);}
+    .person-eleven {background-image: url(imgs/golshan/1_Beginnings_without_endings.jpg);}
+    .person-twelve {background-image: url(imgs/kihyeon/2_kihyeon.png);}
+    .person-thirteen {background-image: url(imgs/kiki);}
+    .person-fourteen {background-image: url(imgs/laura/1_laura.jpg);}
+    .person-fifteen {background-image: url(imgs/linda/Screenshot-website-1.png);}
+    .person-sixteen {background-image: url(imgs/louana);}
+    .person-eighteen {background-image: url(imgs/maarten/front.jpg);}
+    .person-nineteen {background-image: url(imgs/marc);}
+    .person-twenty {background-image: url(imgs/martijn);}
+    .person-twentyone {background-image: url(imgs/martin);}
+    .person-twentytwo {background-image: url(imgs/ned/front.jpg);}
+    .person-twentythree {background-image: url(imgs/nicolai/1_Nicolai.jpg);}
+    .person-twentyfour {background-image: url(imgs/nicoletta/front.jpg);}
+    .person-twentyfive {background-image: url(imgs/pepjin/);}
+    .person-twentysix {background-image: url(imgs/ruben/);}
+    .person-twentyseven {background-image: url(imgs/selina/);}
+    .person-twentyeight {background-image: url(imgs/seojeong/front.jpg);}
+    .person-twentynine {background-image: url(imgs/sofia/front.jpg);}
+    .person-thirty {background-image: url(imgs/tilius/unnamed.jpg);}
+    .person-thirtyone {background-image: url(imgs/trang/2_Trang.png);}
+
 
 
 
@@ -219,6 +308,10 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         font-size: 28px;
         cursor: pointer;
     }
+    .imageblock {
+        max-width: 50%;
+        max-height: 50vw;
+    }
     .larger {
         font-family: Sambo;
         font-size: 28px;
@@ -231,6 +324,14 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         width: 100%;
 
         display: none;
+    }
+    .contentShowing {
+        position: relative;
+        min-height: 70vh;
+        left: 0%;
+        width: 100%;
+
+        display: inline;
     }
 
     .abstract {
@@ -311,6 +412,27 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
     }
     .textInBannerLeft a {color: white !important;}
+    .textInBannerCenter {
+        position: absolute;
+        top: 15px;
+        right: 0px;
+        left: 0px;
+        float: center;
+        text-align: center;
+        color: white !important;
+    }
+    .textInBannerCenterClose {
+        position: fixed;
+        top: 15px;
+        right: 0px;
+        left: 0px;
+        float: center;
+        text-align: center;
+        color: white !important;
+        z-index: 9999999999999;
+        display: none;
+        cursor: pointer;
+    }
     .textInBannerRight {
         position: absolute;
         top: 15px;
@@ -320,16 +442,6 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
     }
     .fullscreen {height: 100%; cursor: auto;}
-    .blueScreenClose {
-        display: none; 
-        z-index: 9999999999999;
-
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        color: white;
-        cursor: pointer;
-    }
     .blueScreenOpen {display: none; color: white;}
 
 
