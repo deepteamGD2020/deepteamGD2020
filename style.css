@@ -473,6 +473,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         position: absolute;
         top: 15px;
         right: 15px;
+        left: 15px;
         margin-bottom: 15px;
         float: right;
         color: white !important;
@@ -488,6 +489,16 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         color: white !important;
         text-align: center;
 
+        font-size: 50px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+    }
+    a.textInBannerRightBottom:hover {
+        text-decoration: none;
+        /*border-top: 1px solid blue;*/
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
     }
     .fullscreen {height: 100%; cursor: auto;}
     .blueScreenOpen {display: none; color: white;}
@@ -498,10 +509,27 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         left: 15px;
         right: calc(50% + 15px); 
         top: 0px;
-        background-color: blue;
-        bottom: calc(30px + 27px + 20px); 
+        bottom: 0px;
+        overflow-y: scroll;
+        background-color: blue; 
 
         text-transform: lowercase;
+    }
+    .blueBanner a {color: white !important;}
+    .blueBanner a:hover {
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+
+    .cinemaAnnounce {
+        position: relative; 
+        text-align: center !important; 
+        right: 10%; 
+        left: calc(60% - 30px); 
+        width: 30vw;
+        padding: 30px;
+
+        border: 2px solid white;
     }
 
 
