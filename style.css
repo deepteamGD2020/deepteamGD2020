@@ -309,8 +309,17 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         cursor: pointer;
     }
     .imageblock {
-        max-width: 50%;
-        max-height: 50vw;
+        max-width: 35%;
+        max-height: 35vw;
+        margin-top: 30px;
+    }
+    .imageblock:hover {
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
+    }
+    .shadow {
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 5px 5px #222);
     }
     .larger {
         font-family: Sambo;
@@ -324,14 +333,6 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         width: 100%;
 
         display: none;
-    }
-    .contentShowing {
-        position: relative;
-        min-height: 70vh;
-        left: 0%;
-        width: 100%;
-
-        display: inline;
     }
 
     .abstract {
