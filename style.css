@@ -17,6 +17,20 @@ html {overflow-x: hidden; height: 100%; width: 100%;}
 body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
 
+/*  LOOP */
+
+/*.Loop {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background: yellow;
+}*/
+
+
+
+
 
 
 /*     BASICS     */
@@ -355,11 +369,33 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
     .shadow {
         -webkit-filter: drop-shadow(5px 5px 5px #222);
         filter: drop-shadow(5px 5px 5px #222);
+
+        /*max-width: 15%;
+        max-height: 15vw;*/
+        max-width: 100vh;
+        max-height: 100vh;
+        width: 100vh;
+        height: auto;
     }
     .larger {
         font-family: Sambo;
         font-size: 28px;
     }
+
+
+    .nameHidden {
+        display: none;
+        position: fixed;
+        right: 20px;
+        top: calc(30px + 27px + 20px);
+
+
+        border: 2px solid blue;
+        padding: 30px;
+        /*border-radius: 50px;*/
+    }
+    .nameTwo:hover + .nameHidden {display: inline;}
+
     
     .content {
         position: relative;
