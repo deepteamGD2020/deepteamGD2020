@@ -20,7 +20,7 @@
       type="image/png"
       href="favicon3.png" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -37,15 +37,20 @@
     </div>
 
     <div class="text textDescriptionBottom">
-        graduation festival <span class="Sambo">2020</span><br>
+        graduation festival <span class="SamboFront">2020</span><br>
         Graphic Design&nbsp;(BA) + Non&nbsp;Linear Narrative&nbsp;(MA)<br>
         Royal Academy of Art, The Hague
         <br><br>
         free entrance:<br>
-        thursday <span class="Sambo">10</span>th of September &ndash; Sunday <span class="Sambo">13</span>th of September
+        thursday <span class="SamboFront">10</span>th of September &ndash; Sunday <span class="SamboFront">13</span>th of September
         <br>
-        <span class="Sambo">11</span>pm &ndash; <span class="Sambo">8</span>pm
+        <span class="SamboFront">11</span>pm &ndash; <span class="SamboFront">8</span>pm        
     </div>
+
+
+    <!--<div class="text textTypewriter">
+        <div id="typewriter"></div>
+    </div>-->
 
 
     <img class="logo" src="logoblue.png">
@@ -614,14 +619,29 @@
         
         <div class="textInBannerLeft Chalga">
             <!--<a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" target="_blank">graphic design&nbsp;(ba)</a> + <a href="https://www.kabk.nl/en/programmes/master/non-linear-narrative" target="_blank">non&nbsp;linear narrative&nbsp;(ma)</a>-->
-            contact
+            dear reader ...
         </div>
 
         <div class="textInBannerCenter Chalga">&uarr;</div>
         
 
         <div class="textInBannerRight Chalga">
-            next screening: Thursday <span class="Sambo">17</span>th, <span class="Sambo">14</span>:<span class="Sambo">00</span>h
+            <!--next screening: Thursday <span class="Sambo">17</span>th, <span class="Sambo">14</span>:<span class="Sambo">00</span>h-->
+            contact
+            <span class="blueScreenOpen"><br><br>
+                deepteam<span class="Sambo">2020</span>@gmail.com<br>
+                instagram
+            </span>
+        </div>
+
+
+        <div class="blueScreenOpen text textTypewriter Chalga">
+            <div id="typewriter"></div>
+        </div>
+
+        <div class="blueScreenOpen text textInBannerRightBottom Sambo">
+            In the coming weeks this will turn into a cinema.<br>
+            Please follow on our own time on instagram or send an email to deepteam<span class="Sambo">2020</span>@gmail.com for updates.
         </div>
 
     </div>
@@ -1131,5 +1151,54 @@
 
 
 </script>
+
+
+<script type="text/javascript">
+
+        var spacing = "<span class=whiteSpace> </span>";
+
+        var str = " <p> dear reader </p> <p> we"+spacing+"the graduating class of 2020 hope you are safe and sound"+spacing+"wherever you are </p> <p> in these in these times times"+spacing+"our private spaces have become the centers of our public lives </p> <p> we found ourselves in our bedrooms"+spacing+"making work related to social"+spacing+"political"+spacing+"and economic issues </p> <p> our common place has dispersed"+spacing+"but we sought to re-enact a shared ground in the writing of this letter </p> <p> we chose a location for everyone to visit on their own time"+spacing+"we brought and performed our works in progress on this mutual spot"+spacing+"ultimately"+spacing+"we came together"+spacing+"in one place"+spacing+"but at different moments </p> <p> you"+spacing+"the reader of this letter"+spacing+"are the first witness of our re-entry to the public sphere </p> <p> as you read"+spacing+"you patch our fragmented times into a shared event"+spacing+"and while it appears only as a simulation in your mind"+spacing+"it will soon materialize as a real-time physical encounter"+spacing+"at our graduation exhibition from 10th–13th september </p> <p> your attention"+spacing+"care"+spacing+"and curiosity is heard and felt by each one of us"+spacing+"by financially supporting us and visiting our exhibition in the fall"+spacing+"you restore a sense of publicness"+spacing+"urgency and importance to our ideas </p> <p> we are looking forward to hearing back from you </p> <p> sincerely </p> <p> the 2020 graduates of graphic design (ba): </p> <p> anastasia umpeleva"+spacing+"anna moschioni"+spacing+"berglind jóhannsdóttir"+spacing+"brechje krah"+spacing+"clara lezla"+spacing+"dana doorenbos"+spacing+"denise jansen"+spacing+"edward dzulaj"+spacing+"emily anderson"+spacing+"fien leeflang"+spacing+"golshan azadokht"+spacing+"kihyeon kim"+spacing+"kiki coster"+spacing+"laura brouwer"+spacing+"linda van houtum"+spacing+"louana gentner"+spacing+"marc van den berg"+spacing+"menso jensen"+spacing+"maarten meij"+spacing+"martijn brakenhoff"+spacing+"nedislav kamburov"+spacing+"nicolai schmelling"+spacing+"nicoletta radice"+spacing+"pepijn de jonge"+spacing+"ruben visser"+spacing+"selina landis"+spacing+"seojeong youn"+spacing+"sophia de jong yantorno"+spacing+"tilius sodeika"+spacing+"trang hà"+spacing+"yessica deira"+spacing+"zahari dimitrov"+spacing+"zuzanna zgierska </p> <p> & non linear narrative (ma): </p> <p> claude nassar"+spacing+"cristina lavosi"+spacing+"cyan bae"+spacing+"giulia faccin"+spacing+"kert viiart"+spacing+"lila steinkampf"+spacing+"mauro tosarelli </p> <p> royal academy of art, the hague (kabk) </p>",
+
+            i = 0,
+            isTag,
+            text;
+
+        (function type() {
+            text = str.slice(0, ++i);
+            if (text === str) return;
+
+            document.getElementById('typewriter').innerHTML = text;
+            /*document.getElementById( 'bottom' ).scrollIntoView();*/
+
+            var char = text.slice(-1);
+            if( char === '<' ) isTag = true;
+            if( char === '>' ) isTag = false;
+
+
+            // ===================================
+            // FUNCTION TO FIND TIME-RELATED WORDS
+            // ===================================
+
+            // ADD TIME-RELATED WORDS TO THIS ARRAY
+            var yourstring = ["2020", "in these times", "on their own time", "progress", "ultimately", "moments", "different times", "event", "real-time", "from 10th–13th september", "fall"];
+
+            $.each(yourstring , function(index, val) {
+              $('p:contains('+val+')', document.body).each(function(){
+                    console.log(this);
+                    $(this).html($(this).html().replace(
+                          new RegExp(val, 'g'), '<span class=timeClass>'+val+'</span>'
+                    ));
+              });
+            });
+
+            // ===================================
+
+
+            if (isTag) return type();
+            setTimeout(type, 100);
+
+        }());
+
+      </script>
 </body>
 </html>

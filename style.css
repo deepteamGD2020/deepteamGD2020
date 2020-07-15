@@ -180,6 +180,22 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
 
 
+/*  TYPEWRITER  */
+
+    /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
+      .timeClass{
+        font-family: 'Sambo-Regular', sans-serif;
+        font-size: 1.2em;
+        color: white;
+        line-height: 0em;
+      }
+
+      .whiteSpace{
+        letter-spacing: 3em;
+      }
+
+
+
 
 /* FUNDRAISER  */
      .introFund {
@@ -227,13 +243,32 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         bottom: calc(30px + 27px + 20px); 
         
         
-        font: 18px Chalga;
-        line-height: 27px;
+        font: 32px Chalga;
+        line-height: 35px;
         color: blue;
         z-index: 11;
 
         text-transform: lowercase;
     }
+    .SamboFront {
+        font-family: Sambo;
+        font-size: 37px;
+    }
+    /*.textTypewriter {
+        position: fixed;
+        text-align: left;
+        left: 20px;
+        right: 20px; 
+        bottom: calc(30px + 27px + 20px); 
+        
+        
+        font: 32px Chalga;
+        line-height: 35px;
+        color: blue;
+        z-index: 11;
+
+        text-transform: lowercase;
+    }*/
     .Sambo {
         font-family: Sambo;
         font-size: 25px;
@@ -441,52 +476,38 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
         margin-bottom: 15px;
         float: right;
         color: white !important;
+        text-align: right;
+    }
+    .textInBannerRightBottom {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        left: calc(50% + 15px);
+        margin-bottom: 15px;
+        float: right;
+        color: white !important;
+        text-align: center;
+
     }
     .fullscreen {height: 100%; cursor: auto;}
     .blueScreenOpen {display: none; color: white;}
+
+     .textTypewriter {
+        position: absolute;
+        text-align: left;
+        left: 15px;
+        right: calc(50% + 15px); 
+        top: 0px;
+        background-color: blue;
+        bottom: calc(30px + 27px + 20px); 
+
+        text-transform: lowercase;
+    }
 
 
 
 @media screen and (max-width: 800px){
 
-    /* FUNDRAISER */
-        .logo {
-            position: relative;
-            width: calc(100vw - 40px);
-            left: 20px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            height: auto;
-        }
-        .onlyDesktop {display: none;}
-        .onlyMobile {display: inline;}
-
-        .fundraiserVid {
-            position: relative;
-            margin-top: 50px;
-            top: auto;
-            left: 20px;
-            width: calc(100vw - 40px);
-            height: calc(100vh - 40px);
-        }
-
-
-    /*     "COVER"     */
-        .covertitleFund {
-            font: 40px Chalga;
-            line-height: 45px;
-            bottom: 10px;
-            width: calc(100vw - 40px);
-        }
-        /*.textDescriptionBottom {
-            position: relative;
-            margin-top: 10% !important;
-            padding-bottom: 20vh;
-            margin-left: 25px;
-        }*/
-        .textDescription {
-            margin-bottom: 40vh;
-        }
         
 
 }
