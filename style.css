@@ -16,36 +16,39 @@ div {
 html {overflow-x: hidden; height: 100%; width: 100%;}
 body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
+section {-webkit-overflow-scrolling: touch;}
+
 
 /*  LOOP */
 
-/*.Loop {
-  position: relative;
-  height: 100vh;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
+    /*.Loop {
+      position: relative;
+      height: 100vh;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
 
-  background: yellow;
-}*/
-
-
+      background: yellow;
+    }*/
 
 
-
-
-/*     BASICS     */
-
-    .text {font: 16px Chalga;}
+/*   WHY BOTHER?   */
 
     .top {top: 20px !important; margin-top: 0% !important;}
     .left {left: 20px;}
     .right {right: 20px; text-align: right;}
 
-    section {-webkit-overflow-scrolling: touch;}
+    
 
+
+/*     TEXT     */
     .Chalga {
         font: 20px Chalga;
         line-height: 27px;
+    }
+
+    .SamboFront {
+        font-family: Sambo;
+        font-size: 41px;
     }
 
 
@@ -59,7 +62,6 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
     a.covertitleFund:hover {
         text-decoration: none;
-        /*border-top: 1px solid blue;*/
         border-bottom: 2px solid blue;
         margin-bottom: 20px;
     }
@@ -244,10 +246,7 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
         text-transform: lowercase;
     }
-    .SamboFront {
-        font-family: Sambo;
-        font-size: 37px;
-    }
+    
     /*.textTypewriter {
         position: fixed;
         text-align: left;
