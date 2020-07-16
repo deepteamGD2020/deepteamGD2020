@@ -7,7 +7,7 @@ div {
 
 @font-face {
     font-family: Chalga;
-    src: url(Chalga/Chalga-Regular.otf);
+    src: url(chalga/Chalga-Regular.otf);
 }
 @font-face {
     font-family: Sambo;
@@ -35,36 +35,18 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
 
 /*     BASICS     */
 
-    .absolute {position: absolute;}
-    .fixed {position: fixed;}
-
     .text {font: 16px Chalga;}
-    .italic {font-style: italic; font-size: 20px;}
-    .pureitalic {font-style: italic;}
 
     .top {top: 20px !important; margin-top: 0% !important;}
     .left {left: 20px;}
     .right {right: 20px; text-align: right;}
 
-    .center {width: calc(50vw - 40px); text-align: center; left: calc(25vw + 20px);}
-
-    .top20 {top: 20vh;}
-    .top50 {top: 50vh;}
-    .bottom {bottom: 20px;}
-    .bottom11 {bottom: 11vh;}
-    .bottom15 {bottom: 15vh;}
-    .bottom5020 {bottom: calc(80vh + 20px);}
-
     section {-webkit-overflow-scrolling: touch;}
-
 
     .Chalga {
         font: 20px Chalga;
         line-height: 27px;
-        /*line-height: 29px;*/
     }
-
-    .underline {border-bottom: 2px solid blue;}
 
 
 /*     CLASSLIST     */
@@ -85,6 +67,8 @@ body {background-color: rgb(253,253,253); width: 100vw; overflow-x: hidden;}
     .overviewButton:hover {
         font-family: Sambo;
         font-size: 25px;
+        /*border-bottom: 2px solid blue;
+        margin-bottom: 20px;*/
         cursor: pointer;
     }
     .overviewButton-hide {
