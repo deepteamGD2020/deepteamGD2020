@@ -99,20 +99,6 @@
       $(".logoImg").removeClass('spin2');
     }
 
-    //  FOR FIRST CONTENTLESS VIEW 
-    if ($(document).scrollTop() >= 700) {
-      $(".logoImg").addClass('spin3');
-    } else {
-      $(".logoImg").removeClass('spin3');
-    }
-
-    if ($(document).scrollTop() >= 1400) {
-      $(".logoImg").addClass('spin4');
-    } else {
-      $(".logoImg").removeClass('spin4');
-    }
-
-    /*  FOR WHEN CONTENT IS IN
     if ($(document).scrollTop() >= 1100) {
       $(".logoImg").addClass('spin3');
     } else {
@@ -123,7 +109,7 @@
       $(".logoImg").addClass('spin4');
     } else {
       $(".logoImg").removeClass('spin4');
-    }*/
+    }
 
     if ($(document).scrollTop() >= 3100) {
       $(".logoImg").addClass('spin5');
@@ -147,22 +133,11 @@
       $(".logo").removeClass('spin2');
     }
 
-
-      //  FOR FIRST CONTENTLESS VIEW 
-      if ($(document).scrollTop() >= 1100) {
-          $(".logo").addClass('spin3');
-        } else {
-          $(".logo").removeClass('spin3');
-        }
-
-
-      /*  FOR WHEN CONTENT IS IN
-      if ($(document).scrollTop() >= 1600) {
-          $(".logo").addClass('spin3');
-        } else {
-          $(".logo").removeClass('spin3');
-        }
-      */
+    if ($(document).scrollTop() >= 1600) {
+        $(".logo").addClass('spin3');
+      } else {
+        $(".logo").removeClass('spin3');
+      }
 
       if ($(document).scrollTop() >= 3100) {
         $(".logo").addClass('spin4');
@@ -226,115 +201,106 @@
 // SLIDESHOW FANCYBOXXXX===============
 // ====================================
 
-  $(".fancybox").fancybox();
+    $(".open_fancybox_berglind").click(function() {
 
-  $(".open_fancybox_berglind").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/berglind/1.png',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/berglind/2.png',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/berglind/3.png',
-            title : '3rd title'
-        }
-    ], {
-        padding : 0
-    });
-
-    return false;
-
-  });
-
-  $(".open_fancybox_clara").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/clara/1_Lezla.png',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/clara/2_Lezla.png',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/clara/3_Lezla.png',
-            title : '3rd title'
-        }
-    ], {
-        padding : 0
-    });
-
-    return false;
-
-  });
-
-  $(".open_fancybox_cristina").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/cristina/1_Cristina_Lavosi.jpg',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/cristina/2_Cristina_Lavosi.jpg',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/cristina/3_Cristina_Lavosi.jpg',
-            title : '3rd title'
-        },
-        {
-            href : 'imgs/cristina/4_Cristina_Lavosi.jpg',
-            title : '4rd title'
-        },
-        {
-            href : 'imgs/cristina/5_Cristina_Lavosi.jpg',
-            title : '5rd title'
-        }
-    ], {
-        padding : 0
-    });
+      $.fancybox.open([
+          {
+            src : 'imgs/berglind/berglind_0.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_1.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_2.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_3.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_4.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_5.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_6.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
 
     return false;
 
-  });
-
-  $(".open_fancybox_edward").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/edward/Posters3-min.jpg',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/edward/Posters4-min.jpg',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/edward/Posters6-min.jpg',
-            title : '3rd title'
-        },
-        {
-            href : 'imgs/edward/Posters7-min.jpg',
-            title : '4rd title'
-        },
-        {
-            href : 'imgs/edward/Posters9-min-min.jpg',
-            title : '5rd title'
-        }
-    ], {
-        padding : 0
     });
+
+    $(".open_fancybox_anna").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/anna/anna_0.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_1.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_2.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/berglind/berglind_3.png',
+            opts : {
+              caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
 
     return false;
 
-  });
+    });
 
 
 
@@ -361,7 +327,7 @@
 
   var spacing = "<span class=whiteSpace> </span>";
 
-  var str = " <p> dear reader </p> <p> we"+spacing+"the graduating class of 2020"+spacing+"hope you are safe and sound </p> <p> in these in these times times"+spacing+"we found ourselves in our bedrooms"+spacing+"making work related to social"+spacing+"political"+spacing+"and economic issues </p> <p> our common place has dispersed"+spacing+"but we sought to re-enact a shared ground in the writing of <br> this letter </p> <p> we chose a location for everyone to visit on their <br> own time </p> <p> we brought and performed there our works in progress </p> <p> ultimately"+spacing+"we came together"+spacing+"in one place"+spacing+"but at different moments </p> <p> you"+spacing+"the reader of this letter"+spacing+"are the first witness of our re-entry to the public sphere </p> <p> as you read"+spacing+"you patch our fragmented times into <br> a shared event </p> <p> what appears only <br> a simulation in your mind"+spacing+"will soon materialize as <br> a real-time physical encounter"+spacing+"at our graduation show <br> from 10th to 13th september </p> <p> by financially supporting us and visiting the exhibition in the fall <br> you restore a sense of publicness"+spacing+"urgency"+spacing+"and importance to our ideas </p> <p> we are looking forward to hearing back from you </p> <p> sincerely </p> <p> the 2020 graduates of graphic design (ba): </p> <p> anastasia umpeleva"+spacing+"anna moschioni"+spacing+"berglind jóhannsdóttir"+spacing+"brechje krah"+spacing+"clara lezla"+spacing+"dana doorenbos"+spacing+"denise jansen"+spacing+"edward dzulaj"+spacing+"emily anderson"+spacing+"fien leeflang"+spacing+"golshan azadokht"+spacing+"kihyeon kim"+spacing+"kiki coster"+spacing+"laura brouwer"+spacing+"linda van houtum"+spacing+"louana gentner"+spacing+"marc van den berg"+spacing+"menso jensen"+spacing+"maarten meij"+spacing+"martijn brakenhoff"+spacing+"nedislav kamburov"+spacing+"nicolai schmelling"+spacing+"nicoletta radice"+spacing+"pepijn de jonge"+spacing+"ruben visser"+spacing+"selina landis"+spacing+"seojeong youn"+spacing+"sophia de jong yantorno"+spacing+"tilius sodeika"+spacing+"trang hà"+spacing+"yessica deira"+spacing+"zahari dimitrov"+spacing+"zuzanna zgierska </p> <p> & non linear narrative (ma): </p> <p> claude nassar"+spacing+"cristina lavosi"+spacing+"cyan bae"+spacing+"giulia faccin"+spacing+"kert viiart"+spacing+"lila steinkampf"+spacing+"mauro tosarelli </p> <p> royal academy of art <br> the hague (kabk) </p>",
+  var str = " <p> dear reader </p> <br> <p> we"+spacing+"the graduating class of 2020"+spacing+"hope you are safe and sound </p> <p> in these in these times times"+spacing+"we found ourselves in our bedrooms"+spacing+"making work related to social"+spacing+"political"+spacing+"and economic issues </p> <p> our common place has dispersed"+spacing+"but we sought to re-enact a shared ground in the writing of <br> this letter </p> <p> we chose a location for everyone to visit on their <br> own time </p> <p> we brought and performed there our works in progress </p> <p> ultimately"+spacing+"we came together"+spacing+"in one place"+spacing+"but at different moments </p> <p> you"+spacing+"the reader of this letter"+spacing+"are the first witness of our re-entry to the public sphere </p> <p> as you read"+spacing+"you patch our fragmented times into <br> a shared event </p> <p> what appears only <br> a simulation in your mind"+spacing+"will soon materialize as <br> a real-time physical encounter"+spacing+"at our graduation show <br> from 10th to 13th september </p> <p> by financially supporting us and visiting the exhibition in the fall <br> you restore a sense of publicness"+spacing+"urgency"+spacing+"and importance to our ideas </p> <p> we are looking forward to hearing back from you </p> <p> sincerely </p> <p> the 2020 graduates of graphic design (ba): </p> <p> anastasia umpeleva"+spacing+"anna moschioni"+spacing+"berglind jóhannsdóttir"+spacing+"brechje krah"+spacing+"clara lezla"+spacing+"dana doorenbos"+spacing+"denise jansen"+spacing+"edward dzulaj"+spacing+"emily anderson"+spacing+"fien leeflang"+spacing+"golshan azadokht"+spacing+"kihyeon kim"+spacing+"kiki coster"+spacing+"laura brouwer"+spacing+"linda van houtum"+spacing+"louana gentner"+spacing+"marc van den berg"+spacing+"menso jensen"+spacing+"maarten meij"+spacing+"martijn brakenhoff"+spacing+"nedislav kamburov"+spacing+"nicolai schmelling"+spacing+"nicoletta radice"+spacing+"pepijn de jonge"+spacing+"ruben visser"+spacing+"selina landis"+spacing+"seojeong youn"+spacing+"sophia de jong yantorno"+spacing+"tilius sodeika"+spacing+"trang hà"+spacing+"yessica deira"+spacing+"zahari dimitrov"+spacing+"zuzanna zgierska </p> <p> & non linear narrative (ma): </p> <p> claude nassar"+spacing+"cristina lavosi"+spacing+"cyan bae"+spacing+"giulia faccin"+spacing+"kert viiart"+spacing+"lila steinkampf"+spacing+"mauro tosarelli </p> <p> royal academy of art <br> the hague (kabk) </p>",
 
       i = 0,
       isTag,
@@ -397,9 +363,11 @@
 
       // ===================================
 
+      // $('#readLetter').click(function(){
+        if (isTag) return type();
+        setTimeout(type, 50);
+      // });
 
-      if (isTag) return type();
-      setTimeout(type, 50);
 
   }());
 

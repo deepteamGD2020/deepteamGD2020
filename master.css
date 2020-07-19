@@ -228,6 +228,7 @@ body {
     }
     .fullscreen {height: 100%; cursor: auto;}
     .blueScreenOpen {display: none; color: white;}
+    .cinemaImage{ width: 80%; margin: 5%; }
 
     /*  TYPEWRITER  */
 
@@ -244,7 +245,7 @@ body {
      .textTypewriter {
         position: absolute;
         text-align: left;
-        /* left: 15px; */
+        left: 0%;
         right: 50%;
         top: 0px;
         bottom: 0px;
@@ -592,7 +593,7 @@ body {
        }
 
        .introTxt p{
-          margin: 5% 5% 0 5%;
+          margin: 5% 3% 0 3%;
        }
 
        .larger-text {
@@ -605,7 +606,7 @@ body {
           height: auto;
           min-height: 100px;
           width: 45%;
-          margin: 25vh 5% 23vh 5%;
+          margin: 25vh 3% 30vh 3%;
 
           display: block;
        }
@@ -636,6 +637,7 @@ body {
           z-index: 11;
           z-index: 501;
       }
+
       .right-side {right: 20px;}
       .left-side {left: 20px;}
 
@@ -800,7 +802,13 @@ body {
     /*   CINEMA   */
 
     .marquee span {
-      animation-duration: 200s;
+      animation-duration: 20s;
+    }
+
+    /*   NAME BLOCK   */
+
+    .top-margin-block{
+      margin-top: 10%;
     }
 
 
