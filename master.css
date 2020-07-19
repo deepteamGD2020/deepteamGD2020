@@ -63,6 +63,9 @@ textarea {resize: vertical;}
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
     margin: 0;
+
+    font-size: 2em;
+    line-height: 1.1em;
 }
 
 .wrapper {
@@ -110,6 +113,162 @@ body {
         text-decoration: none;
     }
     a:hover {border-bottom: 2px solid blue;}
+
+
+
+
+
+
+    /*   CINEMA   */
+
+    .blueBanner {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        /*height: calc(30px + 35px);*/
+        height: calc(10px + 35px);
+
+        background: blue;
+        z-index: 9999999;
+        cursor: pointer;
+
+        font-family:
+           'Chalga Reg',
+           serif;
+        color: blue;
+
+        transition: 0.5s !important;
+    }
+    .textInBannerLeft {
+        position: relative;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        color: white !important;
+    }
+    .textInBannerLeft a {color: white !important;}
+    .click-to-open {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        float: center;
+        text-align: center;
+        color: white !important;
+        z-index: 99999;
+    }
+
+    .marquee {
+      position: absolute;
+      top: 5px;
+      color: white !important;
+      z-index: 1;
+      width: auto;
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 100%;
+    }
+    .marquee span {
+      position: relative;
+      /*display: inline-block;*/
+      display: flex;
+      height: 30px;
+      left: 100vw;
+      width: fit-content;
+      animation: marquee linear infinite;
+      animation-duration: 250s;
+    }
+    @keyframes marquee {
+      0%   { left: 100vw; }
+      100% { left: -100%; }
+    }
+    .textInBannerCenterClose, .textInBannerRight, .textInBannerRightBottom {
+        color: white !important;
+    }
+    .textInBannerCenterClose {
+        position: absolute;
+        top: 5px;
+        right: 0px;
+        left: 0px;
+        text-align: center;
+        z-index: 9999999999999;
+        display: none;
+        cursor: pointer;
+    }
+    .textInBannerRight {
+        position: absolute;
+        padding-top: 5px;
+        top: 0px;
+        right: 0px;
+        padding-right: 20px;
+        left: auto;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        text-align: right;
+        background-color: blue;
+        z-index: 999;
+    }
+    .textInBannerRightBottom {
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        left: calc(50% + 20px);
+        margin-bottom: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+    a.textInBannerRightBottom:hover {
+        text-decoration: none;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+    .fullscreen {height: 100%; cursor: auto;}
+    .blueScreenOpen {display: none; color: white;}
+
+    /*  TYPEWRITER  */
+
+        /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
+          .timeClass{
+            font-family: 'Sambo-Regular', serif;
+            font-size: 1.18em;
+            color: white !important;
+            line-height: 0em;
+          }
+
+          .whiteSpace{letter-spacing: 1.2em;}
+
+     .textTypewriter {
+        position: absolute;
+        text-align: left;
+        left: 15px;
+        right: calc(50% + 15px); 
+        top: 0px;
+        bottom: 0px;
+        overflow-y: scroll;
+        background-color: blue; 
+
+        text-transform: lowercase;
+    }
+    .blueBanner a {color: white !important;}
+    .blueBanner a:hover {
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+
+    .cinemaAnnounce {
+        position: relative; 
+        text-align: center !important; 
+        right: 10%; 
+        left: calc(60% - 30px); 
+        width: 30vw;
+        padding: 30px;
+
+        border: 2px solid white;
+    }
+
 
 
 
@@ -179,7 +338,7 @@ body {
 
    .noColor { color: transparent; }
 
-    .marquee {
+    /*.marquee {
       z-index: 1000;
       width: auto;
       margin: 0 auto;
@@ -191,7 +350,7 @@ body {
       position: relative;
       left: 100%;
       animation: marquee 20s linear infinite;
-    }
+    }*/
 
           #overviewButton{
             font-family: 'Chalga Reg', sans-serif;
@@ -229,10 +388,7 @@ body {
 
     .floatRight{ float: right; }
 
-    @keyframes marquee {
-      0%   { left: 100%; }
-      100% { left: -100%; }
-    }
+    
 
    .main-container{ margin-top: 10%; }
 
@@ -357,7 +513,10 @@ body {
     }
 } */
 
-@media only screen and (min-width: 768px) {
+/* CHANGED SIZE FROM
+@media only screen and (min-width: 768px)
+   TO  */
+@media only screen and (min-width: 1025px) {
 
 /* ====================
     WIDE: CSS3 Effects
@@ -427,9 +586,7 @@ body {
           color: blue !important;
       }
 
-.hovertry:hover {
-  background-color: yellow;
-}
+
 
       .introTxt{
          text-align: left;
@@ -438,7 +595,7 @@ body {
            serif;
          color: blue;
 
-         top: 30vh;
+         top: 18vh;
          position: relative;
        }
 
@@ -447,21 +604,22 @@ body {
        }
 
        .larger-text {
-          font-size: 3.5em;
+          font-size: 6.8vw;
           line-height: 1.1em;
        }
 
        .info-wrapper {
           height: 200px;
+          height: auto;
+          min-height: 100px;
           width: 45%;
-          margin: 5vh 5% 0 5%;
+          margin: 25vh 5% 30vh 5%;
 
           display: block;
        }
 
        .intro-box {
-          top: 0px;
-          margin-bottom: 11vh;
+          margin-bottom: 25vh;
           float: left;
           left: 0px;
        }
@@ -470,8 +628,10 @@ body {
        .third-box, .fourth-box {width: 25%;}
 
        .ba-nln-intro-text {
-          top: 20px; 
-          height: 70vh;
+          top: 0px; 
+          height: 50vh;
+          /*background-color: yellow;*/
+          margin-top: 0%;
        }
 
 
@@ -578,66 +738,86 @@ body {
           .person-thirty {background-image: url(imgs/tilius/unnamed.jpg);}
           .person-thirtyone {background-image: url(imgs/trang/2_Trang.png);}
 
-  .menuBar{background-color: rgba(0,0,0,0);}
-  .topper{top:20px;}
-  div p {margin: 0px 20px 0px 20px;}
+      .menuBar{background-color: rgba(0,0,0,0);}
+      .topper{top:20px;}
+      div p {margin: 0px 20px 0px 20px;}
 
-   .logo-desktop {
-        position: fixed;
-        top: calc(20px + 5vh + 10vh);
-        right: calc(20px + 5vw);
-        /*height: 30vh; */
-        width: calc(44vw - 40px);
-        height: auto;
-        height: 60vh;
-        width: auto;
-        z-index: 2;
-        z-index: 11;
+       .logo-desktop {
+            position: fixed;
+            top: calc(20px + 5vh + 10vh);
+            right: calc(20px + 5vw);
+            /*height: 30vh; */
+            width: calc(44vw - 40px);
+            height: auto;
+            height: 60vh;
+            width: auto;
+            z-index: 2;
+            z-index: 11;
 
-        animation: spin;
-        transition-timing-function: ease-in-out;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
+            animation: spin;
+            transition-timing-function: ease-in-out;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
 
-        transform: rotate(0deg);
+            transform: rotate(0deg);
 
-        transition: 1s !important;
+            transition: 1s !important;
+        }
+        @keyframes spin {
+          0% {transform: rotate(0deg);}
+          15% {transform: rotate(0deg);}
+          25% {transform: rotate(-90deg);}
+          35% {transform: rotate(-90deg);}
+          50% {transform: rotate(-180deg);}
+          60% {transform: rotate(-180deg);}
+          70% {transform: rotate(-270deg);}
+          90% {transform: rotate(-270deg);}
+          100% {transform: rotate(-360deg);}
+        }
+
+        .smaller {
+            height: 30vh; 
+            width: auto;
+
+            bottom: calc(50vh - 15vh + 40px);
+            top: auto;
+            right: 20px;
+        }
+
+        .spin2 {
+            transform: rotate(0deg);
+            animation: none;
+        }
+
+        .spin3 {transform: rotate(-90deg);}
+        .spin4 {transform: rotate(-180deg);}
+        .spin5 {transform: rotate(-270deg);}
+        .spin6 {transform: rotate(-360deg);}
+        .spin7 {transform: rotate(-450deg);}
+        .spin8 {transform: rotate(-540deg);}
+        .spin9 {transform: rotate(-630deg);}
+        .spin10 {transform: rotate(-720deg);}
+        .spin11 {transform: rotate(-810deg);}
+
+
+
+    /*   CINEMA   */
+    
+    .marquee span {
+      animation-duration: 200s;
     }
-    @keyframes spin {
-      0% {transform: rotate(0deg);}
-      15% {transform: rotate(0deg);}
-      25% {transform: rotate(-90deg);}
-      35% {transform: rotate(-90deg);}
-      50% {transform: rotate(-180deg);}
-      60% {transform: rotate(-180deg);}
-      70% {transform: rotate(-270deg);}
-      90% {transform: rotate(-270deg);}
-      100% {transform: rotate(-360deg);}
-    }
 
-    .smaller {
-        height: 30vh; 
-        width: auto;
 
-        bottom: calc(50vh - 15vh + 40px);
-        top: auto;
-        right: 20px;
-    }
 
-    .spin2 {
-        transform: rotate(0deg);
-        animation: none;
-    }
 
-    .spin3 {transform: rotate(-90deg);}
-    .spin4 {transform: rotate(-180deg);}
-    .spin5 {transform: rotate(-270deg);}
-    .spin6 {transform: rotate(-360deg);}
-    .spin7 {transform: rotate(-450deg);}
-    .spin8 {transform: rotate(-540deg);}
-    .spin9 {transform: rotate(-630deg);}
-    .spin10 {transform: rotate(-720deg);}
-    .spin11 {transform: rotate(-810deg);}
+
+
+
+
+
+
+
+
 
 
 /* ============

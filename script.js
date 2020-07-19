@@ -1,164 +1,67 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let timer = document.getElementById("timer");
-    detectSpentTime();
-})
+// TIMER ======================
+// ================================
+    document.addEventListener('DOMContentLoaded', () => {
+        let timer = document.getElementById("timer");
+        detectSpentTime();
+    })
 
-let detectSpentTime = function () {
+    let detectSpentTime = function () {
 
-    TimeMe.initialize({
-        currentPageName: "index.html", // current page
-        idleTimeoutInSeconds: 30 // seconds
-    });
+        TimeMe.initialize({
+            currentPageName: "index.html", // current page
+            idleTimeoutInSeconds: 30 // seconds
+        });
 
-    // Retrieve time spent on current page
-    // let timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+        // Retrieve time spent on current page
+        // let timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
 
-    setInterval(() => {
-        let date = new Date(null);
-        let timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+        setInterval(() => {
+            let date = new Date(null);
+            let timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
 
-        date.setSeconds(timeSpentOnPage); // specify value for SECONDS here
-        let timeSpentFormatted = date.toISOString().substr(11, 8);
+            date.setSeconds(timeSpentOnPage); // specify value for SECONDS here
+            let timeSpentFormatted = date.toISOString().substr(11, 8);
 
-        timer.textContent = timeSpentFormatted;
-
-
-
-    }, 1000)
-
-}
+            timer.textContent = timeSpentFormatted;
 
 
 
+        }, 1000)
 
+    }
 
 
 
 
 
+// CLICK FUNCTIONS ======================
+// ================================
+    $(document).ready(function(){
+        //$('.filmProg').hide();
+        //$('.contactBar').hide();
 
- //    _
- //   ___/_)              _____
- //  (  /       /       (, /   )      /)
- //  __/    _ _/_ /_      /__ / ____  /_.
- // (_/\___(/_(___/_)_   /   \_(_)(__/(__
+        $(".click-to-open").click(function(){
+            $(".blueBanner").addClass('fullscreen');
+            $(".textInBannerCenterClose").show();
+            $(".blueScreenOpen").show();
+            $(".click-to-open").hide();
+            $(".banner-closed").hide();
+        });
 
-$(document).ready(function(){
-  $('.filmProg').hide();
-  $('.contactBar').hide();
 
-// SLIDESHOW FANCYBOXXXX===============
-// ====================================
+        $(".textInBannerCenterClose").click(function(){
+            $(".blueBanner").removeClass('fullscreen');
+            $(".textInBannerCenterClose").hide();
+            $(".blueScreenOpen").hide();
+            $(".click-to-open").show();
+            $(".banner-closed").show();
+        });
 
-  $(".fancybox").fancybox();
 
-  $(".open_fancybox_berglind").click(function() {
 
-    $.fancybox.open([
-        {
-            href : 'imgs/berglind/1.png',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/berglind/2.png',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/berglind/3.png',
-            title : '3rd title'
-        }
-    ], {
-        padding : 0
-    });
 
-    return false;
 
-  });
 
-  $(".open_fancybox_clara").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/clara/1_Lezla.png',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/clara/2_Lezla.png',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/clara/3_Lezla.png',
-            title : '3rd title'
-        }
-    ], {
-        padding : 0
-    });
-
-    return false;
-
-  });
-
-  $(".open_fancybox_cristina").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/cristina/1_Cristina_Lavosi.jpg',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/cristina/2_Cristina_Lavosi.jpg',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/cristina/3_Cristina_Lavosi.jpg',
-            title : '3rd title'
-        },
-        {
-            href : 'imgs/cristina/4_Cristina_Lavosi.jpg',
-            title : '4rd title'
-        },
-        {
-            href : 'imgs/cristina/5_Cristina_Lavosi.jpg',
-            title : '5rd title'
-        }
-    ], {
-        padding : 0
-    });
-
-    return false;
-
-  });
-
-  $(".open_fancybox_edward").click(function() {
-
-    $.fancybox.open([
-        {
-            href : 'imgs/edward/Posters3-min.jpg',
-            title : '1st title'
-        },
-        {
-            href : 'imgs/edward/Posters4-min.jpg',
-            title : '2nd title'
-        },
-        {
-            href : 'imgs/edward/Posters6-min.jpg',
-            title : '3rd title'
-        },
-        {
-            href : 'imgs/edward/Posters7-min.jpg',
-            title : '4rd title'
-        },
-        {
-            href : 'imgs/edward/Posters9-min-min.jpg',
-            title : '5rd title'
-        }
-    ], {
-        padding : 0
-    });
-
-    return false;
-
-  });
 
 
 
@@ -284,6 +187,127 @@ $(document).ready(function(){
         $(".logo").removeClass('spin11');
       }
 
+
+  });
+
+
+
+ //    _
+ //   ___/_)              _____
+ //  (  /       /       (, /   )      /)
+ //  __/    _ _/_ /_      /__ / ____  /_.
+ // (_/\___(/_(___/_)_   /   \_(_)(__/(__
+
+// SLIDESHOW FANCYBOXXXX===============
+// ====================================
+
+  $(".fancybox").fancybox();
+
+  $(".open_fancybox_berglind").click(function() {
+
+    $.fancybox.open([
+        {
+            href : 'imgs/berglind/1.png',
+            title : '1st title'
+        },
+        {
+            href : 'imgs/berglind/2.png',
+            title : '2nd title'
+        },
+        {
+            href : 'imgs/berglind/3.png',
+            title : '3rd title'
+        }
+    ], {
+        padding : 0
+    });
+
+    return false;
+
+  });
+
+  $(".open_fancybox_clara").click(function() {
+
+    $.fancybox.open([
+        {
+            href : 'imgs/clara/1_Lezla.png',
+            title : '1st title'
+        },
+        {
+            href : 'imgs/clara/2_Lezla.png',
+            title : '2nd title'
+        },
+        {
+            href : 'imgs/clara/3_Lezla.png',
+            title : '3rd title'
+        }
+    ], {
+        padding : 0
+    });
+
+    return false;
+
+  });
+
+  $(".open_fancybox_cristina").click(function() {
+
+    $.fancybox.open([
+        {
+            href : 'imgs/cristina/1_Cristina_Lavosi.jpg',
+            title : '1st title'
+        },
+        {
+            href : 'imgs/cristina/2_Cristina_Lavosi.jpg',
+            title : '2nd title'
+        },
+        {
+            href : 'imgs/cristina/3_Cristina_Lavosi.jpg',
+            title : '3rd title'
+        },
+        {
+            href : 'imgs/cristina/4_Cristina_Lavosi.jpg',
+            title : '4rd title'
+        },
+        {
+            href : 'imgs/cristina/5_Cristina_Lavosi.jpg',
+            title : '5rd title'
+        }
+    ], {
+        padding : 0
+    });
+
+    return false;
+
+  });
+
+  $(".open_fancybox_edward").click(function() {
+
+    $.fancybox.open([
+        {
+            href : 'imgs/edward/Posters3-min.jpg',
+            title : '1st title'
+        },
+        {
+            href : 'imgs/edward/Posters4-min.jpg',
+            title : '2nd title'
+        },
+        {
+            href : 'imgs/edward/Posters6-min.jpg',
+            title : '3rd title'
+        },
+        {
+            href : 'imgs/edward/Posters7-min.jpg',
+            title : '4rd title'
+        },
+        {
+            href : 'imgs/edward/Posters9-min-min.jpg',
+            title : '5rd title'
+        }
+    ], {
+        padding : 0
+    });
+
+    return false;
 
   });
 
