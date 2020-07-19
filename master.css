@@ -427,6 +427,9 @@ body {
           color: blue !important;
       }
 
+.hovertry:hover {
+  background-color: yellow;
+}
 
       .introTxt{
          text-align: left;
@@ -450,7 +453,7 @@ body {
 
        .info-wrapper {
           height: 200px;
-          width: 100%;
+          width: 45%;
           margin: 5vh 5% 0 5%;
 
           display: block;
@@ -463,8 +466,8 @@ body {
           left: 0px;
        }
        .first-box {width: 100%;}
-       .second-box {width: 25%;}
-       .third-box, .fourth-box {width: 12.5%;}
+       .second-box {width: 50%;}
+       .third-box, .fourth-box {width: 25%;}
 
        .ba-nln-intro-text {
           top: 20px; 
