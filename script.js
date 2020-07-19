@@ -135,55 +135,55 @@
 
     if ($(document).scrollTop() >= 1600) {
         $(".logo").addClass('spin3');
-      } else { 
+      } else {
         $(".logo").removeClass('spin3');
       }
 
       if ($(document).scrollTop() >= 3100) {
         $(".logo").addClass('spin4');
-      } else { 
+      } else {
         $(".logo").removeClass('spin4');
       }
 
       if ($(document).scrollTop() >= 4600) {
         $(".logo").addClass('spin5');
-      } else { 
+      } else {
         $(".logo").removeClass('spin5');
       }
 
       if ($(document).scrollTop() >= 6100) {
         $(".logo").addClass('spin6');
-      } else { 
+      } else {
         $(".logo").removeClass('spin6');
       }
 
       if ($(document).scrollTop() >= 7600) {
         $(".logo").addClass('spin7');
-      } else { 
+      } else {
         $(".logo").removeClass('spin7');
       }
 
       if ($(document).scrollTop() >= 9100) {
         $(".logo").addClass('spin8');
-      } else { 
+      } else {
         $(".logo").removeClass('spin8');
       }
 
       if ($(document).scrollTop() >= 10600) {
         $(".logo").addClass('spin9');
-      } else { 
+      } else {
         $(".logo").removeClass('spin9');
       }
 
       if ($(document).scrollTop() >= 12100) {
         $(".logo").addClass('spin10');
-      } else { 
+      } else {
         $(".logo").removeClass('spin10');
       }
 
       if ($(document).scrollTop() >= 13600) {
         $(".logo").addClass('spin11');
-      } else { 
+      } else {
         $(".logo").removeClass('spin11');
       }
 

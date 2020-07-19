@@ -244,11 +244,11 @@ body {
         position: absolute;
         text-align: left;
         left: 15px;
-        right: calc(50% + 15px); 
+        right: calc(50% + 15px);
         top: 0px;
         bottom: 0px;
         overflow-y: scroll;
-        background-color: blue; 
+        background-color: blue;
 
         text-transform: lowercase;
     }
@@ -259,10 +259,10 @@ body {
     }
 
     .cinemaAnnounce {
-        position: relative; 
-        text-align: center !important; 
-        right: 10%; 
-        left: calc(60% - 30px); 
+        position: relative;
+        text-align: center !important;
+        right: 10%;
+        left: calc(60% - 30px);
         width: 30vw;
         padding: 30px;
 
@@ -388,7 +388,7 @@ body {
 
     .floatRight{ float: right; }
 
-    
+
 
    .main-container{ margin-top: 10%; }
 
@@ -628,7 +628,7 @@ body {
        .third-box, .fourth-box {width: 25%;}
 
        .ba-nln-intro-text {
-          top: 0px; 
+          top: 0px;
           height: 50vh;
           /*background-color: yellow;*/
           margin-top: 0%;
@@ -640,7 +640,7 @@ body {
 
       .text-menu-top {
           position: fixed;
-          top: 20px; 
+          top: 20px;
           z-index: 11;
           z-index: 501;
       }
@@ -776,7 +776,7 @@ body {
         }
 
         .smaller {
-            height: 30vh; 
+            height: 30vh;
             width: auto;
 
             bottom: calc(50vh - 15vh + 40px);
@@ -802,7 +802,7 @@ body {
 
 
     /*   CINEMA   */
-    
+
     .marquee span {
       animation-duration: 200s;
     }
