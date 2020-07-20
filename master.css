@@ -185,7 +185,7 @@ body {
 
     .textInBannerCenterClose, .textInBannerRight, .textInBannerRightBottom {color: white !important;}
     .textInBannerCenterClose {
-        position: absolute;
+        position: fixed;
         top: 5px;
         right: 0px;
         left: 0px;
