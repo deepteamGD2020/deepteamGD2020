@@ -214,7 +214,7 @@ body {
         position: fixed;
         bottom: 0px;
         background-color: blue;
-        height: 40px;
+        /*height: 40px;*/
         right: 0px;
         left: 0px;
         margin-bottom: 0px;
@@ -222,7 +222,7 @@ body {
         cursor: pointer;
         z-index: 9999;
     }
-    .textInBannerRightBottom:after {
+    /*.textInBannerRightBottom:after {
         content: 'support us';
         position: absolute;
         bottom: 5px;
@@ -230,7 +230,7 @@ body {
         width: 100%;
         text-align: center;
     }
-    .textInBannerRightBottom:hover:after {content: 'link coming!';}
+    .textInBannerRightBottom:hover:after {content: 'link coming!';}*/
     a.textInBannerRightBottom:hover {
         text-decoration: none;
         border-bottom: 2px solid white;
@@ -830,6 +830,15 @@ body {
         text-align: center;
         cursor: pointer;
     }
+    .textInBannerRightBottom:after {
+        content: 'support us';
+        position: absolute;
+        bottom: 5px;
+        right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .textInBannerRightBottom:hover:after {content: 'link coming!';}
     /*  TYPEWRITER  */
 
         /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
