@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -21,9 +22,7 @@
       href="favicon3.png" />
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-    <link rel="stylesheet" href="fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="fancyBox/dist/jquery.fancybox.min.css">
 
     <link rel="stylesheet" href="master.css">
 
@@ -31,20 +30,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script type="text/javascript" src="timeme.min.js"></script>
     <!-- <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.3.1/jquery.marquee.min.js'></script> -->
-
-    <script type="text/javascript" src="fancyBox/lib/jquery.mousewheel.pack.js"></script>
-    <script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
-    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-media.js"></script>
-    <script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
-
+    <script src="fancyBox/dist/jquery.fancybox.min.js" charset="utf-8"></script>
 
   </head>
   <body>
 
     <div class="header-container">
         <div class="menuBar stickyBar topper wrapper clearfix">
-          <!--<p class=""><span id="overviewButton">overview</span></p>-->
+          <p class=""><span id="overviewButton">overview</span></p>
           <p id="timer"></p>
         </div>
 
@@ -86,14 +79,13 @@
                 </div>
                 <div class="intro-box third-box">
                   date <br>
-                  <span class="samboSpan">10/09 &ndash; <br> 13/09</span> <br><br>
+                  <span class="samboSpan">10/09 &ndash; <br> 13/09</span> <br>
                 </div>
                 <div class="intro-box fourth-box">
                   time <br>
-                  <span class="samboSpan">11.00 &ndash; <br> 20.00</span><br><br>
+                  <span class="samboSpan">11.00 &ndash; <br> 20.00</span>
                 </div>
-            </div><br>
-
+            </div>
             <p class="larger-text ba-nln-intro-text">
                   <a href="https://www.kabk.nl/en/programmes/bachelor/graphic-design" target="_blank">graphic <br class=""> design (ba)</a> + <br> <a href="https://www.kabk.nl/en/programmes/master/non-linear-narrative" target="_blank">non linear <br class=""> narrative (ma)</a><br>
                   <br clear="mobile"><br clear="mobile"><br clear="mobile"><br clear="mobile">
@@ -102,31 +94,33 @@
             <span class="mobile">
                 <p>
                   more <br> to come <br>
-                  <span class="samboSpan">23/07</span><br><br>
-                  see you again <span class="samboSpan">soon</span>!<br><br><br><br><br><br>
+                  <span class="samboSpan">23/07</span>
                 </p>
             </span>
 
-            <div class="info-wrapper">
+            <!-- <div class="info-wrapper">
                 <div class="intro-box second-box">
                   more <br> to come <br>
-                  <span class="samboSpan">23/07</span><br><br>
-                  see you again <span class="samboSpan">soon</span>!
+                  <span class="samboSpan">23/07</span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
-    <!--
     <div class="main-container">
         <div class="main wrapper clearfix">
-            <article class="nameColumn">
+            <article class="nameColumn top-margin-block">
               <div class="nameBlock">
+                <a href="#"><p class="projectTitle">domestic tales — odes to triviality</p></a>
+                <p class="nameArtist">anna moschioni</p>
+                <a class="open_fancybox_anna" href="javascript:;"><img src="imgs/anna/anna_0.png" alt=""/></a>
+              </div>
+              <div class="nameBlock top-margin-block">
                 <a href="#"><p class="projectTitle">now and then</p></a>
                 <p class="nameArtist">berglind bra jóhannsdóttir</p>
-                <a class="open_fancybox_berglind" href="imgs/berglind/1.png"><img src="imgs/berglind/1.png" alt=""/></a>
+                <a class="open_fancybox_berglind" href="javascript:;"><img src="imgs/berglind/berglind_0.png" alt=""/></a>
               </div>
-              <div class="nameBlock marginProjectSpacing">
+              <!-- <div class="nameBlock marginProjectSpacing">
                 <a href="#"><p class="projectTitle">hypnosis of the stolen painting</p></a>
                 <p class="nameArtist">clara lezla</p>
                 <a class="open_fancybox_clara" href="imgs/clara/1_Lezla.png"><img src="imgs/clara/1_Lezla.png" alt=""/></a>
@@ -140,10 +134,12 @@
                 <a href="#"><p class="projectTitle">true colors</p></a>
                 <p class="nameArtist">edward july</p>
                 <a class="open_fancybox_edward" href="imgs/edward/Posters3-min.jpg"><img src="imgs/edward/Posters3-min.jpg" alt=""/></a>
-              </div>
+              </div> -->
             </article>
-        </div>--> <!-- #main -->
-    <!--</div>--> <!-- #main-container -->
+        </div>-->
+        <!-- #main -->
+    </div>
+    <!-- #main-container -->
 
 
 
@@ -159,9 +155,7 @@
         </div>
 
         <p class="marquee banner-closed">
-            <!--<span>about schedule next blablabla - click to expand
-            </span>-->
-            <span> dear reader &emsp;&ensp;&emsp;&ensp; We &emsp; the graduating class of 2020 hope you are safe and sound &emsp; wherever you are in these times &emsp;&ensp;&emsp;&ensp; In these times &emsp; our private spaces have become the centers of our public lives. Our common place has dispersed &emsp; we found ourselves in our bedrooms &emsp; making projects related to social &emsp; political and economic issues &emsp; We sought to re-enact a shared ground &emsp; and finally &emsp; we have patched our fragmented times into a shared event &emsp; to be experienced in your own time &emsp;&ensp;&emsp;&ensp; While they appear as simulations &emsp; soon it will also be materialized as a real-time physical encounter &emsp; at our graduation exhibition from 10th–13th september in the hague &emsp; the netherlands &emsp;&ensp;&emsp;&ensp; Your attention &emsp; care and curiosity is heard and felt by each one of us by your time spared in this space and visiting our exhibition &emsp; You restore a sense of publicness &emsp; urgency and importance to our ideas &emsp;&ensp;&emsp;&ensp; sincerely &emsp;&ensp;&emsp;&ensp; the 2020 graduates of graphic design (ba): &emsp;&ensp;&emsp;&ensp; anastasiia umpeleva &emsp; anna moschioni &emsp; berglind jóhannsdóttir &emsp; brechje krah &emsp; clara lezla &emsp; dana doorenbos &emsp; denise jansen &emsp; edward dzulaj &emsp; emily anderson &emsp; fien leeflang &emsp; golshan azadokht &emsp; hyeonjeong kim &emsp; kiki coster &emsp; laura brouwer &emsp; linda van houtum &emsp; louana gentner &emsp; marc van den berg &emsp; menso jensen &emsp; maarten meij &emsp; martijn brakenhoff &emsp; nedislav kamburov &emsp; nicolai schmelling &emsp; nicoletta radice &emsp; pepijn de jonge &emsp; ruben visser &emsp; selina landis &emsp; seojeong youn &emsp; sophia de jong yantorno &emsp; tilius sodeika &emsp; trang hà &emsp; yessica deira &emsp; zahari dimitrov &emsp; zuzanna zgierska &emsp;&ensp;&emsp;&ensp; & non linear narrative (ma): &emsp;&ensp;&emsp;&ensp; claude nassar &emsp; cristina lavosi &emsp; cyan bae &emsp; giulia faccin &emsp; kert viiart &emsp; lila steinkampf &emsp; mauro tosarelli &emsp;&ensp;&emsp;&ensp; royal academy of art, the hague (kabk)
+            <span> the schedule for the cinema program will be announced during the festival &emsp;&emsp; have a great summer and see you soon &emsp;&emsp;&emsp; take care
             </span>
         </p>
 
@@ -172,19 +166,21 @@
             <span class="banner-closed">&uarr;</span> info
             <span class="blueScreenOpen"><br><br>
                 <a href="mailto:deepteam2020@gmail.com">deepteam<span class="samboSpan">2020</span>@gmail.com</a><br>
-                <a href="https://www.instagram.com/onourowntime/" target="_blank">instagram</a>
+                <a href="https://www.instagram.com/onourowntime/" target="_blank">instagram</a><br>
+                type design: nedislav kamburov <br>
+
             </span>
         </div>
 
         <div class="blueScreenOpen textTypewriter">
+            <p style="top: 5px;">info</p><br>
+            <!-- <p></p><br> -->
+            <!-- <p id="readLetter">read</p><br> -->
             <div id="typewriter"></div>
-            <p style="top: 5px;">dear reader</p><br>
-            <p>information on the screening program will be announced during the festival <br> <br>
-            see you there! </p>
         </div>
 
         <a class="blueScreenOpen textInBannerRightBottom larger-text">
-                support us
+                support us!
         </a>
     </div>
 
@@ -235,3 +231,6 @@
 
   </body>
 </html>
+
+<!-- <span> dear reader &emsp;&ensp;&emsp;&ensp; We &emsp; the graduating class of 2020 hope you are safe and sound &emsp; wherever you are in these times &emsp;&ensp;&emsp;&ensp; In these times &emsp; our private spaces have become the centers of our public lives. Our common place has dispersed &emsp; we found ourselves in our bedrooms &emsp; making projects related to social &emsp; political and economic issues &emsp; We sought to re-enact a shared ground &emsp; and finally &emsp; we have patched our fragmented times into a shared event &emsp; to be experienced in your own time &emsp;&ensp;&emsp;&ensp; While they appear as simulations &emsp; soon it will also be materialized as a real-time physical encounter &emsp; at our graduation exhibition from 10th–13th september in the hague &emsp; the netherlands &emsp;&ensp;&emsp;&ensp; Your attention &emsp; care and curiosity is heard and felt by each one of us by your time spared in this space and visiting our exhibition &emsp; You restore a sense of publicness &emsp; urgency and importance to our ideas &emsp;&ensp;&emsp;&ensp; sincerely &emsp;&ensp;&emsp;&ensp; the 2020 graduates of graphic design (ba): &emsp;&ensp;&emsp;&ensp; anastasiia umpeleva &emsp; anna moschioni &emsp; berglind jóhannsdóttir &emsp; brechje krah &emsp; clara lezla &emsp; dana doorenbos &emsp; denise jansen &emsp; edward dzulaj &emsp; emily anderson &emsp; fien leeflang &emsp; golshan azadokht &emsp; hyeonjeong kim &emsp; kiki coster &emsp; laura brouwer &emsp; linda van houtum &emsp; louana gentner &emsp; marc van den berg &emsp; menso jensen &emsp; maarten meij &emsp; martijn brakenhoff &emsp; nedislav kamburov &emsp; nicolai schmelling &emsp; nicoletta radice &emsp; pepijn de jonge &emsp; ruben visser &emsp; selina landis &emsp; seojeong youn &emsp; sophia de jong yantorno &emsp; tilius sodeika &emsp; trang hà &emsp; yessica deira &emsp; zahari dimitrov &emsp; zuzanna zgierska &emsp;&ensp;&emsp;&ensp; & non linear narrative (ma): &emsp;&ensp;&emsp;&ensp; claude nassar &emsp; cristina lavosi &emsp; cyan bae &emsp; giulia faccin"+spacing+"kert viiart &emsp; lila steinkampf &emsp; mauro tosarelli &emsp;&ensp;&emsp;&ensp; royal academy of art, the hague (kabk) -->
+<!-- </span> -->
