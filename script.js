@@ -99,7 +99,7 @@
       $(".logoImg").removeClass('spin2');
     }
 
-    //  FOR FIRST CONTENTLESS VIEW 
+    //  FOR FIRST CONTENTLESS VIEW
     if ($(document).scrollTop() >= 700) {
       $(".logoImg").addClass('spin3');
     } else {
@@ -148,7 +148,7 @@
     }
 
 
-      //  FOR FIRST CONTENTLESS VIEW 
+      //  FOR FIRST CONTENTLESS VIEW
       if ($(document).scrollTop() >= 1100) {
           $(".logo").addClass('spin3');
         } else {
@@ -351,8 +351,7 @@
 
   var spacing = "<span class=whiteSpace> </span>";
 
-  var str = " <p> dear reader </p> <br> <p> we"+spacing+"the graduating class of 2020"+spacing+"hope you are safe and sound </p> <p> in these in these times times"+spacing+"we found ourselves in our bedrooms"+spacing+"making work related to social"+spacing+"political"+spacing+"and economic issues </p> <p> our common place has dispersed"+spacing+"but we sought to re-enact a shared ground in the writing of <br> this letter </p> <p> we chose a location for everyone to visit on their <br> own time </p> <p> we brought and performed there our works in progress </p> <p> ultimately"+spacing+"we came together"+spacing+"in one place"+spacing+"but at different moments </p> <p> you"+spacing+"the reader of this letter"+spacing+"are the first witness of our re-entry to the public sphere </p> <p> as you read"+spacing+"you patch our fragmented times into <br> a shared event </p> <p> what appears only <br> a simulation in your mind"+spacing+"will soon materialize as <br> a real-time physical encounter"+spacing+"at our graduation show <br> from 10th to 13th september </p> <p> by financially supporting us and visiting the exhibition in the fall <br> you restore a sense of publicness"+spacing+"urgency"+spacing+"and importance to our ideas </p> <p> we are looking forward to hearing back from you </p> <p> sincerely </p> <p> the 2020 graduates of graphic design (ba): </p> <p> anastasia umpeleva"+spacing+"anna moschioni"+spacing+"berglind jóhannsdóttir"+spacing+"brechje krah"+spacing+"clara lezla"+spacing+"dana doorenbos"+spacing+"denise jansen"+spacing+"edward dzulaj"+spacing+"emily anderson"+spacing+"fien leeflang"+spacing+"golshan azadokht"+spacing+"kihyeon kim"+spacing+"kiki coster"+spacing+"laura brouwer"+spacing+"linda van houtum"+spacing+"louana gentner"+spacing+"marc van den berg"+spacing+"menso jensen"+spacing+"maarten meij"+spacing+"martijn brakenhoff"+spacing+"nedislav kamburov"+spacing+"nicolai schmelling"+spacing+"nicoletta radice"+spacing+"pepijn de jonge"+spacing+"ruben visser"+spacing+"selina landis"+spacing+"seojeong youn"+spacing+"sophia de jong yantorno"+spacing+"tilius sodeika"+spacing+"trang hà"+spacing+"yessica deira"+spacing+"zahari dimitrov"+spacing+"zuzanna zgierska </p> <p> & non linear narrative (ma): </p> <p> claude nassar"+spacing+"cristina lavosi"+spacing+"cyan bae"+spacing+"giulia faccin"+spacing+"kert viiart"+spacing+"lila steinkampf"+spacing+"mauro tosarelli </p> <p> royal academy of art <br> the hague (kabk) </p>",
-
+  var str = "<p>dear reader</p><p>our private spaces have become the centers of our public lives" +spacing+ "our common place has dispersed"+spacing+"and we found ourselves in our bedrooms"+spacing+"making projects related to social"+spacing+"political and economic issues"+spacing+"since then"+spacing+"we sought to re-enact a shared ground"+spacing+"and eventually"+spacing+"have patched our fragmented times into this very shared moment"+spacing+"soon to be experienced together on our own time </p><p> the works displayed on this platform will be materialized in a real-time physical encounter at our graduation festival from the 10th to the 13th of September"+spacing+"during which the platform will host a screening of all complete works</p><p>although the graduation show this year will be limited in terms of accessibility and time"+spacing+"we hope this platform will allow our audience to experience our work further on their own time.</p>",
       i = 0,
       isTag,
       text;
