@@ -63,7 +63,6 @@ textarea {resize: vertical;}
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
     margin: 0;
-
     font-size: 2em;
     line-height: 1.1em;
 }
@@ -140,6 +139,7 @@ body {
 
         transition: 0.5s !important;
     }
+
     .textInBannerLeft {
         position: relative;
         margin-top: 15px;
@@ -147,6 +147,7 @@ body {
         margin-bottom: 15px;
         color: white !important;
     }
+
     .textInBannerLeft a {color: white !important;}
     .click-to-open {
         position: absolute;
@@ -227,12 +228,13 @@ body {
     }
     .fullscreen {height: 100%; cursor: auto;}
     .blueScreenOpen {display: none; color: white;}
+    .cinemaImage{ width: 80%; margin: 5%; }
 
     /*  TYPEWRITER  */
 
         /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
           .timeClass{
-            font-family: 'Sambo-Regular', serif;
+            font-family: 'Sambo Reg', serif;
             font-size: 1.18em;
             color: white !important;
             line-height: 0em;
@@ -243,8 +245,8 @@ body {
      .textTypewriter {
         position: absolute;
         text-align: left;
-        left: 15px;
-        right: calc(50% + 15px);
+        left: 0%;
+        right: 50%;
         top: 0px;
         bottom: 0px;
         overflow-y: scroll;
@@ -338,19 +340,6 @@ body {
 
    .noColor { color: transparent; }
 
-    /*.marquee {
-      z-index: 1000;
-      width: auto;
-      margin: 0 auto;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    .marquee span {
-      display: inline-block;
-      position: relative;
-      left: 100%;
-      animation: marquee 20s linear infinite;
-    }*/
 
           #overviewButton{
             font-family: 'Chalga Reg', sans-serif;
@@ -373,6 +362,7 @@ body {
             text-decoration: none;
             /* float: right; */
           }
+
     .contactBar{
       background-color: transparent;
       z-index: 100000;
@@ -455,7 +445,9 @@ body {
       text-align: left;
       overflow: scroll;
     }
+
     .filmProg p{ margin: 0 5% 0 5%; }
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -513,9 +505,10 @@ body {
     }
 } */
 
-/* CHANGED SIZE FROM
-@media only screen and (min-width: 768px)
-   TO  */
+/* FROM */
+/* @media only screen and (min-width: 768px)  */
+/* TO  */
+
 @media only screen and (min-width: 1025px) {
 
 /* ====================
@@ -600,7 +593,7 @@ body {
        }
 
        .introTxt p{
-          margin: 5% 5% 0 5%;
+          margin: 5% 3% 0 3%;
        }
 
        .larger-text {
@@ -613,7 +606,7 @@ body {
           height: auto;
           min-height: 100px;
           width: 45%;
-          margin: 25vh 5% 23vh 5%;
+          margin: 25vh 3% 30vh 3%;
 
           display: block;
        }
@@ -644,6 +637,7 @@ body {
           z-index: 11;
           z-index: 501;
       }
+
       .right-side {right: 20px;}
       .left-side {left: 20px;}
 
@@ -662,6 +656,7 @@ body {
 
 
       /*     OVERVIEW     */
+
           .usAll {
               position: relative;
               position: fixed;
@@ -682,7 +677,9 @@ body {
               flex-wrap: wrap;
               flex-direction: row;
           }
+
           .hide {display: none;}
+
           .person {
               position: relative;
               display: inline-block;
@@ -705,6 +702,7 @@ body {
               border: 2px solid rgba(0,0,0,0);
               cursor: pointer;
           }
+
           .person:hover {border: 2px solid blue;}
 
           .person-one {background-image: url(imgs/anastasiia/front.png);}
@@ -804,20 +802,14 @@ body {
     /*   CINEMA   */
 
     .marquee span {
-      animation-duration: 200s;
+      animation-duration: 20s;
     }
 
+    /*   NAME BLOCK   */
 
-
-
-
-
-
-
-
-
-
-
+    .top-margin-block{
+      margin-top: 10%;
+    }
 
 
 /* ============
