@@ -306,7 +306,7 @@ body {
               top: 0px;
               left: 0px;
               width: 45%;
-              height: 50vh;
+              height: 45vh;
 
               flex-grow: 1;
               flex: flex-grow;
@@ -320,7 +320,7 @@ body {
               margin: 0px;
               padding: 0px;
 
-              border: 2px solid rgba(0,0,0,0);
+              border: 2px solid rgba(255,255,255,1);
               cursor: pointer;
           }
 
@@ -373,9 +373,9 @@ body {
             text-align: center;
             width: 100%;
           }
-          .person-one:after {content: 'emily anderson, title';}
-          .person-two:after {content: 'Golshan Azadokht';}
-          .person-three:after {content: 'Marc van den Berg';}
+          .person-one:after {content: 'title, emily anderson';}
+          .person-two:after {content: 'title, golshan azadokht';}
+          .person-three:after {content: 'title, marc van den berg';}
           .person-four:after {content: 'Martijn Brakenhoff';}
           .person-five:after {content: 'Laura Brouwer';}
           .person-six:after {content: 'Kiki Coster';}
@@ -414,7 +414,7 @@ body {
           .person-thirtynine:after {content: 'Mauro Tosarelli';}
           .person-fourty:after {content: 'Kert Viiart';}
 
-          .person-one {background-image: url(imgs/anastasiia/front.png);}
+          .person-one {background-image: url(imgs/emily/screenshot.jpg);}
           .person-one:hover:after {content: 'Emily Anderson';}
 
           .person-two {background-image: url(imgs/anna/front.jpg);}
@@ -501,7 +501,7 @@ body {
           .person-twentynine {background-image: url(imgs/tilius/unnamed.jpg);}
           .person-twentynine:hover:after {content: 'Tilius Sodeika';}
 
-          .person-thirty {background-image: url(imgs/trang/2_Trang.png);}
+          .person-thirty {background-image: url(imgs/anastasia/anasta_1.jpg);}
           .person-thirty:hover:after {content: 'Anastasia Umpeleva';}
 
           .person-thirtyone {background-image: url(imgs/trang/2_Trang.png);}
