@@ -306,7 +306,7 @@ body {
               top: 0px;
               left: 0px;
               width: 45%;
-              height: 30vh;
+              height: 50vh;
 
               flex-grow: 1;
               flex: flex-grow;
@@ -373,7 +373,7 @@ body {
             text-align: center;
             width: 100%;
           }
-          .person-one:after {content: 'Emily Anderson';}
+          .person-one:after {content: 'emily anderson, title';}
           .person-two:after {content: 'Golshan Azadokht';}
           .person-three:after {content: 'Marc van den Berg';}
           .person-four:after {content: 'Martijn Brakenhoff';}
