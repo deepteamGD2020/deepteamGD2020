@@ -48,7 +48,6 @@
             $(".banner-closed").hide();
         });
 
-
         $(".textInBannerCenterClose").click(function(){
             $(".blueBanner").removeClass('fullscreen');
             $(".textInBannerCenterClose").hide();
@@ -56,6 +55,22 @@
             $(".click-to-open").show();
             $(".banner-closed").show();
         });
+
+
+
+
+        $(".showOverview").click(function(){
+            $(".showOverview").hide();
+            $(".hideOverview").show();
+            $(".usAll").removeClass('hide');
+        });
+        $(".hideOverview").click(function(){
+            $(".showOverview").show();
+            $(".hideOverview").hide();
+            $(".usAll").addClass('hide');
+        });
+
+
 
 
 
@@ -328,20 +343,6 @@
 
 
 
-
-// EXPAND MENU======================
-// ================================
-
-  $('#infoButton').click(function(){
-    $('.headline').toggleClass('expand');
-    $('.filmProg').toggle();
-    $('.contactBar').toggle();
-  });
-
-  $('#overviewButton').click(function(){
-    $('.menuBar').toggleClass('expand');
-    // $('.menuTop').toggleClass('moveMenu');
-  });
 
 
 
