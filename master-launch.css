@@ -281,11 +281,11 @@ body {
           .usAll {
               position: fixed;
               z-index: 9999;
-              top: calc(30px + 27px + 20px);
+              top: 45px;
               left: 0px;
               right: 0px;
               width: 100vw;
-              height: auto;
+              height: calc(100vh - (45px * 2));
               overflow-y: scroll; 
               -webkit-overflow-scrolling: touch;
 
