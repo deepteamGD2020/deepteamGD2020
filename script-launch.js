@@ -301,6 +301,55 @@
 
     });
 
+    $(".open_fancybox_anastasia").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/anastasia/anasta_0.jpg',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : '',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/anastasia/anasta_1.jpg',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/anastasia/anasta_2.jpg',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          },
+          {
+            src : 'imgs/anastasia/anasta_3.jpg',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+    return false;
+
+    });
+
+
+
     $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([

@@ -316,7 +316,7 @@ body {
               align-self: stretch;
 
               background-repeat: no-repeat;
-              background-size: cover;
+              background-size: contain !important;
               background-position: center;
               margin: 0px;
               padding: 0px;
@@ -393,90 +393,90 @@ body {
           }
           .person-one:before {content: 'laud softness: the art of gentle protest';}*/
           .person-one:after, .person-one:hover:after {content: 'anastasia umpeleva';}
-          .person-one {background-image: url(imgs/anastasia/anasta_1.jpg);}
+          .person-one {background-image: url(imgs/anastasia/thumbnail.jpg);}
           /*.person-two:before {content: 'domestic tales — odes to triviality';}*/
           .person-two:after, .person-two:hover:after {content: 'anna moschioni';}
-          .person-two {background-image: url(imgs/anna/anna_0.png);}
+          .person-two {background-image: url(imgs/anna/thumbnail.jpg);}
           /*.person-three:before {content: 'now and then';}*/
           .person-three:after, .person-three:hover:after {content: 'berglind jóhannsdóttir';}
-          .person-three {background-image: url(imgs/berglind/berglind_0.png);}
+          .person-three {background-image: url(imgs/berglind/thumbnail2.png);}
           /*.person-four:before {content: 'things and what we make of them';}*/
           .person-four:after, .person-four:hover:after {content: 'brechje krah';}
-          .person-four {background-image: url(imgs/brechje/brechje_0.png);}
+          .person-four {background-image: url(imgs/brechje/thumbnail.jpg);}
           /*.person-five:before {content: 'hypnosis of the stolen painting';}*/
           .person-five:after, .person-five:hover:after {content: 'clara lezla';}
-          .person-five {background-image: url(imgs/clara/clara_1.png);}
+          .person-five {background-image: url(imgs/clara/thumbnail.jpg);}
           .person-six:after, .person-six:hover:after {content: 'dana doorenbos';}
-          .person-six {background-image: url(imgs/dana/dana_16.png);}
+          .person-six {background-image: url(imgs/dana/thumbnail.jpg);}
           .person-seven:after, .person-seven:hover:after {content: 'denise jansen';}
-          .person-seven {background-image: url(imgs/denise/denise_1.jpg);}
+          .person-seven {background-image: url(imgs/denise/thumbnail.jpg);}
           .person-eight:after, .person-eight:hover:after {content: 'edward dżułaj';}
-          .person-eight {background-image: url(imgs/edward/edward_1.jpg);}
+          .person-eight {background-image: url(imgs/edward/thumbnail.jpg);}
           .person-nine:after, .person-nine:hover:after {content: 'emily anderson';}
-          .person-nine {background-image: url(imgs/emily/screenshot.jpg);}
+          .person-nine {background-image: url(imgs/emily/thumbnail.jpg);}
           .person-ten:after, .person-ten:hover:after {content: 'fien leeflang';}
-          .person-ten {background-image: url(imgs/fien/fien_2.png);}
+          .person-ten {background-image: url(imgs/fien/thumbnail.jpg);}
           .person-eleven:after, .person-eleven:hover:after {content: 'golshan azadokht';}
-          .person-eleven {background-image: url(imgs/golshan/golshan_1.jpg);}
+          .person-eleven {background-image: url(imgs/golshan/thumbnail.jpg);}
           .person-twelve:after, .person-twelve:hover:after {content: 'hyeonjeong kim';}
-          .person-twelve {background-image: url(imgs/kihyeon/kihyeon_1.png);}
+          .person-twelve {background-image: url(imgs/kihyeon/thumbnail.jpg);}
           .person-thirteen:after, .person-thirteen:hover:after {content: 'kiki coster';}
-          .person-thirteen {background-image: url(imgs/kiki);}
+          .person-thirteen {background-image: url(imgs/kiki/thumbnail.jpg);}
           .person-fourteen:after, .person-fourteen:hover:after {content: 'laura brouwer';}
-          .person-fourteen {background-image: url(imgs/laura/laura_1.jpg);}
+          .person-fourteen {background-image: url(imgs/laura/thumbnail.jpg);}
           .person-fifteen:after, .person-fifteen:hover:after {content: 'linda van houtum';}
-          .person-fifteen {background-image: url(imgs/linda/linda_0.png);}
+          .person-fifteen {background-image: url(imgs/linda/thumbnail.jpg);}
           .person-sixteen:after, .person-sixteen:hover:after {content: 'louana gentner';}
-          .person-sixteen {background-image: url(imgs/louana);}
+          .person-sixteen {background-image: url(imgs/louana/thumbnail.jpg);}
           .person-seventeen:after, .person-seventeen:hover:after {content: 'maarten meij';}
-          .person-seventeen {background-image: url(imgs/maarten/screenshot.jpg);}
+          .person-seventeen {background-image: url(imgs/maarten/thumbnail.jpg);}
           .person-eighteen:after, .person-eighteen:hover:after {content: 'marc van den berg';}
-          .person-eighteen {background-image: url(imgs/marc/marc_0.jpg);}
+          .person-eighteen {background-image: url(imgs/marc/thumbnail.jpg);}
           .person-nineteen:after, .person-nineteen:hover:after {content: 'marina sophia de jong yantorno';}
-          .person-nineteen {background-image: url(imgs/sophia/screenshot.jpg);}
+          .person-nineteen {background-image: url(imgs/sophia/thumbnail.jpg);}
           .person-twenty:after, .person-twenty:hover:after {content: 'martijn brakenhoff';}
-          .person-twenty {background-image: url(imgs/martijn);}
+          .person-twenty {background-image: url(imgs/martijn/thumbnail.jpg);}
           .person-twentyone:after, .person-twentyone:hover:after {content: 'martin menso jensen';}
-          .person-twentyone {background-image: url(imgs/martin/martin_0.png);}
+          .person-twentyone {background-image: url(imgs/martin/thumbnail.jpg);}
           .person-twentytwo:after, .person-twentytwo:hover:after {content: 'nedislav kamburov';}
-          .person-twentytwo {background-image: url(imgs/ned/screenshot.jpg);}
+          .person-twentytwo {background-image: url(imgs/ned/thumbnail.jpg);}
           .person-twentythree:after, .person-twentythree:hover:after {content: 'nicolai schmelling';}
-          .person-twentythree {background-image: url(imgs/nicolai/nicolai_0.jpg);}
+          .person-twentythree {background-image: url(imgs/nicolai/thumbnail.jpg);}
           .person-twentyfour:after, .person-twentyfour:hover:after {content: 'nicoletta radice';}
-          .person-twentyfour {background-image: url(imgs/nicoletta/nicoletta_0.png);}
+          .person-twentyfour {background-image: url(imgs/nicoletta/thumbnail.jpg);}
           .person-twentyfive:after, .person-twentyfive:hover:after {content: 'pepijn de jonge';}
-          .person-twentyfive {background-image: url(imgs/pepjin/);}
+          .person-twentyfive {background-image: url(imgs/pepjin/thumbnail.jpg);}
           .person-twentysix:after, .person-twentysix:hover:after {content: 'ruben visser';}
-          .person-twentysix {background-image: url(imgs/ruben/ruben_1.jpg);}
+          .person-twentysix {background-image: url(imgs/ruben/thumbnail.jpg);}
           .person-twentyseven:after, .person-twentyseven:hover:after {content: 'selina landis';}
-          .person-twentyseven {background-image: url(imgs/selina/selina_2.jpg);}
+          .person-twentyseven {background-image: url(imgs/selina/thumbnail.jpg);}
           .person-twentyeight:after, .person-twentyeight:hover:after {content: 'seojeong youn';}
-          .person-twentyeight {background-image: url(imgs/seojeong/screenshot.jpg);}
+          .person-twentyeight {background-image: url(imgs/seojeong/thumbnail.jpg);}
           .person-twentynine:after, .person-twentynine:hover:after {content: 'tilius sodeika';}
-          .person-twentynine {background-image: url(imgs/tilius/tilius_0.jpg);}
+          .person-twentynine {background-image: url(imgs/tilius/thumbnail.jpg);}
           .person-thirty:after, .person-thirty:hover:after {content: 'trang hà';}
-          .person-thirty {background-image: url(imgs/trang/trang_3.png);}
+          .person-thirty {background-image: url(imgs/trang/thumbnail.jpg);}
           .person-thirtyone:after, .person-thirtyone:hover:after {content: 'yessica deira';}
-          .person-thirtyone {background-image: url(imgs/yessica/yessica_8.png);}
+          .person-thirtyone {background-image: url(imgs/yessica/thumbnail.jpg);}
           .person-thirtytwo:after, .person-thirtytwo:hover:after {content: 'zahari dimitrov';}
-          .person-thirtytwo {background-image: url(imgs/zahari/zahari_2.png);}
+          .person-thirtytwo {background-image: url(imgs/zahari/thumbnail.jpg);}
           .person-thirtythree:after, .person-thirtythree:hover:after {content: 'Zuzanna Zgierska';}
-          .person-thirtythree {background-image: url(imgs/zuzanna/zuzanna_2.png);}
+          .person-thirtythree {background-image: url(imgs/zuzanna/thumbnail.jpg);}
 
           .person-thirtyfour:after, .person-thirtyfour:hover:after {content: 'claude nassar';}
-          .person-thirtyfour {background-image: url(imgs/claude/claude_0.png);}
+          .person-thirtyfour {background-image: url(imgs/claude/thumbnail.jpg);}
           .person-thirtyfive:after, .person-thirtyfive:hover:after {content: 'cristina lavosi';}
-          .person-thirtyfive {background-image: url(imgs/cristina/cristina_0.jpg);}
+          .person-thirtyfive {background-image: url(imgs/cristina/thumbnail.jpg);}
           .person-thirtysix:after, .person-thirtysix:hover:after {content: 'cyan bae';}
-          .person-thirtysix {background-image: url(imgs/cyan/cyan_3.png);}
+          .person-thirtysix {background-image: url(imgs/cyan/thumbnail.jpg);}
           .person-thirtyseven:after, .person-thirtyseven:hover:after {content: 'giulia faccin';}
-          .person-thirtyseven {background-image: url(imgs/guilia/guilia_0.png);}
+          .person-thirtyseven {background-image: url(imgs/guilia/thumbnail.jpg);}
           .person-thirtyeight:after, .person-thirtyeight:hover:after {content: 'kert viiart';}
-          .person-thirtyeight {background-image: url(imgs/kert/stills/kert-stills-0.png);}
+          .person-thirtyeight {background-image: url(imgs/kert/thumbnail.jpg);}
           .person-thirtynine:after, .person-thirtynine:hover:after {content: 'lila steinkampf';}
-          .person-thirtynine {background-image: url(imgs/lila/lila_0.jpg);}
+          .person-thirtynine {background-image: url(imgs/lila/thumbnail.jpg);}
           .person-fourty:after, .person-fourty:hover:after {content: 'Kert Viiart';}
-          .person-fourty {background-image: url(imgs/mauro/mauro-0.png);}
+          .person-fourty {background-image: url(imgs/mauro/thumbnail.jpg);}
 
 
 
