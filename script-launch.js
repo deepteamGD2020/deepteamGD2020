@@ -295,20 +295,12 @@
     /*EMBED VIDEO/SOUND / WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
-          {
+          /*{
             src : 'imgs/anna/anna_0.png',
             opts : {caption : 'First caption',}
-          },
+          },*/
           {
-            src : 'imgs/berglind/berglind_1.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_2.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_3.png',
+            src : 'imgs/anna/',
             opts : {caption : 'First caption',}
           }
       ], {
@@ -528,10 +520,10 @@
     /*EMBED VIDEO --*/ $(".open_fancybox_emily").click(function() {
 
       $.fancybox.open([
-          {
+          /*{
             src : 'imgs/emily/screenshot.jpg',
             opts : {caption : 'First caption',}
-          },
+          },*/
           {
             src : 'imgs/emily/',
             opts : {caption : 'First caption',}
@@ -667,6 +659,432 @@
 
       return false;
     });
+
+    $(".open_fancybox_laura").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/laura/laura_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/laura/laura_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/laura/laura_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/laura/laura_3.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_linda").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/linda/linda_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/linda/linda_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/linda/linda_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/linda/linda_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/linda/linda_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/linda/linda_5.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*EMBED VIDEO --*/ $(".open_fancybox_louana").click(function() {
+
+      $.fancybox.open([
+          /*{
+            src : 'imgs/louana/louana.jpg',
+            opts : {caption : 'First caption',}
+          },*/
+          {
+            src : 'imgs/louana/',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_maarten").click(function() {
+
+      $.fancybox.open([
+          /*{
+            src : 'imgs/maarten/screenshot.jpg',
+            opts : {caption : 'First caption',}
+          },*/
+          {
+            src : 'imgs/maarten/maarten_0.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/maarten/maarten_1.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_marc").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/marc/marc_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/marc/marc_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/marc/marc_2.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_sophia").click(function() {
+
+      $.fancybox.open([
+          /*{
+            src : 'imgs/sophia/front.jpg',
+            opts : {caption : 'First caption',}
+          },*/
+          {
+            src : 'imgs/sophia/sophia_0.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_martijn").click(function() {
+
+      $.fancybox.open([
+          /*{
+            src : 'imgs/martijn/still.jpg',
+            opts : {caption : 'First caption',}
+          },*/
+          {
+            src : 'imgs/martijn/1_Martijn_Brakenhoff.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_martin").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/martin/martin_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/martin/martin_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/martin/martin_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/martin/martin_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/martin/martin_4.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*WEBSITE LINK MAYBE? -- */ $(".open_fancybox_ned").click(function() {
+
+      $.fancybox.open([
+          /*{
+            src : 'imgs/ned/screenshot.jpg',
+            opts : {caption : 'First caption',}
+          },*/
+          {
+            src : 'imgs/ned/ned_0.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_nicolai").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/nicolai/nicolai_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicolai/nicolai_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicolai/nicolai_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicolai/nicolai_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicolai/nicolai_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicolai/nicolai_5.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*WEBSITE LINK -- */ $(".open_fancybox_nicoletta").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/nicoletta/nicoletta_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/nicoletta/nicoletta_1.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*EMBED SPOTIFY -- */ $(".open_fancybox_pepjin").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/pepjin/pepjin.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/pepjin/pepjin2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/pepjin/pepjin3.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_ruben").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/ruben/ruben_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/ruben/ruben_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/ruben/ruben_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/ruben/ruben_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/ruben/ruben_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {            
+            src : 'imgs/ruben/ruben_5.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {            
+            src : 'imgs/ruben/ruben_6.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_selina").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/selina/selina_1.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/selina/selina_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/selina/selina_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/selina/selina_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/selina/selina_5.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_seojeong").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/seojeong/seojeong_0.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/seojeong/seojeong_1.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/seojeong/seojeong_2.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+
+
+
+
+
+
+    $(".open_fancybox_tilius").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/tilius/tilius_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/tilius/tilius_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/tilius/tilius_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/tilius/tilius_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/tilius/tilius_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/tilius/tilius_5.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });  
 
 
 
