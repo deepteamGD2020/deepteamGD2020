@@ -316,7 +316,7 @@ body {
               align-self: stretch;
 
               background-repeat: no-repeat;
-              background-size: contain !important;
+              background-size: cover;
               background-position: center;
               margin: 0px;
               padding: 0px;
@@ -449,7 +449,7 @@ body {
           .person-twentysix:after, .person-twentysix:hover:after {content: 'ruben visser';}
           .person-twentysix {background-image: url(imgs/ruben/thumbnail.jpg);}
           .person-twentyseven:after, .person-twentyseven:hover:after {content: 'selina landis';}
-          .person-twentyseven {background-image: url(imgs/selina/thumbnail.jpg);}
+          .person-twentyseven {background-image: url(imgs/selina/thumbnail.png);}
           .person-twentyeight:after, .person-twentyeight:hover:after {content: 'seojeong youn';}
           .person-twentyeight {background-image: url(imgs/seojeong/thumbnail.jpg);}
           .person-twentynine:after, .person-twentynine:hover:after {content: 'tilius sodeika';}
@@ -851,7 +851,7 @@ body {
               align-self: stretch;
 
               background-repeat: no-repeat;
-              background-size: cover;
+              background-size: contain;
               background-position: center;
               margin: 0px;
               padding: 0px;
