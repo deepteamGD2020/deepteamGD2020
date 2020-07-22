@@ -292,24 +292,32 @@
       return false;
     });
 
-    /*EMBED VIDEO/SOUND / WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
+    /*WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
-          /*{
-            src : 'imgs/anna/anna_0.png',
-            opts : {caption : 'First caption',}
-          },*/
+          { 
+            src : 'https://player.vimeo.com/video/436092429?title=0&byline=0&portrait=0', 
+            type : 'iframe' 
+          },
+          { 
+            src : 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/844722430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 
+            type : 'iframe' 
+          }/*,
           {
-            src : 'imgs/anna/',
-            opts : {caption : 'First caption',}
-          }
+            src  : 'https://annamoschioni.github.io/domestic-tales/#/',
+            type : 'iframe',
+            opts : {
+              afterShow : function( instance, current ) {
+                console.info( 'done!' );
+              }   
+            }
+          }*/
       ], {
-          padding : 0, loop : true
+          preload: true, loop : true
       });
 
       return false;
     });
-
     
     /*CHOOSE FILES / WEBSITE LINK -- $(".open_fancybox_berglind").click(function() {
 
@@ -349,7 +357,6 @@
       return false;
     });*/
     
-
     $(".open_fancybox_brechje").click(function() {
 
       $.fancybox.open([
@@ -517,16 +524,12 @@
       return false;
     });*/
 
-    /*EMBED VIDEO --*/ $(".open_fancybox_emily").click(function() {
+    $(".open_fancybox_emily").click(function() {
 
       $.fancybox.open([
-          /*{
-            src : 'imgs/emily/screenshot.jpg',
-            opts : {caption : 'First caption',}
-          },*/
-          {
-            src : 'imgs/emily/',
-            opts : {caption : 'First caption',}
+          { 
+            src : 'https://player.vimeo.com/video/438916995?title=0&byline=0&portrait=0', 
+            type : 'iframe' 
           }
       ], {
           padding : 0,
@@ -539,12 +542,21 @@
     /*WEBSITE LINK -- */ $(".open_fancybox_fien").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/fien/fien_2.jpg',
-            opts : {caption : 'First caption',}
+          { 
+            src : 'https://www.youtube.com/embed/57AB5qwNqPo', 
+            type : 'iframe' 
           },
           {
-            src : 'imgs/fien/',
+            src  : 'https://eerstehulpbijongemak.nl/',
+            type : 'iframe',
+            opts : {
+              afterShow : function( instance, current ) {
+                console.info( 'done!' );
+              }   
+            }
+          },
+          {
+            src : 'imgs/fien/fien_2.jpg',
             opts : {caption : 'First caption',}
           }
       ], {
@@ -593,6 +605,15 @@
           {
             src : 'imgs/golshan/golshan_8.jpg',
             opts : {caption : 'First caption',}
+          },
+          {
+            src  : 'https://azadokht.github.io/beginning-without-endings/',
+            type : 'iframe',
+            opts : {
+              afterShow : function( instance, current ) {
+                console.info( 'done!' );
+              }   
+            }
           }
       ], {
           padding : 0,
@@ -722,16 +743,12 @@
       return false;
     });
 
-    /*EMBED VIDEO --*/ $(".open_fancybox_louana").click(function() {
+    $(".open_fancybox_louana").click(function() {
 
       $.fancybox.open([
-          /*{
-            src : 'imgs/louana/louana.jpg',
-            opts : {caption : 'First caption',}
-          },*/
-          {
-            src : 'imgs/louana/',
-            opts : {caption : 'First caption',}
+          { 
+            src : 'https://player.vimeo.com/video/435502965?title=0&byline=0&portrait=0', 
+            type : 'iframe' 
           }
       ], {
           padding : 0,
@@ -929,7 +946,7 @@
       return false;
     });
 
-    /*EMBED SPOTIFY -- */ $(".open_fancybox_pepjin").click(function() {
+    $(".open_fancybox_pepjin").click(function() {
 
       $.fancybox.open([
           {
@@ -943,7 +960,12 @@
           {
             src : 'imgs/pepjin/pepjin3.jpg',
             opts : {caption : 'First caption',}
+          },
+          { 
+            src : 'https://open.spotify.com/embed/artist/7FhgRkfCZXxVIRfqt9q7w5', 
+            type : 'iframe' 
           }
+
       ], {
           padding : 0,
           loop : true
@@ -1045,12 +1067,6 @@
       return false;
     });
 
-
-
-
-
-
-
     $(".open_fancybox_tilius").click(function() {
 
       $.fancybox.open([
@@ -1084,7 +1100,298 @@
       });
 
       return false;
-    });  
+    }); 
+
+    $(".open_fancybox_trang").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/trang/trang_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/trang/trang_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/trang/trang_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/trang/trang_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/trang/trang_4.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*FILES MAKE SMALLER AND ADD ALL -- */ $(".open_fancybox_yessica").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/yessica/yessica_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/yessica/yessica_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/yessica/yessica_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/yessica/yessica_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/yessica/yessica_4.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_zahari").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/zahari/zahari_0.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zahari/zahari_1.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zahari/zahari_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zahari/zahari_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zahari/zahari_4.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zahari/zahari_5.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_zuzanna").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/zuzanna/zuzanna_1.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zuzanna/zuzanna_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zuzanna/zuzanna_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/zuzanna/zuzanna_4.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+
+
+    $(".open_fancybox_claude").click(function() {
+
+      $.fancybox.open([
+          { 
+            src : 'https://player.vimeo.com/video/436081318', 
+            type : 'iframe' 
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_cristina").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/cristina/cristina_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cristina/cristina_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cristina/cristina_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cristina/cristina_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cristina/cristina_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cristina/6_Cristina_Lavosi_LOWER.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*FILES MAKE SMALLER -- */ $(".open_fancybox_cyan").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/cyan/cyan_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cyan/cyan_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cyan/cyan_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/cyan/cyan_3.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    $(".open_fancybox_guilia").click(function() {
+
+      $.fancybox.open([
+          { 
+            src : 'https://www.youtube.com/embed/BYTd1LLBvm8', 
+            type : 'iframe' 
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    /*FILES MAKE SMALLER AND ADD ALL -- */ $(".open_fancybox_kert").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/kert/kert_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kert/kert_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kert/kert_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kert/kert_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kert/kert_4.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
+
+    /*WEBSITE LINK -- */ $(".open_fancybox_lila").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/lila/lila_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/lila/lila_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/lila/lila_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/lila/lila_3.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*EMBED SOUNDCLOUD (waiting for it to be set to public) -- */ $(".open_fancybox_mauro").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/mauro/mauro_1.mp4', /*  https://soundcloud.com/mauro_tosarelli/prisoners-sound-archive-230520/s-fVDu17nKWaq?fbclid=IwAR1qp0jyL8rb3tNs3Sq6OFNUwV9JBkGqz9zfCRclk30azphjQcNS18Vy0lE  */
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    }); 
 
 
 

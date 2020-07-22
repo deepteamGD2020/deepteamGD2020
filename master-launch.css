@@ -481,6 +481,9 @@ body {
 
 
 
+          .nameBlock a:hover {border: none;}
+          .nameBlock:hover {} 
+
 
 
 
