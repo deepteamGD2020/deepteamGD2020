@@ -376,7 +376,7 @@ body {
           .person-one:after {content: 'title, emily anderson';}
           .person-two:after {content: 'title, golshan azadokht';}
           .person-three:after {content: 'title, marc van den berg';}
-          .person-four:after {content: 'Martijn Brakenhoff';}
+          .person-four:after {content: 'title, martijn brakenhoff';}
           .person-five:after {content: 'Laura Brouwer';}
           .person-six:after {content: 'Kiki Coster';}
           .person-seven:after {content: 'Yessica Deira';}
@@ -417,37 +417,37 @@ body {
           .person-one {background-image: url(imgs/emily/screenshot.jpg);}
           .person-one:hover:after {content: 'Emily Anderson';}
 
-          .person-two {background-image: url(imgs/anna/front.jpg);}
+          .person-two {background-image: url(imgs/golshan/golshan_0.jpg);}
           .person-two:hover:after {content: 'Golshan Azadokht';}
 
-          .person-three {background-image: url(imgs/berglind/pagessmaller.png);}
+          .person-three {background-image: url(imgs/marc/marc_0.jpg);}
           .person-three:hover:after {content: 'Marc van den Berg';}
 
           .person-four {background-image: url(imgs/brechje/front.png);}
           .person-four:hover:after {content: 'Martijn Brakenhoff';}
 
-          .person-five {background-image: url(imgs/clara/1_Lezla.png);}
+          .person-five {background-image: url(imgs/laura/laura_1.jpg);}
           .person-five:hover:after {content: 'Laura Brouwer';}
 
           .person-six {background-image: url(imgs/dana/1.png);}
           .person-six:hover:after {content: 'Kiki Coster';}
 
-          .person-seven {background-image: url(imgs/denise/1.png);}
+          .person-seven {background-image: url(imgs/yessica/yessica_8.png);}
           .person-seven:hover:after {content: 'Yessica Deira';}
 
-          .person-eight {background-image: url(imgs/edward/Posters-min.jpg);}
+          .person-eight {background-image: url(imgs/zahari/zahari_2.png);}
           .person-eight:hover:after {content: 'Zahari Dimitrov';}
 
-          .person-nine {background-image: url(imgs/emily/);}
+          .person-nine {background-image: url(imgs/dana/dana_16.png);}
           .person-nine:hover:after {content: 'Dana Doorenbos';}
 
-          .person-ten {background-image: url(imgs/fien/);}
+          .person-ten {background-image: url(imgs/edward/edward_1.jpg);}
           .person-ten:hover:after {content: 'Edward Dżułaj';}
 
           .person-eleven {background-image: url(imgs/golshan/1_Beginnings_without_endings.jpg);}
           .person-eleven:hover:after {content: 'Louana Gentner';}
 
-          .person-twelve {background-image: url(imgs/kihyeon/2_kihyeon.png);}
+          .person-twelve {background-image: url(imgs/trang/trang_3.png);}
           .person-twelve:hover:after {content: 'Trang Hà';}
 
           .person-thirteen {background-image: url(imgs/kiki);}
