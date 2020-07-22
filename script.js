@@ -351,7 +351,7 @@
 
   var spacing = "<span class=whiteSpace> </span>";
 
-  var str = "<p>dear reader</p> <br> <p>our private spaces have become the centers of our public lives" +spacing+ "our common place has dispersed"+spacing+"and we found ourselves in our bedrooms"+spacing+"making projects related to social"+spacing+"political and economic issues"+spacing+"since then"+spacing+"we sought to re-enact a shared ground"+spacing+"and eventually"+spacing+"have patched our fragmented times into this very shared moment"+spacing+"soon to be experienced together on our own time </p> <br> <p> the works displayed on this platform will be materialized in a real-time physical encounter at our graduation festival from the 10th to the 13th of september"+spacing+"during which the platform will host a screening of complete works</p> <br> <p>although the graduation show this year will be limited in terms of accessibility and time"+spacing+"we hope this platform will allow our audience to experience our work further on their own time</p>",
+  var str = "<p>dear reader</p> <br> <p>our private spaces have become the centers of our public lives" +spacing+ "our common place has dispersed"+spacing+"and we found ourselves in our bedrooms"+spacing+"making projects related to social"+spacing+"political and economic issues"+spacing+"since then"+spacing+"we sought to re-enact a shared ground"+spacing+"and eventually"+spacing+"have patched our fragmented times into this very shared moment"+spacing+"soon to be experienced together on our own time </p> <br> <p> the works displayed on this platform will be materialized in a real-time physical encounter at our graduation festival from the 10th to the 13th of september"+spacing+"during which the platform will host a screening of complete works</p> <br> <p>although the graduation show this year will be limited in terms of accessibility and time"+spacing+"we hope this platform will allow our audience to experience our work further on their own time</p><br><p>take care" +spacing+ "see you soon</p><br><br><p>(type design" +spacing+ "chalga by nedislav kamburov" +spacing+ "sambo by edward dżułaj)</p><br><br>",
       i = 0,
       isTag,
       text;
@@ -373,7 +373,7 @@
       // ===================================
 
       // ADD TIME-RELATED WORDS TO THIS ARRAY
-      var yourstring = ["2020", "in these times", "on their", "own time", "in progress", "ultimately", "soon", "different times", "fragmented times", "event", "ually", "real-time", "10th", "13th", "of september", "fall", "moment", 'year'];
+      var yourstring = ["2020", "in these times", "on their", "own time", "in progress", "ultimately", "soon", "different times", "fragmented times", "event", "ually", "real-time", "10th", "13th", "of september", "fall", "moment", 'year', 'sambo'];
 
       $.each(yourstring , function(index, val) {
         $('#typewriter p:contains('+val+')', document.body).each(function(){
