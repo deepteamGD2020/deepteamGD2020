@@ -548,3 +548,26 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+
+
+
+
+// Loop scroll, working put jumpy ======================
+// ================================
+
+        $('document').ready(function() {
+          $(document).scroll(function(){
+            if (document.documentElement.clientHeight + $(window).scrollTop() >= $(document).height()) {
+              $(document).scrollTop(0);
+            }
+          });
+        });
+
+
+
+
+
+
+
