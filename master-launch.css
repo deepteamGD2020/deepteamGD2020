@@ -1,0 +1,953 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin:  0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {vertical-align: middle;}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {resize: vertical;}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+@font-face {
+  font-family: 'Chalga Reg';
+  src: url('fonts/ChalgaRegular-new/Chalga-Regular.woff');
+}
+@font-face {
+  font-family: 'Sambo Reg';
+  src: url('fonts/Sambo-Regular.otf');
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.1em;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+/* ==============
+    MOBILE: Basics
+   ============== */
+  body{
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+
+  .stickyBar{
+    position: fixed;
+    z-index: 500;
+  }
+
+  .topper{top:0;}
+
+  .hidden{visibility: hidden;}
+
+  .bottomer{bottom:0;}
+
+  br{margin: 0;}
+  div p {margin: 1.5% 3% 1.5% 3%;}
+
+  a:visited{color: black;}
+
+
+
+/* ==============
+    Basics ALL
+   ============== */
+    a {
+        color: blue !important;
+        text-decoration: none;
+    }
+    a:hover {border-bottom: 2px solid blue;}
+
+
+
+
+
+
+    /*   CINEMA   */
+
+    .blueBanner {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: calc(10px + 35px);
+
+        background: blue;
+        z-index: 9999999;
+        cursor: pointer;
+
+        font-family:
+           'Chalga Reg',
+           serif;
+        color: blue;
+
+        transition: 0.5s !important;
+    }
+    .blueBanner a {color: white !important;}
+    .blueBanner a:hover {
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+
+    .click-to-open {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        float: center;
+        text-align: center;
+        color: white !important;
+        z-index: 99999;
+    }
+    .fullscreen {height: 100%; cursor: auto; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
+
+    .marquee {
+      position: absolute;
+      top: 5px;
+      color: white !important;
+      z-index: 1;
+      width: auto;
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 100%;
+    }
+    .marquee span {
+      position: relative;
+      display: flex;
+      height: 30px;
+      left: 100vw;
+      width: fit-content;
+      animation: marquee linear infinite;
+      animation-duration: 50s;
+    }
+    @keyframes marquee {
+      0%   { left: 100vw; }
+      100% { left: -100%; }
+    }
+
+
+    .textInBannerCenterClose, .textInBannerRight, .support-us {color: white !important;}
+    .textInBannerCenterClose {
+        position: fixed;
+        top: 5px;
+        padding-right: 15px;
+        right: 0px;
+        left: 0px;
+        text-align: right;
+        z-index: 9999999999999;
+        display: none;
+        cursor: pointer;
+    }
+
+
+    .textInBannerRight {
+        position: absolute;
+        padding-top: 5px;
+        top: 0px;
+        right: 0px;
+        padding-right: 20px;
+        left: auto;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        text-align: right;
+        background-color: blue;
+
+        z-index: 999;
+    }
+    .support-us {
+        position: fixed;
+        bottom: 0px;
+        background-color: blue;
+        /*height: 40px;*/
+        right: 0px;
+        left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    /*.support-us:after {
+        content: 'support us';
+        position: absolute;
+        bottom: 5px;
+        right: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .support-us:hover:after {content: 'link coming!';}*/
+
+    a.support-us:hover {
+        text-decoration: none;
+        border-bottom: 2px solid white;
+        margin-bottom: 20px;
+    }
+    .blueScreenOpen {display: none; color: white;}
+
+    /*  TYPEWRITER  */
+
+        /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
+          .timeClass{
+            font-family: 'Sambo Reg', serif;
+            font-size: 1.18em;
+            color: white !important;
+            line-height: 0em;
+          }
+
+          .whiteSpace{letter-spacing: 1.2em;}
+
+         .textTypewriter {
+            position: absolute;
+            text-align: left;
+            left: 0px;
+            right: 15px;
+            /*top: 60vh;*/
+            overflow-y: scroll;
+            text-transform: lowercase;
+        }
+
+
+
+
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+   /* For mobile phones: */
+
+   .logoImg {
+     width: 90%;
+     float: right;
+     margin: 5%;
+     margin-top: 2%;
+     transition: 0.3s;
+     z-index: 10000;
+   }
+
+    .spin2 {transform: rotate(0deg);}
+    .spin3 {transform: rotate(-90deg);}
+    .spin4 {transform: rotate(-180deg);}
+    .spin5 {transform: rotate(-270deg);}
+    .spin6 {transform: rotate(-360deg);}
+    .spin7 {transform: rotate(-450deg);}
+    .spin8 {transform: rotate(-540deg);}
+    .spin9 {transform: rotate(-630deg);}
+    .spin10 {transform: rotate(-720deg);}
+    .spin11 {transform: rotate(-810deg);}
+
+
+   .menuBar{
+     background-color: white;
+     text-align: right;
+     font-family:
+       'Sambo Reg',
+       monospace;
+     color: blue;
+   }
+
+   .introTxt{
+     text-align: left;
+     font-family:
+       'Chalga Reg',
+       serif;
+     color: blue;
+   }
+
+   .introTxt p{ margin: 10% 5% 0 5%; }
+
+   .headline{
+     width: 100%;
+     background-color: blue;
+     text-align: left;
+     font-family:
+       'Chalga Reg',
+       serif;
+     color: white;
+   }
+
+   .expand{
+     z-index: 9999;
+     height:100%;
+   }
+
+   .disablePointer{ pointer-events: none; }
+
+   .noColor { color: transparent; }
+
+
+          #overviewButton{
+            font-family: 'Chalga Reg', sans-serif;
+            float: left;
+            cursor: pointer;
+          }
+
+          #infoButton{
+            float: left;
+            background-color: none;
+            cursor: pointer;
+          }
+          #contact{
+            color: white;
+            /* float: left; */
+            text-decoration: none;
+          }
+          #ig{
+            color: white;
+            text-decoration: none;
+            /* float: right; */
+          }
+
+    .contactBar{
+      background-color: transparent;
+      z-index: 100000;
+      width: 100%;
+      font-family:
+        'Chalga Reg',
+        serif;
+      color: white;
+      /* bottom: 0; */
+    }
+
+    .floatLeft{ float: left; }
+
+    .floatRight{ float: right; }
+
+
+
+   .main-container{ margin-top: 10%; }
+
+   .nameColumn{
+     width: 100%;
+     background-color: white;
+     color: white;
+     margin: 5% 0% 0% 0%;
+   }
+       .nameBlock{
+         width: 100%;
+         background-color: white;
+         display: inline-block;
+         margin: 2% 0% 0% 0%;
+         font-family:
+           'Chalga Reg',
+           serif;
+         color: blue;
+         text-align: left;
+       }
+
+    .nameBlock img{
+      width: 100%;
+      margin: 2% 0 0 0%;
+    }
+
+        .marginProjectSpacing{ margin-top: 10%; }
+
+    .projectTitle{
+      font-size: 0.49em;
+      line-height: 1.1em;
+      font-family:
+        'Chalga Reg',
+        serif;
+    }
+
+    .nameArtist{
+      text-align: left;
+      /* padding-left: 5%; */
+    }
+
+        .lastItem{ margin-top: 10%; }
+
+        .samboSpan{
+          font-size: 1.18em;
+          font-family:
+            'Sambo Reg',
+            serif;
+        }
+
+        .footer-container{ width: auto; }
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+/* .ie7 .title {
+    padding-top: 20px;
+} */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ===============
+    Difference in mobile and desktop
+   =============== */
+
+    .desktop {display: none;}
+    .mobile {display: inline;}
+    .info-wrapper {display: none;}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    /* nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+} */
+
+/* FROM */
+/* @media only screen and (min-width: 768px)  */
+/* TO  */
+
+@media only screen and (min-width: 1025px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+/* ============
+    WIDE: Menu
+   ============ */
+   /* For desktop: */
+   .col-1 {width: 8.33%;}
+   .col-2 {width: 16.66%;}
+   .col-3 {width: 25%;}
+   .col-4 {width: 33.33%;}
+   .col-5 {width: 41.66%;}
+   .col-6 {width: 50%;}
+   .col-7 {width: 58.33%;}
+   .col-8 {width: 66.66%;}
+   .col-9 {width: 75%;}
+   .col-10 {width: 83.33%;}
+   .col-11 {width: 91.66%;}
+   .col-12 {width: 100%;}
+
+
+   .header-container {position: relative;}
+   .main-container {position: relative;}
+
+
+   /*     TEXT     */
+      a {
+          color: blue;
+          text-decoration: none;
+      }
+      a:hover {border-bottom: 2px solid blue;}
+
+
+
+      .introTxt{
+         text-align: left;
+         font-family:
+           'Chalga Reg',
+           serif;
+         color: blue;
+
+         top: 18vh;
+         position: relative;
+       }
+
+       .introTxt p{
+          margin: 5% 3% 0 3%;
+       }
+
+       .larger-text {
+          font-size: 6.8vw;
+          line-height: 1.1em;
+       }
+
+       .info-wrapper {
+          height: 200px;
+          height: auto;
+          min-height: 100px;
+          width: 45%;
+          margin: 25vh 5% 23vh 5%;
+
+          display: block;
+       }
+
+       .intro-box {
+          margin-bottom: 25vh;
+          float: left;
+          left: 0px;
+       }
+       .first-box {width: 100%;}
+       .second-box {width: 50%;}
+       .third-box, .fourth-box {width: 25%;}
+
+       .ba-nln-intro-text {
+          top: 0px;
+          height: 50vh;
+          /*background-color: yellow;*/
+          margin-top: 0%;
+       }
+
+
+
+   /*    Menu top bars   */
+
+      .text-menu-top {
+          position: fixed;
+          top: 20px;
+          z-index: 11;
+          z-index: 501;
+      }
+
+      .right-side {right: 20px;}
+      .left-side {left: 20px;}
+
+
+      .overviewButton:hover {
+          font-family: Sambo;
+          font-size: 25px;
+          /*border-bottom: 2px solid blue;
+          margin-bottom: 20px;*/
+          cursor: pointer;
+      }
+      .overviewButton-hide {
+          z-index: 999999;
+          display: none;
+      }
+
+
+      /*     OVERVIEW     */
+
+          .usAll {
+              position: relative;
+              position: fixed;
+              z-index: 9999;
+              top: 20px;
+              top: calc(30px + 27px + 20px);
+              left: 20px;
+              right: 20px;
+              width: calc(100vw - 40px);
+              height: calc(100vh - ((30px + 27px + 20px) * 2));
+
+              align-content: stretch;
+              display: flex;
+              display: space-between;
+              flex-flow: row wrap;
+              justify-content: space-around;
+              justify-content: flex-start;
+              flex-wrap: wrap;
+              flex-direction: row;
+          }
+
+          .hide {display: none;}
+
+          .person {
+              position: relative;
+              display: inline-block;
+              top: 0px;
+              left: 0px;
+              min-width: 200px;
+              height: auto;
+
+              flex: flex-grow;
+              flex-grow: 2;
+              flex-basis: auto;
+              order: 1;
+
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              margin: 0px;
+              padding: 0px;
+
+              border: 2px solid rgba(0,0,0,0);
+              cursor: pointer;
+          }
+
+          .person:hover {border: 2px solid blue;}
+
+          .person-one {background-image: url(imgs/anastasiia/front.png);}
+          .person-two {background-image: url(imgs/anna/front.jpg);}
+          .person-three {background-image: url(imgs/berglind/pagessmaller.png);}
+          .person-four {background-image: url(imgs/brechje/front.png);}
+          .person-five {background-image: url(imgs/clara/1_Lezla.png);}
+          .person-six {background-image: url(imgs/dana/1.png);}
+          .person-seven {background-image: url(imgs/denise/1.png);}
+          .person-eight {background-image: url(imgs/edward/Posters-min.jpg);}
+          .person-nine {background-image: url(imgs/emily/);}
+          .person-ten {background-image: url(imgs/fien/);}
+          .person-eleven {background-image: url(imgs/golshan/1_Beginnings_without_endings.jpg);}
+          .person-twelve {background-image: url(imgs/kihyeon/2_kihyeon.png);}
+          .person-thirteen {background-image: url(imgs/kiki);}
+          .person-fourteen {background-image: url(imgs/laura/1_laura.jpg);}
+          .person-fifteen {background-image: url(imgs/linda/Screenshot-website-1.png);}
+          .person-sixteen {background-image: url(imgs/louana);}
+          .person-eighteen {background-image: url(imgs/maarten/front.jpg);}
+          .person-nineteen {background-image: url(imgs/marc);}
+          .person-twenty {background-image: url(imgs/martijn);}
+          .person-twentyone {background-image: url(imgs/martin);}
+          .person-twentytwo {background-image: url(imgs/ned/front.jpg);}
+          .person-twentythree {background-image: url(imgs/nicolai/1_Nicolai.jpg);}
+          .person-twentyfour {background-image: url(imgs/nicoletta/front.jpg);}
+          .person-twentyfive {background-image: url(imgs/pepjin/);}
+          .person-twentysix {background-image: url(imgs/ruben/);}
+          .person-twentyseven {background-image: url(imgs/selina/);}
+          .person-twentyeight {background-image: url(imgs/seojeong/front.jpg);}
+          .person-twentynine {background-image: url(imgs/sofia/front.jpg);}
+          .person-thirty {background-image: url(imgs/tilius/unnamed.jpg);}
+          .person-thirtyone {background-image: url(imgs/trang/2_Trang.png);}
+
+      .menuBar{background-color: rgba(0,0,0,0);}
+      .topper{top:20px;}
+      div p {margin: 0px 20px 0px 20px;}
+
+       .logo-desktop {
+            position: fixed;
+            top: calc(20px + 5vh + 10vh);
+            right: calc(20px + 5vw);
+            /*height: 30vh; */
+            width: calc(44vw - 40px);
+            height: auto;
+            height: 60vh;
+            width: auto;
+            z-index: 2;
+            z-index: 11;
+
+            animation: spin;
+            transition-timing-function: ease-in-out;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+
+            transform: rotate(0deg);
+
+            transition: 1s !important;
+        }
+        @keyframes spin {
+          0% {transform: rotate(0deg);}
+          15% {transform: rotate(0deg);}
+          25% {transform: rotate(-90deg);}
+          35% {transform: rotate(-90deg);}
+          50% {transform: rotate(-180deg);}
+          60% {transform: rotate(-180deg);}
+          70% {transform: rotate(-270deg);}
+          90% {transform: rotate(-270deg);}
+          100% {transform: rotate(-360deg);}
+        }
+
+        .smaller {
+            height: 30vh;
+            width: auto;
+
+            bottom: calc(50vh - 15vh + 40px);
+            top: auto;
+            right: 20px;
+        }
+
+        .spin2 {
+            transform: rotate(0deg);
+            animation: none;
+        }
+
+        .spin3 {transform: rotate(-90deg);}
+        .spin4 {transform: rotate(-180deg);}
+        .spin5 {transform: rotate(-270deg);}
+        .spin6 {transform: rotate(-360deg);}
+        .spin7 {transform: rotate(-450deg);}
+        .spin8 {transform: rotate(-540deg);}
+        .spin9 {transform: rotate(-630deg);}
+        .spin10 {transform: rotate(-720deg);}
+        .spin11 {transform: rotate(-810deg);}
+
+
+
+    /*   CINEMA   */
+
+    .marquee span {animation-duration: 20s;}
+
+    .textInBannerRight, .support-us {
+        position: absolute;
+        color: white !important;
+    }
+    .textInBannerRight {
+        padding-top: 5px;
+        top: 0px;
+        right: 0px;
+        padding-right: 20px;
+        left: auto;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        text-align: right;
+        background-color: blue;
+        z-index: 999;
+    }
+    /*.support-us {
+        content: 'hello';
+        color: rgba(0,0,0,.5);
+        top: auto;
+        bottom: 15px;
+        right: 15px;
+        left: 80%;
+        margin-bottom: 0px;
+        text-align: right;
+        cursor: pointer;
+    }
+    .support-us:after {
+        content: 'support us';
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        text-align: right;
+    }
+    .support-us:hover:after {content: 'link coming';}*/
+
+
+    .support-us-new:after {
+        content: 'support us';
+        cursor: pointer;
+    }
+    .support-us-new:hover:after {content: 'link coming';}
+    /*  TYPEWRITER  */
+
+        /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
+          .timeClass{
+            font-family: 'Sambo Reg', serif;
+            font-size: 1.18em;
+            color: white !important;
+            line-height: 0em;
+          }
+
+          .whiteSpace{letter-spacing: 1.2em;}
+
+         .textTypewriter {
+            position: absolute;
+            text-align: left;
+            left: 0%;
+            right: 15px;
+            top: 0px;
+            bottom: 0px;
+            overflow-y: scroll;
+            background-color: blue;
+
+            text-transform: lowercase;
+        }
+
+    /*   NAME BLOCK   */
+
+    .top-margin-block{
+      margin-top: 10%;
+    }
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+
+/* ===============
+    Difference in mobile and desktop
+   =============== */
+
+    .desktop {display: inline;}
+    .mobile {display: none;}
+
+
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
