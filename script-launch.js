@@ -245,79 +245,12 @@
 // SLIDESHOW FANCYBOXXXX===============
 // ====================================
 
-    $(".open_fancybox_berglind").click(function() {
-
-      $.fancybox.open([
-          {
-            src : 'imgs/berglind/berglind_0.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_1.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_2.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_3.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_4.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_5.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : 'imgs/berglind/berglind_6.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          }
-      ], {
-          padding : 0,
-          loop : true
-      });
-
-    return false;
-
-    });
 
     $(".open_fancybox_anastasia").click(function() {
 
       $.fancybox.open([
           {
             src : 'imgs/anastasia/anasta_0.jpg',
-            opts : {
-              //caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
-          },
-          {
-            src : '',
             opts : {
               //caption : 'First caption',
               //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
@@ -343,56 +276,396 @@
               //caption : 'First caption',
               //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
             }
+          },
+          {
+            src : 'imgs/anastasia/anasta_4.jpg',
+            opts : {
+              //caption : 'First caption',
+              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
+            }
           }
       ], {
           padding : 0,
           loop : true
       });
 
-    return false;
-
+      return false;
     });
 
-
-
-    $(".open_fancybox_anna").click(function() {
+    /*EMBED VIDEO/SOUND / WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
           {
             src : 'imgs/anna/anna_0.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
+            opts : {caption : 'First caption',}
           },
           {
             src : 'imgs/berglind/berglind_1.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
+            opts : {caption : 'First caption',}
           },
           {
             src : 'imgs/berglind/berglind_2.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
+            opts : {caption : 'First caption',}
           },
           {
             src : 'imgs/berglind/berglind_3.png',
-            opts : {
-              caption : 'First caption',
-              //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
-            }
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0, loop : true
+      });
+
+      return false;
+    });
+
+    
+    /*CHOOSE FILES / WEBSITE LINK -- $(".open_fancybox_berglind").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/berglind/berglind_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_2.png',
+            opts : {Caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_4.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_5.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/berglind/berglind_6.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0, loop : true
+      });
+
+      return false;
+    });*/
+    
+
+    $(".open_fancybox_brechje").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/brechje/brechje_0.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/brechje/brechje_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/brechje/brechje_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/brechje/brechje_3.png',
+            opts : {caption : 'First caption',}
           }
       ], {
           padding : 0,
           loop : true
       });
 
-    return false;
+      return false;
+    });
 
+    $(".open_fancybox_clara").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/clara/clara_0.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/clara/clara_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/clara/clara_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/clara/clara_3.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*PDF TO EXPORT -- $(".open_fancybox_dana").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/dana/dana_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/dana/dana_4.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/dana/dana_5.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/dana/dana_6.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });*/
+
+    $(".open_fancybox_denise").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/denise/denise_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/denise_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/denise_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/denise_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/5Ear_Plasty.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/denise_5.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/denise_6.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/denise/2Flaporen_Lexicon.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*PDF TO EXPORT -- $(".open_fancybox_edward").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/edward/denise_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/denise_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/denise_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/denise_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/5Ear_Plasty.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/denise_5.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/denise_6.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/edward/2Flaporen_Lexicon.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });*/
+
+    /*EMBED VIDEO --*/ $(".open_fancybox_emily").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/emily/screenshot.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/emily/',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*WEBSITE LINK -- */ $(".open_fancybox_fien").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/fien/fien_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/fien/',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    /*WEBSITE LINK -- */ $(".open_fancybox_golshan").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/golshan/golshan_0.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_1.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_2.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_3.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_4.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_5.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_6.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_7.jpg',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/golshan/golshan_8.jpg',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_kihyeon").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/kihyeon/kihyeon_0.mp4',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kihyeon/kihyeon_1.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kihyeon/kihyeon_2.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kihyeon/kihyeon_3.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kihyeon/kihyeon_4.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kihyeon/kihyeon_5.mp4',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
+    });
+
+    $(".open_fancybox_kiki").click(function() {
+
+      $.fancybox.open([
+          {
+            src : 'imgs/kiki/0-min.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kiki/1-min.png',
+            opts : {caption : 'First caption',}
+          },
+          {
+            src : 'imgs/kiki/2-min.png',
+            opts : {caption : 'First caption',}
+          }
+      ], {
+          padding : 0,
+          loop : true
+      });
+
+      return false;
     });
 
 
@@ -556,7 +829,7 @@ $(document).ready(function(){
 
 // Loop scroll, working put jumpy ======================
 // ================================
-
+/*
         $('document').ready(function() {
           $(document).scroll(function(){
             if (document.documentElement.clientHeight + $(window).scrollTop() >= $(document).height()) {
@@ -564,7 +837,7 @@ $(document).ready(function(){
             }
           });
         });
-
+*/
 
 
 
