@@ -372,23 +372,21 @@ body {
 
     .floatRight{ float: right; }
 
+
+
    .main-container{ margin-top: 10%; }
 
-
-   /*   NAME BLOCK   */
-
-   /* .nameColumn{
-     float: right;
-     width: 60%;
+   .nameColumn{
+     width: 100%;
      background-color: white;
      color: white;
-     margin: 5% 15% 0% 0%;
+     margin: 5% 0% 0% 0%;
    }
        .nameBlock{
-         height: 15em;
+         width: 100%;
          background-color: white;
          display: inline-block;
-         margin: 5% 0% 0% 0%;
+         margin: 2% 0% 0% 0%;
          font-family:
            'Chalga Reg',
            serif;
@@ -397,8 +395,8 @@ body {
        }
 
     .nameBlock img{
-      height: 100%;
-      margin: 0.5% 0 0 0%;
+      width: 100%;
+      margin: 2% 0 0 0%;
     }
 
         .marginProjectSpacing{ margin-top: 10%; }
@@ -413,6 +411,7 @@ body {
 
     .nameArtist{
       text-align: left;
+      /* padding-left: 5%; */
     }
 
         .lastItem{ margin-top: 10%; }
@@ -422,7 +421,7 @@ body {
           font-family:
             'Sambo Reg',
             serif;
-        } */
+        }
 
         .footer-container{ width: auto; }
 
@@ -810,57 +809,11 @@ body {
 
     /*   NAME BLOCK   */
 
-    .nameColumn{
-      float: right;
-      width: 60%;
-      background-color: white;
-      color: white;
-      margin: 10% 15% 0% 0%;
-      /* overflow: hidden; */
+    .top-margin-block{
+      margin-top: 10%;
     }
-        .nameBlock{
-          height: 15em;
-          background-color: white;
-          display: inline-block;
-          font-family:
-            'Chalga Reg',
-            serif;
-          color: blue;
-          text-align: left;
-        }
 
-     article:last-child{ margin-bottom: 10%; }
-     .nameBlock img, video{
-       height: 100%;
-       margin: 0.8% 0 0 0%;
-     }
 
-     .top-margin-block{
-       margin-top: 12%;
-     }
-
-     .projectTitle{
-       font-size: 0.49em;
-       line-height: 1.1em;
-       font-family:
-         'Chalga Reg',
-         serif;
-     }
-
-     .nameArtist{
-       text-align: left;
-     }
-
-         .lastItem{ margin-top: 10%; }
-
-         .samboSpan{
-           font-size: 1.18em;
-           font-family:
-             'Sambo Reg',
-             serif;
-         }
-
-         .footer-container{ width: auto; }
 /* ============
     WIDE: Main
    ============ */
