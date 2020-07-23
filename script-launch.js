@@ -1532,6 +1532,10 @@
           {
             src : 'imgs/mauro/mauro_1.mp4', /*  https://soundcloud.com/mauro_tosarelli/prisoners-sound-archive-230520/s-fVDu17nKWaq?fbclid=IwAR1qp0jyL8rb3tNs3Sq6OFNUwV9JBkGqz9zfCRclk30azphjQcNS18Vy0lE  */
             opts : {caption : 'First caption',}
+          },
+          { 
+            src : 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/826935472&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 
+            type : 'iframe' 
           }
       ], {
           padding : 0,
