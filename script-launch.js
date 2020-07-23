@@ -324,23 +324,11 @@
     /*WEBSITE LINK --*/ $(".open_fancybox_berglind").click(function() {
 
       $.fancybox.open([ 
-          {
-            src : 'imgs/berglind/2.png',
-            opts : {caption : 'First caption',}
-          },
-          {src : '#abstract-berglind',},
-          {
-            src : 'imgs/berglind/5.mp4',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/3.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/5.jpg',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/berglind/2.png', },
+          {src : '#abstract-berglind', },
+          { src : 'imgs/berglind/5.mp4', },
+          { src : 'imgs/berglind/3.png', },
+          { src : 'imgs/berglind/5.jpg', }
       ], {
           padding : 0, loop : true
       });
@@ -351,22 +339,11 @@
     $(".open_fancybox_brechje").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/brechje/brechje_0.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/brechje/brechje_1.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/brechje/brechje_2.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/brechje/brechje_3.png',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/brechje/brechje_0.png', },
+          { src : '#abstract-brechje', },
+          { src : 'imgs/brechje/brechje_1.png', },
+          { src : 'imgs/brechje/brechje_2.png', },
+          { src : 'imgs/brechje/brechje_3.png', }
       ], {
           padding : 0,
           loop : true
@@ -378,22 +355,11 @@
     $(".open_fancybox_clara").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/clara/clara_0.mp4',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/clara/clara_1.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/clara/clara_2.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/clara/clara_3.png',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/clara/clara_0.mp4', },
+          { src : '#abstract-clara', },
+          { src : 'imgs/clara/clara_1.png', },
+          { src : 'imgs/clara/clara_2.png', },
+          { src : 'imgs/clara/clara_3.png', }
       ], {
           padding : 0,
           loop : true
@@ -402,32 +368,36 @@
       return false;
     });
 
-    /*PDF TO EXPORT -- $(".open_fancybox_dana").click(function() {
+    /*MAKE SELECION / MAKE SMALLER FILES --*/ $(".open_fancybox_dana").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/dana/dana_3.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/dana/dana_4.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/dana/dana_5.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/dana/dana_6.png',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/dana/dana_2-1.png', },
+          { src : '#abstract-dana', },
+          { src : 'imgs/dana/dana_2-2.png', },
+          { src : 'imgs/dana/dana_2-3.png', },
+          { src : 'imgs/dana/dana_2-4.png', },
+          { src : 'imgs/dana/dana_2-5.png', },
+          { src : 'imgs/dana/dana_3.jpg', },
+          { src : 'imgs/dana/dana_4.png', },
+          { src : 'imgs/dana/dana_5.png', },
+          { src : 'imgs/dana/dana_6.png', },
+          { src : 'imgs/dana/dana_7.png', },
+          { src : 'imgs/dana/dana_8.png', },
+          { src : 'imgs/dana/dana_9.png', },
+          { src : 'imgs/dana/dana_10.png', },
+          { src : 'imgs/dana/dana_11.png', },
+          { src : 'imgs/dana/dana_12.png', },
+          { src : 'imgs/dana/dana_13.png', },
+          { src : 'imgs/dana/dana_14.png', },
+          { src : 'imgs/dana/dana_15.png', },
+          { src : 'imgs/dana/dana_16.png', }
       ], {
           padding : 0,
           loop : true
       });
 
       return false;
-    });*/
+    });
 
     $(".open_fancybox_denise").click(function() {
 
@@ -436,6 +406,7 @@
             src : 'imgs/denise/denise_1.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-denise', },
           {
             src : 'imgs/denise/denise_2.jpg',
             opts : {caption : 'First caption',}
@@ -472,48 +443,31 @@
       return false;
     });
 
-    /*PDF TO EXPORT -- $(".open_fancybox_edward").click(function() {
+    $(".open_fancybox_edward").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/edward/denise_1.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/denise_2.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/denise_3.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/denise_4.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/5Ear_Plasty.mp4',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/denise_5.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/denise_6.jpg',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/edward/2Flaporen_Lexicon.mp4',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/edward/edward_0-1.png', },
+          { src : '#abstract-edward', },
+          { src : 'imgs/edward/edward_0-2.jpg', },
+          { src : 'imgs/edward/edward_0-3.jpg', },
+          { src : 'imgs/edward/edward_0-4.jpg', },
+          { src : 'imgs/edward/edward_0-5.jpg', },
+          { src : 'imgs/edward/edward_0-6.jpg', },
+          { src : 'imgs/edward/edward_1.jpg', },
+          { src : 'imgs/edward/edward_2.jpg', },
+          { src : 'imgs/edward/edward_3.jpg', },
+          { src : 'imgs/edward/edward_4.jpg', },
+          { src : 'imgs/edward/edward_5.jpg', },
+          { src : 'imgs/edward/edward_6.jpg', },
+          { src : 'imgs/edward/edward_7.jpg', },
+          { src : 'imgs/edward/edward_8.jpg', }
       ], {
           padding : 0,
           loop : true
       });
 
       return false;
-    });*/
+    });
 
     $(".open_fancybox_emily").click(function() {
 
@@ -521,7 +475,8 @@
           { 
             src : 'https://player.vimeo.com/video/438916995?title=0&byline=0&portrait=0', 
             type : 'iframe' 
-          }
+          },
+          { src : '#abstract-emily', }
       ], {
           padding : 0,
           loop : true
@@ -537,7 +492,8 @@
             src : 'https://www.youtube.com/embed/57AB5qwNqPo', 
             type : 'iframe' 
           },
-          {
+          { src : '#abstract-fien', },
+          /*{
             src  : 'https://eerstehulpbijongemak.nl/',
             type : 'iframe',
             opts : {
@@ -545,7 +501,7 @@
                 console.info( 'done!' );
               }   
             }
-          },
+          },*/
           {
             src : 'imgs/fien/fien_2.jpg',
             opts : {caption : 'First caption',}
@@ -565,6 +521,7 @@
             src : 'imgs/golshan/golshan_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-golshan', },
           {
             src : 'imgs/golshan/golshan_1.jpg',
             opts : {caption : 'First caption',}
@@ -596,7 +553,7 @@
           {
             src : 'imgs/golshan/golshan_8.jpg',
             opts : {caption : 'First caption',}
-          },
+          }/*,
           {
             src  : 'https://azadokht.github.io/beginning-without-endings/',
             type : 'iframe',
@@ -605,7 +562,7 @@
                 console.info( 'done!' );
               }   
             }
-          }
+          }*/
       ], {
           padding : 0,
           loop : true
@@ -621,6 +578,7 @@
             src : 'imgs/kihyeon/kihyeon_0.mp4',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-hyeonjeong', },
           {
             src : 'imgs/kihyeon/kihyeon_1.png',
             opts : {caption : 'First caption',}
@@ -656,6 +614,7 @@
             src : 'imgs/kiki/0-min.png',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-kiki', },
           {
             src : 'imgs/kiki/1-min.png',
             opts : {caption : 'First caption',}
@@ -679,6 +638,7 @@
             src : 'imgs/laura/laura_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-laura', },
           {
             src : 'imgs/laura/laura_1.jpg',
             opts : {caption : 'First caption',}
