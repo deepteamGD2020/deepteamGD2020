@@ -113,124 +113,301 @@
   $(document).on('scroll', function() {
     // mobile spin //
 
-    if ($(document).scrollTop() >= 100) {
-      $(".logoImg").addClass('spin2');
-    } else {
-      $(".logoImg").removeClass('spin2');
-    }
-
-    //  FOR FIRST CONTENTLESS VIEW
-    if ($(document).scrollTop() >= 700) {
-      $(".logoImg").addClass('spin3');
-    } else {
-      $(".logoImg").removeClass('spin3');
-    }
-
-    if ($(document).scrollTop() >= 1400) {
-      $(".logoImg").addClass('spin4');
-    } else {
-      $(".logoImg").removeClass('spin4');
-    }
-
-    /*  FOR WHEN CONTENT IS IN
-    if ($(document).scrollTop() >= 1100) {
-      $(".logoImg").addClass('spin3');
-    } else {
-      $(".logoImg").removeClass('spin3');
-    }
-
-    if ($(document).scrollTop() >= 2100) {
-      $(".logoImg").addClass('spin4');
-    } else {
-      $(".logoImg").removeClass('spin4');
-    }*/
-
-    if ($(document).scrollTop() >= 3100) {
-      $(".logoImg").addClass('spin5');
-    } else {
-      $(".logoImg").removeClass('spin5');
-    }
-
-    if ($(document).scrollTop() >= 4100) {
-      $(".logoImg").addClass('spin6');
-    } else {
-      $(".logoImg").removeClass('spin6');
-    }
-
-
-    // desktop spin //
-    if ($(document).scrollTop() >= 100) {
-      $(".logo").addClass('smaller');
-      $(".logo").addClass('spin2');
-    } else {
-      $(".logo").removeClass('smaller');
-      $(".logo").removeClass('spin2');
-    }
-
-
-      //  FOR FIRST CONTENTLESS VIEW
-      if ($(document).scrollTop() >= 1100) {
-          $(".logo").addClass('spin3');
-        } else {
-          $(".logo").removeClass('spin3');
-        }
-
-
-      /*  FOR WHEN CONTENT IS IN
-      if ($(document).scrollTop() >= 1600) {
-          $(".logo").addClass('spin3');
-        } else {
-          $(".logo").removeClass('spin3');
-        }
-      */
-
-      if ($(document).scrollTop() >= 3100) {
-        $(".logo").addClass('spin4');
+      if ($(document).scrollTop() >= 100) {
+        $(".logoImg").addClass('spin2');
       } else {
-        $(".logo").removeClass('spin4');
+        $(".logoImg").removeClass('spin2');
       }
 
-      if ($(document).scrollTop() >= 4600) {
-        $(".logo").addClass('spin5');
+      //  FOR FIRST CONTENTLESS VIEW
+      /*if ($(document).scrollTop() >= 700) {
+        $(".logoImg").addClass('spin3');
       } else {
-        $(".logo").removeClass('spin5');
+        $(".logoImg").removeClass('spin3');
+      }
+
+      if ($(document).scrollTop() >= 1400) {
+        $(".logoImg").addClass('spin4');
+      } else {
+        $(".logoImg").removeClass('spin4');
+      }*/
+
+      //  FOR WHEN CONTENT IS IN
+      if ($(document).scrollTop() >= 1100) {
+        $(".logoImg").addClass('spin3');
+      } else {
+        $(".logoImg").removeClass('spin3');
+      }
+
+      if ($(document).scrollTop() >= 2100) {
+        $(".logoImg").addClass('spin4');
+      } else {
+        $(".logoImg").removeClass('spin4');
+      }
+
+      if ($(document).scrollTop() >= 3100) {
+        $(".logoImg").addClass('spin5');
+      } else {
+        $(".logoImg").removeClass('spin5');
+      }
+
+      if ($(document).scrollTop() >= 4100) {
+        $(".logoImg").addClass('spin6');
+      } else {
+        $(".logoImg").removeClass('spin6');
+      }
+
+      if ($(document).scrollTop() >= 5100) {
+        $(".logoImg").addClass('spin7');
+      } else {
+        $(".logoImg").removeClass('spin7');
       }
 
       if ($(document).scrollTop() >= 6100) {
-        $(".logo").addClass('spin6');
+        $(".logoImg").addClass('spin8');
       } else {
-        $(".logo").removeClass('spin6');
+        $(".logoImg").removeClass('spin8');
       }
 
-      if ($(document).scrollTop() >= 7600) {
-        $(".logo").addClass('spin7');
+      if ($(document).scrollTop() >= 7100) {
+        $(".logoImg").addClass('spin9');
       } else {
-        $(".logo").removeClass('spin7');
+        $(".logoImg").removeClass('spin9');
+      }
+
+      if ($(document).scrollTop() >= 8100) {
+        $(".logoImg").addClass('spin10');
+      } else {
+        $(".logoImg").removeClass('spin10');
       }
 
       if ($(document).scrollTop() >= 9100) {
-        $(".logo").addClass('spin8');
+        $(".logoImg").addClass('spin11');
       } else {
-        $(".logo").removeClass('spin8');
+        $(".logoImg").removeClass('spin11');
       }
 
-      if ($(document).scrollTop() >= 10600) {
-        $(".logo").addClass('spin9');
+      if ($(document).scrollTop() >= 10100) {
+        $(".logoImg").addClass('spin12');
       } else {
-        $(".logo").removeClass('spin9');
+        $(".logoImg").removeClass('spin12');
+      }
+
+      if ($(document).scrollTop() >= 11100) {
+        $(".logoImg").addClass('spin13');
+      } else {
+        $(".logoImg").removeClass('spin13');
       }
 
       if ($(document).scrollTop() >= 12100) {
-        $(".logo").addClass('spin10');
+        $(".logoImg").addClass('spin14');
       } else {
-        $(".logo").removeClass('spin10');
+        $(".logoImg").removeClass('spin14');
       }
 
-      if ($(document).scrollTop() >= 13600) {
-        $(".logo").addClass('spin11');
+      if ($(document).scrollTop() >= 13100) {
+        $(".logoImg").addClass('spin15');
       } else {
-        $(".logo").removeClass('spin11');
+        $(".logoImg").removeClass('spin15');
       }
+
+      if ($(document).scrollTop() >= 14100) {
+        $(".logoImg").addClass('spin16');
+      } else {
+        $(".logoImg").removeClass('spin16');
+      }
+
+      if ($(document).scrollTop() >= 15100) {
+        $(".logoImg").addClass('spin17');
+      } else {
+        $(".logoImg").removeClass('spin17');
+      }
+
+      if ($(document).scrollTop() >= 16100) {
+        $(".logoImg").addClass('spin18');
+      } else {
+        $(".logoImg").removeClass('spin18');
+      }
+
+      if ($(document).scrollTop() >= 17100) {
+        $(".logoImg").addClass('spin19');
+      } else {
+        $(".logoImg").removeClass('spin19');
+      }
+
+      if ($(document).scrollTop() >= 18100) {
+        $(".logoImg").addClass('spin20');
+      } else {
+        $(".logoImg").removeClass('spin20');
+      }
+
+      if ($(document).scrollTop() >= 19100) {
+        $(".logoImg").addClass('spin21');
+      } else {
+        $(".logoImg").removeClass('spin21');
+      }
+
+      if ($(document).scrollTop() >= 20100) {
+        $(".logoImg").addClass('spin22');
+      } else {
+        $(".logoImg").removeClass('spin22');
+      }
+
+      if ($(document).scrollTop() >= 21100) {
+        $(".logoImg").addClass('spin23');
+      } else {
+        $(".logoImg").removeClass('spin23');
+      }
+
+
+    // desktop spin //
+      if ($(document).scrollTop() >= 100) {
+        $(".logo").addClass('smaller');
+        $(".logo").addClass('spin2');
+      } else {
+        $(".logo").removeClass('smaller');
+        $(".logo").removeClass('spin2');
+      }
+
+
+        //  FOR FIRST CONTENTLESS VIEW
+        /*if ($(document).scrollTop() >= 1100) {
+            $(".logo").addClass('spin3');
+          } else {
+            $(".logo").removeClass('spin3');
+          }*/
+
+
+        //  FOR WHEN CONTENT IS IN
+        if ($(document).scrollTop() >= 1600) {
+            $(".logo").addClass('spin3');
+          } else {
+            $(".logo").removeClass('spin3');
+          }
+        
+
+        if ($(document).scrollTop() >= 3100) {
+          $(".logo").addClass('spin4');
+        } else {
+          $(".logo").removeClass('spin4');
+        }
+
+        if ($(document).scrollTop() >= 4600) {
+          $(".logo").addClass('spin5');
+        } else {
+          $(".logo").removeClass('spin5');
+        }
+
+        if ($(document).scrollTop() >= 6100) {
+          $(".logo").addClass('spin6');
+        } else {
+          $(".logo").removeClass('spin6');
+        }
+
+        if ($(document).scrollTop() >= 7600) {
+          $(".logo").addClass('spin7');
+        } else {
+          $(".logo").removeClass('spin7');
+        }
+
+        if ($(document).scrollTop() >= 9100) {
+          $(".logo").addClass('spin8');
+        } else {
+          $(".logo").removeClass('spin8');
+        }
+
+        if ($(document).scrollTop() >= 10600) {
+          $(".logo").addClass('spin9');
+        } else {
+          $(".logo").removeClass('spin9');
+        }
+
+        if ($(document).scrollTop() >= 12100) {
+          $(".logo").addClass('spin10');
+        } else {
+          $(".logo").removeClass('spin10');
+        }
+
+        if ($(document).scrollTop() >= 13600) {
+          $(".logo").addClass('spin11');
+        } else {
+          $(".logo").removeClass('spin11');
+        }
+
+        if ($(document).scrollTop() >= 15100) {
+          $(".logo").addClass('spin12');
+        } else {
+          $(".logo").removeClass('spin12');
+        }
+
+        if ($(document).scrollTop() >= 16600) {
+          $(".logo").addClass('spin13');
+        } else {
+          $(".logo").removeClass('spin13');
+        }
+
+        if ($(document).scrollTop() >= 18100) {
+          $(".logo").addClass('spin14');
+        } else {
+          $(".logo").removeClass('spin14');
+        }
+/*
+
+
+
+        /*if ($(document).scrollTop() >= 19600) {
+          $(".logo").addClass('spin15');
+        } else {
+          $(".logo").removeClass('spin15');
+        }
+
+        if ($(document).scrollTop() >= 21100) {
+          $(".logo").addClass('spin16');
+        } else {
+          $(".logo").removeClass('spin16');
+        }
+
+        if ($(document).scrollTop() >= 22600) {
+          $(".logo").addClass('spin17');
+        } else {
+          $(".logo").removeClass('spin17');
+        }
+
+        if ($(document).scrollTop() >= 24100) {
+          $(".logo").addClass('spin18');
+        } else {
+          $(".logo").removeClass('spin18');
+        }
+
+        if ($(document).scrollTop() >= 25600) {
+          $(".logo").addClass('spin19');
+        } else {
+          $(".logo").removeClass('spin19');
+        }
+
+        if ($(document).scrollTop() >= 27100) {
+          $(".logo").addClass('spin20');
+        } else {
+          $(".logo").removeClass('spin20');
+        }
+
+        if ($(document).scrollTop() >= 28600) {
+          $(".logo").addClass('spin21');
+        } else {
+          $(".logo").removeClass('spin21');
+        }
+
+        if ($(document).scrollTop() >= 30100) {
+          $(".logo").addClass('spin22');
+        } else {
+          $(".logo").removeClass('spin22');
+        }
+
+        if ($(document).scrollTop() >= 31600) {
+          $(".logo").addClass('spin23');
+        } else {
+          $(".logo").removeClass('spin23');
+        }*/
 
 
   });
@@ -1286,29 +1463,33 @@
       return false;
     }); 
 
-    /*INSTALLATION FILES MAKE SMALLER AND MAKE SELECTION -- */ $(".open_fancybox_kert").click(function() {
+    $(".open_fancybox_kert").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/kert/kert_0.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/kert/kert_1.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/kert/kert_2.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/kert/kert_3.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/kert/kert_4.png',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/kert/imgs/kert-0.jpg', },
+          { src : '#abstract-kert', },
+          { src : 'imgs/kert/imgs/kert-1.jpg', },
+          { src : 'imgs/kert/imgs/kert-2.jpg', },
+          { src : 'imgs/kert/imgs/kert-3.jpg', },
+          { src : 'imgs/kert/imgs/kert-4.jpg', },
+          { src : 'imgs/kert/imgs/kert-5.jpg', },
+          { src : 'imgs/kert/imgs/kert-6.jpg', },
+          { src : 'imgs/kert/imgs/kert-7.jpg', },
+          { src : 'imgs/kert/imgs/kert-8.jpg', },
+          { src : 'imgs/kert/imgs/kert-9.jpg', },
+          { src : 'imgs/kert/imgs/kert-10.jpg', },
+          { src : 'imgs/kert/imgs/kert-11.jpg', },
+          { src : 'imgs/kert/imgs/kert-12.jpg', },
+          { src : 'imgs/kert/imgs/kert-13.jpg', },
+          { src : 'imgs/kert/imgs/kert-14.jpg', },
+          { src : 'imgs/kert/imgs/kert-15.jpg', },
+          { src : 'imgs/kert/stills/kert-stills-0.png', },
+          { src : 'imgs/kert/stills/kert-stills-1.png', },
+          { src : 'imgs/kert/stills/kert-stills-2.png', },
+          { src : 'imgs/kert/stills/kert-stills-3.png', },
+          { src : 'imgs/kert/stills/kert-stills-4.png', },
+          { src : 'imgs/kert/stills/kert-stills-5.png', },
+          { src : 'imgs/kert/stills/kert-stills-6.png', }
       ], {
           padding : 0,
           loop : true
@@ -1317,13 +1498,14 @@
       return false;
     }); 
 
-    /*WEBSITE LINK -- */ $(".open_fancybox_lila").click(function() {
+    $(".open_fancybox_lila").click(function() {
 
       $.fancybox.open([
           {
             src : 'imgs/lila/lila_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-lila', },
           {
             src : 'imgs/lila/lila_1.jpg',
             opts : {caption : 'First caption',}

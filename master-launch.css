@@ -522,14 +522,27 @@ body {
 
     .spin2 {transform: rotate(0deg);}
     .spin3 {transform: rotate(-90deg);}
-    .spin4 {transform: rotate(-180deg);}
-    .spin5 {transform: rotate(-270deg);}
-    .spin6 {transform: rotate(-360deg);}
-    .spin7 {transform: rotate(-450deg);}
-    .spin8 {transform: rotate(-540deg);}
-    .spin9 {transform: rotate(-630deg);}
-    .spin10 {transform: rotate(-720deg);}
-    .spin11 {transform: rotate(-810deg);}
+    .spin4 {transform: rotate(-270deg);}
+    .spin5 {transform: rotate(-360deg);}
+    .spin6 {transform: rotate(-450deg);}
+    .spin7 {transform: rotate(-540deg);}
+    .spin8 {transform: rotate(-630deg);}
+    .spin9 {transform: rotate(-720deg);}
+    .spin10 {transform: rotate(-810deg);}
+    .spin11 {transform: rotate(-900deg);}
+
+    .spin12 {transform: rotate(-990deg);}
+    .spin13 {transform: rotate(-1080deg);}
+    .spin14 {transform: rotate(-1170deg);}
+    .spin15 {transform: rotate(-1260deg);}
+    .spin16 {transform: rotate(-1350deg);}
+    .spin17 {transform: rotate(-1440deg);}
+    .spin18 {transform: rotate(-1530deg);}
+    .spin19 {transform: rotate(-1620deg);}
+    .spin20 {transform: rotate(-1710deg);}
+    .spin21 {transform: rotate(-1800deg);}
+    .spin22 {transform: rotate(-1890deg);}
+    .spin23 {transform: rotate(-1980deg);}
 
 
    .menuBar{
