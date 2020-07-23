@@ -666,6 +666,7 @@
             src : 'imgs/linda/linda_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-linda', },
           {
             src : 'imgs/linda/linda_1.jpg',
             opts : {caption : 'First caption',}
@@ -700,7 +701,8 @@
           { 
             src : 'https://player.vimeo.com/video/435502965?title=0&byline=0&portrait=0', 
             type : 'iframe' 
-          }
+          },
+          { src : '#abstract-louana', }
       ], {
           padding : 0,
           loop : true
@@ -720,6 +722,7 @@
             src : 'imgs/maarten/maarten_0.mp4',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-maarten', },
           {
             src : 'imgs/maarten/maarten_1.mp4',
             opts : {caption : 'First caption',}
@@ -739,6 +742,7 @@
             src : 'imgs/marc/marc_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-marc', },
           {
             src : 'imgs/marc/marc_1.jpg',
             opts : {caption : 'First caption',}
@@ -765,7 +769,8 @@
           {
             src : 'imgs/sophia/sophia_0.mp4',
             opts : {caption : 'First caption',}
-          }
+          },
+          { src : '#abstract-sophia', }
       ], {
           padding : 0,
           loop : true
@@ -784,7 +789,8 @@
           {
             src : 'imgs/martijn/1_Martijn_Brakenhoff.mp4',
             opts : {caption : 'First caption',}
-          }
+          },
+          { src : '#abstract-martijn', }
       ], {
           padding : 0,
           loop : true
@@ -800,6 +806,7 @@
             src : 'imgs/martin/martin_0.png',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-martin', },
           {
             src : 'imgs/martin/martin_1.png',
             opts : {caption : 'First caption',}
@@ -824,7 +831,7 @@
       return false;
     });
 
-    /*WEBSITE LINK MAYBE? -- */ $(".open_fancybox_ned").click(function() {
+    $(".open_fancybox_ned").click(function() {
 
       $.fancybox.open([
           /*{
@@ -834,7 +841,8 @@
           {
             src : 'imgs/ned/ned_0.mp4',
             opts : {caption : 'First caption',}
-          }
+          },
+          { src : '#abstract-ned', }
       ], {
           padding : 0,
           loop : true
@@ -850,6 +858,7 @@
             src : 'imgs/nicolai/nicolai_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-nicolai', },
           {
             src : 'imgs/nicolai/nicolai_1.jpg',
             opts : {caption : 'First caption',}
@@ -885,6 +894,7 @@
             src : 'imgs/nicoletta/nicoletta_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-nicoletta', },
           {
             src : 'imgs/nicoletta/nicoletta_1.mp4',
             opts : {caption : 'First caption',}
@@ -904,6 +914,7 @@
             src : 'imgs/pepjin/pepjin.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-pepijn', },
           {
             src : 'imgs/pepjin/pepjin2.jpg',
             opts : {caption : 'First caption',}
@@ -925,13 +936,14 @@
       return false;
     });
 
-    $(".open_fancybox_ruben").click(function() {
+    /*MISSING ABSTRACT --- */ $(".open_fancybox_ruben").click(function() {
 
       $.fancybox.open([
           {
             src : 'imgs/ruben/ruben_0.jpg',
             opts : {caption : 'First caption',}
-          },
+          },/*
+          { src : '#abstract-ruben', },*/
           {
             src : 'imgs/ruben/ruben_1.jpg',
             opts : {caption : 'First caption',}
@@ -971,6 +983,7 @@
             src : 'imgs/selina/selina_1.mp4',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-selina', },
           {
             src : 'imgs/selina/selina_2.jpg',
             opts : {caption : 'First caption',}
@@ -1002,6 +1015,7 @@
             src : 'imgs/seojeong/seojeong_0.mp4',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-seojeong', },
           {
             src : 'imgs/seojeong/seojeong_1.mp4',
             opts : {caption : 'First caption',}
@@ -1025,6 +1039,7 @@
             src : 'imgs/tilius/tilius_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-tilius', },
           {
             src : 'imgs/tilius/tilius_1.jpg',
             opts : {caption : 'First caption',}
@@ -1060,6 +1075,7 @@
             src : 'imgs/trang/trang_0.jpg',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-trang', },
           {
             src : 'imgs/trang/trang_1.png',
             opts : {caption : 'First caption',}
@@ -1084,29 +1100,26 @@
       return false;
     });
 
-    /*FILES MAKE SMALLER AND ADD ALL -- */ $(".open_fancybox_yessica").click(function() {
+    /*WEBSITE LINK -- */ $(".open_fancybox_yessica").click(function() {
 
       $.fancybox.open([
-          {
-            src : 'imgs/yessica/yessica_0.png',
-            opts : {caption : 'First caption',}
+          { src : 'imgs/yessica/yessica_0.jpg', },
+          { src : '#abstract-yessica', },
+          { 
+            src : 'https://www.youtube.com/embed/mQwWaHovLfk', 
+            type : 'iframe' 
           },
-          {
-            src : 'imgs/yessica/yessica_1.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/yessica/yessica_2.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/yessica/yessica_3.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/yessica/yessica_4.png',
-            opts : {caption : 'First caption',}
-          }
+          { src : 'imgs/yessica/yessica_2.jpg', },
+          { src : 'imgs/yessica/yessica_3.jpg', },
+          { src : 'imgs/yessica/yessica_5.jpg', },
+          { src : 'imgs/yessica/yessica_6.jpg', },
+          { src : 'imgs/yessica/yessica_7.jpg', },
+          { src : 'imgs/yessica/yessica_8.jpg', },
+          { src : 'imgs/yessica/yessica_9.png', },
+          { src : 'imgs/yessica/yessica_10.png', },
+          { src : 'imgs/yessica/yessica_11.png', },
+          { src : 'imgs/yessica/yessica_12.png', },
+          { src : 'imgs/yessica/yessica_13.jpg', }
       ], {
           padding : 0,
           loop : true
@@ -1122,6 +1135,7 @@
             src : 'imgs/zahari/zahari_0.mp4',
             opts : {caption : 'First caption',}
           },
+          { src : '#abstract-zahari', },
           {
             src : 'imgs/zahari/zahari_1.mp4',
             opts : {caption : 'First caption',}
@@ -1150,13 +1164,14 @@
       return false;
     });
 
-    $(".open_fancybox_zuzanna").click(function() {
+    /*MISSING ABSTRACT -- */ $(".open_fancybox_zuzanna").click(function() {
 
       $.fancybox.open([
           {
             src : 'imgs/zuzanna/zuzanna_1.mp4',
             opts : {caption : 'First caption',}
           },
+          /*{ src : '#abstract-zuzanna', },*/
           {
             src : 'imgs/zuzanna/zuzanna_2.jpg',
             opts : {caption : 'First caption',}
@@ -1229,7 +1244,7 @@
       return false;
     });
 
-    /*FILES MAKE SMALLER -- */ $(".open_fancybox_cyan").click(function() {
+    $(".open_fancybox_cyan").click(function() {
 
       $.fancybox.open([
           {
@@ -1237,7 +1252,7 @@
             opts : {caption : 'First caption',}
           },
           {
-            src : 'imgs/cyan/cyan_1.png',
+            src : 'imgs/cyan/cyan_1.jpg',
             opts : {caption : 'First caption',}
           },
           {
@@ -1245,7 +1260,7 @@
             opts : {caption : 'First caption',}
           },
           {
-            src : 'imgs/cyan/cyan_3.png',
+            src : 'imgs/cyan/cyan_3.jpg',
             opts : {caption : 'First caption',}
           }
       ], {
@@ -1271,7 +1286,7 @@
       return false;
     }); 
 
-    /*FILES MAKE SMALLER AND ADD ALL -- */ $(".open_fancybox_kert").click(function() {
+    /*INSTALLATION FILES MAKE SMALLER AND MAKE SELECTION -- */ $(".open_fancybox_kert").click(function() {
 
       $.fancybox.open([
           {
