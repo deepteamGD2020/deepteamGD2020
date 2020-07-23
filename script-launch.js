@@ -246,10 +246,9 @@
 // ====================================
 
 
-    $(".open_fancybox_anastasia").click(function() {
+    /*WEBSITE LINK  --*/ $(".open_fancybox_anastasia").click(function() {
 
       $.fancybox.open([
-          {src : '#abstract-anastasia',},
           {
             src : 'imgs/anastasia/anasta_0.jpg',
             opts : {
@@ -257,6 +256,7 @@
               //thumb   : 'https://source.unsplash.com/IvfoDk30JnI/240x160'
             }
           },
+          {src : '#abstract-anastasia',},
           {
             src : 'imgs/anastasia/anasta_1.jpg',
             opts : {
@@ -296,11 +296,11 @@
     /*WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
-          {src : '#abstract-anna',},
           { 
             src : 'https://player.vimeo.com/video/436092429?title=0&byline=0&portrait=0', 
             type : 'iframe' 
           },
+          {src : '#abstract-anna',},
           { 
             src : 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/844722430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 
             type : 'iframe' 
@@ -321,35 +321,24 @@
       return false;
     });
     
-    /*CHOOSE FILES / WEBSITE LINK -- $(".open_fancybox_berglind").click(function() {
+    /*WEBSITE LINK --*/ $(".open_fancybox_berglind").click(function() {
 
-      $.fancybox.open([
+      $.fancybox.open([ 
           {
-            src : 'imgs/berglind/berglind_0.png',
+            src : 'imgs/berglind/2.png',
+            opts : {caption : 'First caption',}
+          },
+          {src : '#abstract-berglind',},
+          {
+            src : 'imgs/berglind/5.mp4',
             opts : {caption : 'First caption',}
           },
           {
-            src : 'imgs/berglind/berglind_1.png',
+            src : 'imgs/berglind/3.png',
             opts : {caption : 'First caption',}
           },
           {
-            src : 'imgs/berglind/berglind_2.png',
-            opts : {Caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_3.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_4.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_5.png',
-            opts : {caption : 'First caption',}
-          },
-          {
-            src : 'imgs/berglind/berglind_6.png',
+            src : 'imgs/berglind/5.jpg',
             opts : {caption : 'First caption',}
           }
       ], {
@@ -357,7 +346,7 @@
       });
 
       return false;
-    });*/
+    });
     
     $(".open_fancybox_brechje").click(function() {
 
