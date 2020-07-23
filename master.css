@@ -65,6 +65,7 @@ body {
     margin: 0;
     font-size: 2em;
     line-height: 1.1em;
+    width: 100vw;
 }
 
 .wrapper {
@@ -265,6 +266,241 @@ body {
 
 
 
+      .showOverview:hover, .hideOverview:hover {
+          border-bottom: 2px solid blue;
+          margin-bottom: 20px;
+          cursor: pointer;
+      }
+      .hideOverview {
+          z-index: 999999;
+          display: none;
+      }
+
+
+      /*     OVERVIEW     */
+
+          .usAll {
+              position: fixed;
+              z-index: 9999;
+              top: 45px;
+              left: 0px;
+              right: 0px;
+              width: 100vw;
+              height: calc(100vh - (45px * 2));
+              overflow-y: scroll; 
+              -webkit-overflow-scrolling: touch;
+
+
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: stretch;
+          }
+
+          .hide {display: none;}
+
+          .person {
+              position: relative;
+              display: inline-block;
+              top: 0px;
+              left: 0px;
+              width: 45%;
+              height: 45vh;
+
+              flex-grow: 1;
+              flex: flex-grow;
+              
+              flex-basis: auto;
+              align-self: stretch;
+
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: center;
+              margin: 0px;
+              padding: 0px;
+
+              border: 2px solid rgba(255,255,255,1);
+              cursor: pointer;
+          }
+
+          .person:hover {border: 2px solid blue;}
+          .person-one:after,
+          .person-two:after,
+          .person-three:after,
+          .person-four:after,
+          .person-five:after,
+          .person-six:after,
+          .person-seven:after,
+          .person-eight:after,
+          .person-nine:after,
+          .person-ten:after,
+          .person-eleven:after,
+          .person-twelve:after,
+          .person-thirteen:after,
+          .person-fourteen:after,
+          .person-fifteen:after,
+          .person-sixteen:after,
+          .person-seventeen:after,
+          .person-eighteen:after,
+          .person-nineteen:after,
+          .person-twenty:after,
+          .person-twentyone:after,
+          .person-twentytwo:after,
+          .person-twentythree:after,
+          .person-twentyfour:after,
+          .person-twentyfive:after,
+          .person-twentysix:after,
+          .person-twentyseven:after,
+          .person-twentyeight:after,
+          .person-twentynine:after,
+          .person-thirty:after,
+          .person-thirtyone:after,
+          .person-thirtytwo:after,
+          .person-thirtythree:after,
+          .person-thirtyfour:after,
+          .person-thirtyfive:after,
+          .person-thirtysix:after,
+          .person-thirtyseven:after,
+          .person-thirtyeight:after,
+          .person-thirtynine:after,
+          .person-fourty:after {
+            background-color: blue;
+            color: white;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            text-align: center;
+            width: 100%;
+
+
+          }
+          /*.person-one:before {
+            background-color: blue;
+            color: white;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            text-align: center;
+            width: 100%;
+
+            font-size: 0.49em;
+            line-height: 1.1em;
+            font-family:
+              'Chalga Reg',
+              serif;
+          }
+          .person-one:before {content: 'laud softness: the art of gentle protest';}*/
+          .person-one:after, .person-one:hover:after {content: 'anastasia umpeleva';}
+          .person-one {background-image: url(imgs/anastasia/thumbnail.jpg);}
+          /*.person-two:before {content: 'domestic tales — odes to triviality';}*/
+          .person-two:after, .person-two:hover:after {content: 'anna moschioni';}
+          .person-two {background-image: url(imgs/anna/thumbnail.jpg);}
+          /*.person-three:before {content: 'now and then';}*/
+          .person-three:after, .person-three:hover:after {content: 'berglind jóhannsdóttir';}
+          .person-three {background-image: url(imgs/berglind/thumbnail2.png);}
+          /*.person-four:before {content: 'things and what we make of them';}*/
+          .person-four:after, .person-four:hover:after {content: 'brechje krah';}
+          .person-four {background-image: url(imgs/brechje/thumbnail.jpg);}
+          /*.person-five:before {content: 'hypnosis of the stolen painting';}*/
+          .person-five:after, .person-five:hover:after {content: 'clara lezla';}
+          .person-five {background-image: url(imgs/clara/thumbnail.jpg);}
+          .person-six:after, .person-six:hover:after {content: 'dana doorenbos';}
+          .person-six {background-image: url(imgs/dana/thumbnail.jpg);}
+          .person-seven:after, .person-seven:hover:after {content: 'denise jansen';}
+          .person-seven {background-image: url(imgs/denise/thumbnail.jpg);}
+          .person-eight:after, .person-eight:hover:after {content: 'edward dżułaj';}
+          .person-eight {background-image: url(imgs/edward/thumbnail.jpg);}
+          .person-nine:after, .person-nine:hover:after {content: 'emily anderson';}
+          .person-nine {background-image: url(imgs/emily/thumbnail.jpg);}
+          .person-ten:after, .person-ten:hover:after {content: 'fien leeflang';}
+          .person-ten {background-image: url(imgs/fien/thumbnail.jpg);}
+          .person-eleven:after, .person-eleven:hover:after {content: 'golshan azadokht';}
+          .person-eleven {background-image: url(imgs/golshan/thumbnail.jpg);}
+          .person-twelve:after, .person-twelve:hover:after {content: 'hyeonjeong kim';}
+          .person-twelve {background-image: url(imgs/kihyeon/thumbnail.jpg);}
+          .person-thirteen:after, .person-thirteen:hover:after {content: 'kiki coster';}
+          .person-thirteen {background-image: url(imgs/kiki/thumbnail.jpg);}
+          .person-fourteen:after, .person-fourteen:hover:after {content: 'laura brouwer';}
+          .person-fourteen {background-image: url(imgs/laura/thumbnail.jpg);}
+          .person-fifteen:after, .person-fifteen:hover:after {content: 'linda van houtum';}
+          .person-fifteen {background-image: url(imgs/linda/thumbnail.jpg);}
+          .person-sixteen:after, .person-sixteen:hover:after {content: 'louana gentner';}
+          .person-sixteen {background-image: url(imgs/louana/thumbnail.png);}
+          .person-seventeen:after, .person-seventeen:hover:after {content: 'maarten meij';}
+          .person-seventeen {background-image: url(imgs/maarten/thumbnail.jpg);}
+          .person-eighteen:after, .person-eighteen:hover:after {content: 'marc van den berg';}
+          .person-eighteen {background-image: url(imgs/marc/thumbnail.jpg);}
+          .person-nineteen:after, .person-nineteen:hover:after {content: 'marina sophia de jong yantorno';}
+          .person-nineteen {background-image: url(imgs/sophia/thumbnail.jpg);}
+          .person-twenty:after, .person-twenty:hover:after {content: 'martijn brakenhoff';}
+          .person-twenty {background-image: url(imgs/martijn/thumbnail.jpg);}
+          .person-twentyone:after, .person-twentyone:hover:after {content: 'martin menso jensen';}
+          .person-twentyone {background-image: url(imgs/martin/thumbnail.jpg);}
+          .person-twentytwo:after, .person-twentytwo:hover:after {content: 'nedislav kamburov';}
+          .person-twentytwo {background-image: url(imgs/ned/thumbnail.jpg);}
+          .person-twentythree:after, .person-twentythree:hover:after {content: 'nicolai schmelling';}
+          .person-twentythree {background-image: url(imgs/nicolai/thumbnail.jpg);}
+          .person-twentyfour:after, .person-twentyfour:hover:after {content: 'nicoletta radice';}
+          .person-twentyfour {background-image: url(imgs/nicoletta/thumbnail.jpg);}
+          .person-twentyfive:after, .person-twentyfive:hover:after {content: 'pepijn de jonge';}
+          .person-twentyfive {background-image: url(imgs/pepjin/thumbnail.jpg);}
+          .person-twentysix:after, .person-twentysix:hover:after {content: 'ruben visser';}
+          .person-twentysix {background-image: url(imgs/ruben/thumbnail.jpg);}
+          .person-twentyseven:after, .person-twentyseven:hover:after {content: 'selina landis';}
+          .person-twentyseven {background-image: url(imgs/selina/thumbnail.png);}
+          .person-twentyeight:after, .person-twentyeight:hover:after {content: 'seojeong youn';}
+          .person-twentyeight {background-image: url(imgs/seojeong/thumbnail.jpg);}
+          .person-twentynine:after, .person-twentynine:hover:after {content: 'tilius sodeika';}
+          .person-twentynine {background-image: url(imgs/tilius/thumbnail.jpg);}
+          .person-thirty:after, .person-thirty:hover:after {content: 'trang hà';}
+          .person-thirty {background-image: url(imgs/trang/thumbnail.jpg);}
+          .person-thirtyone:after, .person-thirtyone:hover:after {content: 'yessica deira';}
+          .person-thirtyone {background-image: url(imgs/yessica/thumbnail.jpg);}
+          .person-thirtytwo:after, .person-thirtytwo:hover:after {content: 'zahari dimitrov';}
+          .person-thirtytwo {background-image: url(imgs/zahari/thumbnail.jpg);}
+          .person-thirtythree:after, .person-thirtythree:hover:after {content: 'Zuzanna Zgierska';}
+          .person-thirtythree {background-image: url(imgs/zuzanna/thumbnail.jpg);}
+
+          .person-thirtyfour:after, .person-thirtyfour:hover:after {content: 'claude nassar';}
+          .person-thirtyfour {background-image: url(imgs/claude/thumbnail.jpg);}
+          .person-thirtyfive:after, .person-thirtyfive:hover:after {content: 'cristina lavosi';}
+          .person-thirtyfive {background-image: url(imgs/cristina/thumbnail.jpg);}
+          .person-thirtysix:after, .person-thirtysix:hover:after {content: 'cyan bae';}
+          .person-thirtysix {background-image: url(imgs/cyan/thumbnail.jpg);}
+          .person-thirtyseven:after, .person-thirtyseven:hover:after {content: 'giulia faccin';}
+          .person-thirtyseven {background-image: url(imgs/guilia/thumbnail.jpg);}
+          .person-thirtyeight:after, .person-thirtyeight:hover:after {content: 'kert viiart';}
+          .person-thirtyeight {background-image: url(imgs/kert/thumbnail.jpg);}
+          .person-thirtynine:after, .person-thirtynine:hover:after {content: 'lila steinkampf';}
+          .person-thirtynine {background-image: url(imgs/lila/thumbnail.jpg);}
+          .person-fourty:after, .person-fourty:hover:after {content: 'mauro tosarelli';}
+          .person-fourty {background-image: url(imgs/mauro/thumbnail.jpg);}
+
+
+
+
+          .nameBlock a:hover {border: none;}
+          .nameBlock:hover {} 
+
+
+
+          .abstract-popup {
+            color: white !important;
+            background-color: blue;
+
+            font-family:
+               'Chalga Reg',
+               serif;
+            color: blue;
+          }
+          .abstract-popup a {
+            color: white !important;
+          }
+          .abstract-popup a:hover {
+            border-bottom: 2px solid white;
+          }
 
 
 
@@ -286,14 +522,27 @@ body {
 
     .spin2 {transform: rotate(0deg);}
     .spin3 {transform: rotate(-90deg);}
-    .spin4 {transform: rotate(-180deg);}
-    .spin5 {transform: rotate(-270deg);}
-    .spin6 {transform: rotate(-360deg);}
-    .spin7 {transform: rotate(-450deg);}
-    .spin8 {transform: rotate(-540deg);}
-    .spin9 {transform: rotate(-630deg);}
-    .spin10 {transform: rotate(-720deg);}
-    .spin11 {transform: rotate(-810deg);}
+    .spin4 {transform: rotate(-270deg);}
+    .spin5 {transform: rotate(-360deg);}
+    .spin6 {transform: rotate(-450deg);}
+    .spin7 {transform: rotate(-540deg);}
+    .spin8 {transform: rotate(-630deg);}
+    .spin9 {transform: rotate(-720deg);}
+    .spin10 {transform: rotate(-810deg);}
+    .spin11 {transform: rotate(-900deg);}
+
+    .spin12 {transform: rotate(-990deg);}
+    .spin13 {transform: rotate(-1080deg);}
+    .spin14 {transform: rotate(-1170deg);}
+    .spin15 {transform: rotate(-1260deg);}
+    .spin16 {transform: rotate(-1350deg);}
+    .spin17 {transform: rotate(-1440deg);}
+    .spin18 {transform: rotate(-1530deg);}
+    .spin19 {transform: rotate(-1620deg);}
+    .spin20 {transform: rotate(-1710deg);}
+    .spin21 {transform: rotate(-1800deg);}
+    .spin22 {transform: rotate(-1890deg);}
+    .spin23 {transform: rotate(-1980deg);}
 
 
    .menuBar{
@@ -372,23 +621,26 @@ body {
 
     .floatRight{ float: right; }
 
-   .main-container{ margin-top: 10%; }
+   .main-container{ margin-top: 10%;}
+   /*.main {width: 100vw !important;}*/
+
 
 
    /*   NAME BLOCK   */
 
-   /* .nameColumn{
+    .nameColumn{
      float: right;
-     width: 60%;
+     width: 100vw;
      background-color: white;
      color: white;
-     margin: 5% 15% 0% 0%;
+     margin: 5% 0% 0% 0%;
    }
        .nameBlock{
-         height: 15em;
+         /*height: 15em;*/
+         height: auto;
          background-color: white;
          display: inline-block;
-         margin: 5% 0% 0% 0%;
+         margin: 15% 0% 0% 0%;
          font-family:
            'Chalga Reg',
            serif;
@@ -397,7 +649,8 @@ body {
        }
 
     .nameBlock img{
-      height: 100%;
+      max-width: 100%;
+      max-height: 100%;
       margin: 0.5% 0 0 0%;
     }
 
@@ -422,7 +675,7 @@ body {
           font-family:
             'Sambo Reg',
             serif;
-        } */
+        }
 
         .footer-container{ width: auto; }
 
@@ -592,6 +845,7 @@ body {
       }
 
 
+
       /*     OVERVIEW     */
 
           .usAll {
@@ -605,14 +859,13 @@ body {
               width: calc(100vw - 40px);
               height: calc(100vh - ((30px + 27px + 20px) * 2));
 
-              align-content: stretch;
+
               display: flex;
-              display: space-between;
-              flex-flow: row wrap;
-              justify-content: space-around;
-              justify-content: flex-start;
-              flex-wrap: wrap;
               flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: stretch;
           }
 
           .hide {display: none;}
@@ -622,16 +875,17 @@ body {
               display: inline-block;
               top: 0px;
               left: 0px;
-              min-width: 200px;
+              width: 12%;
               height: auto;
 
+              flex-grow: 1;
               flex: flex-grow;
-              flex-grow: 2;
+              
               flex-basis: auto;
-              order: 1;
+              align-self: stretch;
 
               background-repeat: no-repeat;
-              background-size: cover;
+              background-size: contain;
               background-position: center;
               margin: 0px;
               padding: 0px;
@@ -641,37 +895,97 @@ body {
           }
 
           .person:hover {border: 2px solid blue;}
+          .person-one:hover:after,
+          .person-two:hover:after,
+          .person-three:hover:after,
+          .person-four:hover:after,
+          .person-five:hover:after,
+          .person-six:hover:after,
+          .person-seven:hover:after,
+          .person-eight:hover:after,
+          .person-nine:hover:after,
+          .person-ten:hover:after,
+          .person-eleven:hover:after,
+          .person-twelve:hover:after,
+          .person-thirteen:hover:after,
+          .person-fourteen:hover:after,
+          .person-fifteen:hover:after,
+          .person-sixteen:hover:after,
+          .person-seventeen:hover:after,
+          .person-eighteen:hover:after,
+          .person-nineteen:hover:after,
+          .person-twenty:hover:after,
+          .person-twentyone:hover:after,
+          .person-twentytwo:hover:after,
+          .person-twentythree:hover:after,
+          .person-twentyfour:hover:after,
+          .person-twentyfive:hover:after,
+          .person-twentysix:hover:after,
+          .person-twentyseven:hover:after,
+          .person-twentyeight:hover:after,
+          .person-twentynine:hover:after,
+          .person-thirty:hover:after,
+          .person-thirtyone:hover:after,
+          .person-thirtytwo:hover:after,
+          .person-thirtythree:hover:after,
+          .person-thirtyfour:hover:after,
+          .person-thirtyfive:hover:after,
+          .person-thirtysix:hover:after,
+          .person-thirtyseven:hover:after,
+          .person-thirtyeight:hover:after,
+          .person-thirtynine:hover:after,
+          .person-fourty:hover:after {
+            background-color: blue;
+            color: white;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            text-align: center;
+            width: 100%;
+          }
+          .person-one:after,
+          .person-two:after,
+          .person-three:after,
+          .person-four:after,
+          .person-five:after,
+          .person-six:after,
+          .person-seven:after,
+          .person-eight:after,
+          .person-nine:after,
+          .person-ten:after,
+          .person-eleven:after,
+          .person-twelve:after,
+          .person-thirteen:after,
+          .person-fourteen:after,
+          .person-fifteen:after,
+          .person-sixteen:after,
+          .person-seventeen:after,
+          .person-eighteen:after,
+          .person-nineteen:after,
+          .person-twenty:after,
+          .person-twentyone:after,
+          .person-twentytwo:after,
+          .person-twentythree:after,
+          .person-twentyfour:after,
+          .person-twentyfive:after,
+          .person-twentysix:after,
+          .person-twentyseven:after,
+          .person-twentyeight:after,
+          .person-twentynine:after,
+          .person-thirty:after,
+          .person-thirtyone:after,
+          .person-thirtytwo:after,
+          .person-thirtythree:after,
+          .person-thirtyfour:after,
+          .person-thirtyfive:after,
+          .person-thirtysix:after,
+          .person-thirtyseven:after,
+          .person-thirtyeight:after,
+          .person-thirtynine:after,
+          .person-fourty:after {
+            content: '';
+          }
 
-          .person-one {background-image: url(imgs/anastasiia/front.png);}
-          .person-two {background-image: url(imgs/anna/front.jpg);}
-          .person-three {background-image: url(imgs/berglind/pagessmaller.png);}
-          .person-four {background-image: url(imgs/brechje/front.png);}
-          .person-five {background-image: url(imgs/clara/1_Lezla.png);}
-          .person-six {background-image: url(imgs/dana/1.png);}
-          .person-seven {background-image: url(imgs/denise/1.png);}
-          .person-eight {background-image: url(imgs/edward/Posters-min.jpg);}
-          .person-nine {background-image: url(imgs/emily/);}
-          .person-ten {background-image: url(imgs/fien/);}
-          .person-eleven {background-image: url(imgs/golshan/1_Beginnings_without_endings.jpg);}
-          .person-twelve {background-image: url(imgs/kihyeon/2_kihyeon.png);}
-          .person-thirteen {background-image: url(imgs/kiki);}
-          .person-fourteen {background-image: url(imgs/laura/1_laura.jpg);}
-          .person-fifteen {background-image: url(imgs/linda/Screenshot-website-1.png);}
-          .person-sixteen {background-image: url(imgs/louana);}
-          .person-eighteen {background-image: url(imgs/maarten/front.jpg);}
-          .person-nineteen {background-image: url(imgs/marc);}
-          .person-twenty {background-image: url(imgs/martijn);}
-          .person-twentyone {background-image: url(imgs/martin);}
-          .person-twentytwo {background-image: url(imgs/ned/front.jpg);}
-          .person-twentythree {background-image: url(imgs/nicolai/1_Nicolai.jpg);}
-          .person-twentyfour {background-image: url(imgs/nicoletta/front.jpg);}
-          .person-twentyfive {background-image: url(imgs/pepjin/);}
-          .person-twentysix {background-image: url(imgs/ruben/);}
-          .person-twentyseven {background-image: url(imgs/selina/);}
-          .person-twentyeight {background-image: url(imgs/seojeong/front.jpg);}
-          .person-twentynine {background-image: url(imgs/sofia/front.jpg);}
-          .person-thirty {background-image: url(imgs/tilius/unnamed.jpg);}
-          .person-thirtyone {background-image: url(imgs/trang/2_Trang.png);}
 
       .menuBar{background-color: rgba(0,0,0,0);}
       .topper{top:20px;}
@@ -808,6 +1122,7 @@ body {
             text-transform: lowercase;
         }
 
+
     /*   NAME BLOCK   */
 
     .nameColumn{
@@ -861,6 +1176,8 @@ body {
          }
 
          .footer-container{ width: auto; }
+
+
 /* ============
     WIDE: Main
    ============ */
