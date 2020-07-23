@@ -423,7 +423,7 @@
 // ====================================
 
 
-    /*WEBSITE LINK  --*/ $(".open_fancybox_anastasia").click(function() {
+    /*ADD WEBSITE LINK  --*/ $(".open_fancybox_anastasia").click(function() {
 
       $.fancybox.open([
           {
@@ -470,7 +470,7 @@
       return false;
     });
 
-    /*WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
+    $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
           { 
@@ -498,7 +498,7 @@
       return false;
     });
     
-    /*WEBSITE LINK --*/ $(".open_fancybox_berglind").click(function() {
+    /*ADD WEBSITE LINK --*/ $(".open_fancybox_berglind").click(function() {
 
       $.fancybox.open([ 
           { src : 'imgs/berglind/2.png', },
@@ -662,7 +662,7 @@
       return false;
     });
 
-    /*WEBSITE LINK -- */ $(".open_fancybox_fien").click(function() {
+    /*ADD WEBSITE LINK -- */ $(".open_fancybox_fien").click(function() {
 
       $.fancybox.open([
           { 
@@ -691,7 +691,7 @@
       return false;
     });
 
-    /*WEBSITE LINK -- */ $(".open_fancybox_golshan").click(function() {
+    /*ADD WEBSITE LINK -- */ $(".open_fancybox_golshan").click(function() {
 
       $.fancybox.open([
           {
@@ -1064,7 +1064,7 @@
       return false;
     });
 
-    /*WEBSITE LINK -- */ $(".open_fancybox_nicoletta").click(function() {
+    /*ADD WEBSITE LINK -- */ $(".open_fancybox_nicoletta").click(function() {
 
       $.fancybox.open([
           {
@@ -1277,7 +1277,7 @@
       return false;
     });
 
-    /*WEBSITE LINK -- */ $(".open_fancybox_yessica").click(function() {
+    /*ADD WEBSITE LINK -- */ $(".open_fancybox_yessica").click(function() {
 
       $.fancybox.open([
           { src : 'imgs/yessica/yessica_0.jpg', },
