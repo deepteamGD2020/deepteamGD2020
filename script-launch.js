@@ -249,6 +249,7 @@
     $(".open_fancybox_anastasia").click(function() {
 
       $.fancybox.open([
+          {src : '#abstract-anastasia',},
           {
             src : 'imgs/anastasia/anasta_0.jpg',
             opts : {
@@ -295,6 +296,7 @@
     /*WEBSITE LINK  --*/ $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
+          {src : '#abstract-anna',},
           { 
             src : 'https://player.vimeo.com/video/436092429?title=0&byline=0&portrait=0', 
             type : 'iframe' 

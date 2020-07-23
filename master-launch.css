@@ -486,6 +486,24 @@ body {
 
 
 
+          .abstract-popup {
+            color: white !important;
+            background-color: blue;
+
+            font-family:
+               'Chalga Reg',
+               serif;
+            color: blue;
+          }
+          .abstract-popup a {
+            color: white !important;
+          }
+          .abstract-popup a:hover {
+            border-bottom: 2px solid white;
+          }
+
+
+
 
 /* ==============
     MOBILE: Main
