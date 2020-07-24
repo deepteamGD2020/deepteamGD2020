@@ -284,7 +284,7 @@
           } else {
             $(".logo").removeClass('spin3');
           }
-        
+
 
         if ($(document).scrollTop() >= 3100) {
           $(".logo").addClass('spin4');
@@ -423,7 +423,9 @@
 // ====================================
 
 
-    /*ADD WEBSITE LINK  --*/ $(".open_fancybox_anastasia").click(function() {
+    /*ADD WEBSITE LINK  --*/
+
+    $(".open_fancybox_anastasia").click(function() {
 
       $.fancybox.open([
           {
@@ -473,14 +475,14 @@
     $(".open_fancybox_anna").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://player.vimeo.com/video/436092429?title=0&byline=0&portrait=0', 
-            type : 'iframe' 
+          {
+            src : 'https://player.vimeo.com/video/436092429?title=0&byline=0&portrait=0',
+            type : 'iframe'
           },
           {src : '#abstract-anna',},
-          { 
-            src : 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/844722430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true', 
-            type : 'iframe' 
+          {
+            src : 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/844722430&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+            type : 'iframe'
           }/*,
           {
             src  : 'https://annamoschioni.github.io/domestic-tales/#/',
@@ -488,7 +490,7 @@
             opts : {
               afterShow : function( instance, current ) {
                 console.info( 'done!' );
-              }   
+              }
             }
           }*/
       ], {
@@ -497,10 +499,10 @@
 
       return false;
     });
-    
+
     /*ADD WEBSITE LINK --*/ $(".open_fancybox_berglind").click(function() {
 
-      $.fancybox.open([ 
+      $.fancybox.open([
           { src : 'imgs/berglind/2.png', },
           {src : '#abstract-berglind', },
           { src : 'imgs/berglind/5.mp4', },
@@ -512,7 +514,7 @@
 
       return false;
     });
-    
+
     $(".open_fancybox_brechje").click(function() {
 
       $.fancybox.open([
@@ -649,9 +651,9 @@
     $(".open_fancybox_emily").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://player.vimeo.com/video/438916995?title=0&byline=0&portrait=0', 
-            type : 'iframe' 
+          {
+            src : 'https://player.vimeo.com/video/438916995?title=0&byline=0&portrait=0',
+            type : 'iframe'
           },
           { src : '#abstract-emily', }
       ], {
@@ -665,9 +667,9 @@
     /*ADD WEBSITE LINK -- */ $(".open_fancybox_fien").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://www.youtube.com/embed/57AB5qwNqPo', 
-            type : 'iframe' 
+          {
+            src : 'https://www.youtube.com/embed/57AB5qwNqPo',
+            type : 'iframe'
           },
           { src : '#abstract-fien', },
           /*{
@@ -676,7 +678,7 @@
             opts : {
               afterShow : function( instance, current ) {
                 console.info( 'done!' );
-              }   
+              }
             }
           },*/
           {
@@ -737,7 +739,7 @@
             opts : {
               afterShow : function( instance, current ) {
                 console.info( 'done!' );
-              }   
+              }
             }
           }*/
       ], {
@@ -875,9 +877,9 @@
     $(".open_fancybox_louana").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://player.vimeo.com/video/435502965?title=0&byline=0&portrait=0', 
-            type : 'iframe' 
+          {
+            src : 'https://player.vimeo.com/video/435502965?title=0&byline=0&portrait=0',
+            type : 'iframe'
           },
           { src : '#abstract-louana', }
       ], {
@@ -910,7 +912,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_marc").click(function() {
 
@@ -934,7 +936,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_sophia").click(function() {
 
@@ -954,7 +956,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_martijn").click(function() {
 
@@ -1100,9 +1102,9 @@
             src : 'imgs/pepjin/pepjin3.jpg',
             opts : {caption : 'First caption',}
           },
-          { 
-            src : 'https://open.spotify.com/embed/artist/7FhgRkfCZXxVIRfqt9q7w5', 
-            type : 'iframe' 
+          {
+            src : 'https://open.spotify.com/embed/artist/7FhgRkfCZXxVIRfqt9q7w5',
+            type : 'iframe'
           }
 
       ], {
@@ -1137,11 +1139,11 @@
             src : 'imgs/ruben/ruben_4.jpg',
             opts : {caption : 'First caption',}
           },
-          {            
+          {
             src : 'imgs/ruben/ruben_5.jpg',
             opts : {caption : 'First caption',}
           },
-          {            
+          {
             src : 'imgs/ruben/ruben_6.jpg',
             opts : {caption : 'First caption',}
           }
@@ -1243,7 +1245,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_trang").click(function() {
 
@@ -1282,9 +1284,9 @@
       $.fancybox.open([
           { src : 'imgs/yessica/yessica_0.jpg', },
           { src : '#abstract-yessica', },
-          { 
-            src : 'https://www.youtube.com/embed/mQwWaHovLfk', 
-            type : 'iframe' 
+          {
+            src : 'https://www.youtube.com/embed/mQwWaHovLfk',
+            type : 'iframe'
           },
           { src : 'imgs/yessica/yessica_2.jpg', },
           { src : 'imgs/yessica/yessica_3.jpg', },
@@ -1303,7 +1305,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_zahari").click(function() {
 
@@ -1367,16 +1369,16 @@
       });
 
       return false;
-    }); 
+    });
 
 
 
     $(".open_fancybox_claude").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://player.vimeo.com/video/436081318', 
-            type : 'iframe' 
+          {
+            src : 'https://player.vimeo.com/video/436081318',
+            type : 'iframe'
           }
       ], {
           padding : 0,
@@ -1384,7 +1386,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_cristina").click(function() {
 
@@ -1446,14 +1448,14 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_guilia").click(function() {
 
       $.fancybox.open([
-          { 
-            src : 'https://www.youtube.com/embed/BYTd1LLBvm8', 
-            type : 'iframe' 
+          {
+            src : 'https://www.youtube.com/embed/BYTd1LLBvm8',
+            type : 'iframe'
           }
       ], {
           padding : 0,
@@ -1461,7 +1463,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_kert").click(function() {
 
@@ -1496,7 +1498,7 @@
       });
 
       return false;
-    }); 
+    });
 
     $(".open_fancybox_lila").click(function() {
 
@@ -1539,7 +1541,7 @@
       });
 
       return false;
-    }); 
+    });
 
 
 
@@ -1687,7 +1689,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -1711,9 +1713,3 @@ $(document).ready(function(){
           });
         });
 */
-
-
-
-
-
-
