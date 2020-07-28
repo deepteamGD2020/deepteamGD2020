@@ -1096,7 +1096,7 @@ body {
         content: 'support us';
         cursor: pointer;
     }
-    /*.support-us-new:hover:after {content: 'link coming';}*/
+    .support-us-new:hover:after {content: 'link coming';}
     /*  TYPEWRITER  */
 
         /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
