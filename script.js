@@ -893,17 +893,13 @@
     $(".open_fancybox_maarten").click(function() {
 
       $.fancybox.open([
-          /*{
-            src : 'imgs/maarten/screenshot.jpg',
-            opts : {caption : 'First caption',}
-          },*/
           {
-            src : 'imgs/maarten/maarten_0.mp4',
-            opts : {caption : 'First caption',}
+            src : 'https://www.youtube.com/embed/rYDcaLE_F0Y',
+            type : 'iframe'
           },
           { src : '#abstract-maarten', },
           {
-            src : 'imgs/maarten/maarten_1.mp4',
+            src : 'imgs/maarten/K4ppmmP4.jpeg',
             opts : {caption : 'First caption',}
           }
       ], {
