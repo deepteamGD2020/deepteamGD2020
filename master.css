@@ -231,6 +231,14 @@ body {
     }
 
 
+    .smallerFont {
+      font-size: 0.69em;
+      line-height: 1.2em;
+      font-family:
+        'Chalga Reg',
+        serif;
+    }
+
     .wrapper-cinema-schedule {
       display: none;
     }
@@ -1109,6 +1117,7 @@ body {
         cursor: pointer;
     }
     /*.support-us-new:hover:after {content: 'link coming';}*/
+
 
 
     .wrapper-cinema-schedule {
