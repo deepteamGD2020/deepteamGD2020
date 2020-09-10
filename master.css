@@ -1251,6 +1251,12 @@ body {
       width: calc((100vw - 60px) * 0.75);
       height: calc(((100vw - 60px) * 0.75) * 0.6097);
     }
+    .iframeLivechat {
+      position: relative;
+      margin-left: 20px;
+      width: calc((100vw - 80px) * 0.25 - 20px);
+      height: calc(((100vw - 80px) * 0.25 - 20px) * 1.7);
+    }
     /*  TYPEWRITER  */
 
         /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
