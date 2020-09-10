@@ -1176,6 +1176,20 @@ body {
               align-items: stretch;
               align-content: stretch;
     }
+    .full-width {
+      position: relative;
+      width: 100%;
+      right: 0px;
+      top: 125vh;
+      height: auto;
+
+      display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: stretch;
+    }
     .cinema-schedule-item-small {
       position: relative !important;
       display: inline-block;
