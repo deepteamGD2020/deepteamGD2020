@@ -1116,13 +1116,12 @@ body {
       position: relative;
       width: calc(100% - 40px);
       margin-left: 20px;
-      height: 50vh;
-      overflow-y: visible;
+      height: 100%;
     }
     .wrapper-cinema-schedule:after {
       content: "";
       position: absolute;
-      bottom: 0px;
+      bottom: 1px;
       width: 100%;
       height: 1px;
       background-color: white;
@@ -1148,10 +1147,23 @@ body {
               align-items: stretch;
               align-content: stretch;
     }
+    .right-column-lower {
+      position: absolute;
+      width: 75%;
+      right: 0px;
+      top: 25vh;
+      height: auto;
+
+      display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: stretch;
+    }
     .cinema-schedule-item-small {
       position: relative !important;
       display: inline-block;
-      width: 33%;
       margin: 0;
 
       position: relative;
@@ -1165,6 +1177,26 @@ body {
               
               flex-basis: auto;
               align-self: stretch;
+    }
+    .cinema-schedule-item-larger {
+      position: relative !important;
+      display: inline-block;
+      margin: 0;
+
+      position: relative;
+              display: inline-block;
+              top: 0px;
+              left: 0px;
+              width: 66%;
+
+              flex-grow: 2;
+              flex: flex-grow;
+              
+              flex-basis: auto;
+              align-self: stretch;
+    }
+    .transp {
+      color: rgba(0,0,0,0) !important;
     }
 
     .iframeLivestream {
