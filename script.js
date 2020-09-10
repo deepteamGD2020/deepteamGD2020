@@ -85,6 +85,36 @@
 
 
 
+        $(".day-one-more-show").click(function(){
+            $(".day-one-more").show();
+            $(".day-one-more-show").hide();
+        });
+        $(".day-one-more-hide").click(function(){
+            $(".day-one-more").hide();
+            $(".day-one-more-show").show();
+        });
+
+        $(".day-two-more-show").click(function(){
+            $(".day-two-more").show();
+            $(".day-two-more-show").hide();
+        });
+        $(".day-two-more-hide").click(function(){
+            $(".day-two-more").hide();
+            $(".day-two-more-show").show();
+        });
+
+        $(".day-three-more-show").click(function(){
+            $(".day-three-more").show();
+            $(".day-three-more-show").hide();
+        });
+        $(".day-three-more-hide").click(function(){
+            $(".day-three-more").hide();
+            $(".day-three-more-show").show();
+        });
+
+
+
+
 
 
 

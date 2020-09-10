@@ -248,6 +248,7 @@ body {
       width: calc(100vw - 20px);
       height: calc((100vw - 20px) * 0.6097);
     }
+    .day-one-more, .day-two-more, .day-three-more {display: none;}
     
 
     /*.support-us:after {
@@ -1131,7 +1132,7 @@ body {
       position: relative;
       width: calc(100% - 40px);
       margin-left: 20px;
-      min-height: 200%;
+      min-height: 220%;
       height: auto;
 
       font-size: 0.69em;
