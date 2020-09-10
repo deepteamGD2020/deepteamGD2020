@@ -149,7 +149,7 @@ body {
         position: absolute;
         top: 0px;
         right: 0px;
-        left: 0px;
+        left: 90%;
         height: 100%;
         float: center;
         text-align: center;
@@ -181,6 +181,10 @@ body {
     @keyframes marquee {
       0%   { left: 100vw; }
       100% { left: -100%; }
+    }
+    .marquee a:hover {
+      border-bottom: none;
+      text-decoration: underline;
     }
 
 
