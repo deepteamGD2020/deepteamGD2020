@@ -458,7 +458,7 @@ body {
           .person-seventeen {background-image: url(imgs/maarten/small.jpg);}
           .person-eighteen:after, .person-eighteen:hover:after {content: 'marc van den berg';}
           .person-eighteen {background-image: url(imgs/marc/thumbnail.jpg);}
-          .person-nineteen:after, .person-nineteen:hover:after {content: 'marina sophia de jong yantorno';}
+          .person-nineteen:after, .person-nineteen:hover:after {content: 'sophia de jong';}
           .person-nineteen {background-image: url(imgs/sophia/thumbnail.jpg);}
           .person-twenty:after, .person-twenty:hover:after {content: 'martijn brakenhoff';}
           .person-twenty {background-image: url(imgs/martijn/thumbnail.jpg);}
@@ -1132,7 +1132,7 @@ body {
       position: relative;
       width: calc(100% - 40px);
       margin-left: 20px;
-      min-height: 220%;
+      min-height: 290%;
       height: auto;
 
       font-size: 0.69em;
@@ -1141,7 +1141,7 @@ body {
         'Chalga Reg',
         serif;
     }
-    
+
     .left-column {
       position: absolute;
       width: 25%;
