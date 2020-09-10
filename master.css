@@ -1141,14 +1141,7 @@ body {
         'Chalga Reg',
         serif;
     }
-    .wrapper-cinema-schedule:after {
-      content: "";
-      position: absolute;
-      bottom: 1px;
-      width: 100%;
-      height: 1px;
-      background-color: white;
-    }
+    
     .left-column {
       position: absolute;
       width: 25%;
