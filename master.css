@@ -230,12 +230,11 @@ body {
         z-index: 9999;
     }
 
-    .iframeLivestream {
-      padding-left: 20px;
-      width: calc(100vw - 40px);
-      height: calc((100vw - 40px) * 0.5625)
-      /* width="560" height="315" */
+
+    .wrapper-cinema-schedule {
+      display: none;
     }
+    
 
     /*.support-us:after {
         content: 'support us';
@@ -746,6 +745,7 @@ body {
 /* @media only screen and (min-width: 768px)  */
 /* TO  */
 
+
 @media only screen and (min-width: 1025px) {
 
 /* ====================
@@ -1109,6 +1109,71 @@ body {
         cursor: pointer;
     }
     /*.support-us-new:hover:after {content: 'link coming';}*/
+
+
+    .wrapper-cinema-schedule {
+      display: inline-block;
+      position: relative;
+      width: calc(100% - 40px);
+      margin-left: 20px;
+      height: 50vh;
+      overflow-y: visible;
+    }
+    .wrapper-cinema-schedule:after {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+    }
+    .left-column {
+      position: absolute;
+      width: 25%;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+    }
+    .right-column {
+      position: absolute;
+      width: 75%;
+      right: 0px;
+      top: 0px;
+      height: auto;
+
+      display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: stretch;
+              align-content: stretch;
+    }
+    .cinema-schedule-item-small {
+      position: relative !important;
+      display: inline-block;
+      width: 33%;
+      margin: 0;
+
+      position: relative;
+              display: inline-block;
+              top: 0px;
+              left: 0px;
+              width: 33%;
+
+              flex-grow: 1;
+              flex: flex-grow;
+              
+              flex-basis: auto;
+              align-self: stretch;
+    }
+
+    .iframeLivestream {
+      position: relative;
+      padding-left: 20px;
+      width: calc(100vw - 40px);
+      height: calc((100vw - 40px) * 0.5625)
+      /* width="560" height="315" */
+    }
     /*  TYPEWRITER  */
 
         /* CHANGE THE TYPEFACE FOR TIME-RELATED WORDS */
@@ -1201,6 +1266,7 @@ body {
 
     .desktop {display: inline;}
     .mobile {display: none;}
+
 
 
 
