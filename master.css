@@ -1116,7 +1116,13 @@ body {
       position: relative;
       width: calc(100% - 40px);
       margin-left: 20px;
-      height: 100%;
+      min-height: 175%;
+
+      font-size: 0.69em;
+      line-height: 1.2em;
+      font-family:
+        'Chalga Reg',
+        serif;
     }
     .wrapper-cinema-schedule:after {
       content: "";
