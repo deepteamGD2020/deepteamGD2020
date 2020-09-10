@@ -155,6 +155,7 @@ body {
         text-align: center;
         color: white !important;
         z-index: 99999;
+        cursor: pointer;
     }
     .fullscreen {height: 100%; cursor: auto; overflow-y: scroll; -webkit-overflow-scrolling: touch;}
 
@@ -227,6 +228,13 @@ body {
         text-align: center;
         cursor: pointer;
         z-index: 9999;
+    }
+
+    .iframeLivestream {
+      padding-left: 20px;
+      width: calc(100vw - 40px);
+      height: calc((100vw - 40px) * 0.5625)
+      /* width="560" height="315" */
     }
 
     /*.support-us:after {
