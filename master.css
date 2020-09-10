@@ -242,6 +242,12 @@ body {
     .wrapper-cinema-schedule {
       display: none;
     }
+    .iframeLivestream-mobile {
+      position: relative;
+      margin-left: 10px;
+      width: calc(100vw - 20px);
+      height: calc((100vw - 20px) * 0.6097);
+    }
     
 
     /*.support-us:after {
@@ -1125,7 +1131,8 @@ body {
       position: relative;
       width: calc(100% - 40px);
       margin-left: 20px;
-      min-height: 175%;
+      min-height: 200%;
+      height: auto;
 
       font-size: 0.69em;
       line-height: 1.2em;
@@ -1147,6 +1154,7 @@ body {
       left: 0px;
       top: 0px;
       height: 100%;
+
     }
     .right-column {
       position: absolute;
@@ -1166,7 +1174,7 @@ body {
       position: absolute;
       width: 75%;
       right: 0px;
-      top: 25vh;
+      top: 20vh;
       height: auto;
 
       display: flex;
@@ -1189,6 +1197,23 @@ body {
               justify-content: space-between;
               align-items: stretch;
               align-content: stretch;
+    }
+    .livestream-column {
+      position: relative !important;
+      display: inline-block;
+      margin: 0;
+
+      position: relative;
+              display: inline-block;
+              top: 0px;
+              left: 0px;
+              width: 100%;
+
+              flex-grow: 1;
+              flex: flex-grow;
+              
+              flex-basis: auto;
+              align-self: stretch;
     }
     .cinema-schedule-item-small {
       position: relative !important;
@@ -1224,16 +1249,13 @@ body {
               flex-basis: auto;
               align-self: stretch;
     }
-    .transp {
-      color: rgba(0,0,0,0) !important;
-    }
+    .transp {color: rgba(0,0,0,0) !important;}
 
     .iframeLivestream {
       position: relative;
       padding-left: 20px;
-      width: calc(100vw - 40px);
-      height: calc((100vw - 40px) * 0.5625)
-      /* width="560" height="315" */
+      width: calc((100vw - 60px) * 0.75);
+      height: calc(((100vw - 60px) * 0.75) * 0.6097);
     }
     /*  TYPEWRITER  */
 
