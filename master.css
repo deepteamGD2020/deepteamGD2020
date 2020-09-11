@@ -238,6 +238,13 @@ body {
         'Chalga Reg',
         serif;
     }
+    .open-chat, .hide-chat {cursor: pointer;}
+    .chat-showing {display: none;}
+    .iframeLivechat {
+      position: relative;
+      width: calc(100vw - 20px);
+      height: calc((100vw - 20px) * 1.7);
+    }
 
     .wrapper-cinema-schedule {
       display: none;
@@ -1251,9 +1258,9 @@ body {
       width: calc((100vw - 60px) * 0.75);
       height: calc(((100vw - 60px) * 0.75) * 0.6097);
     }
+
     .iframeLivechat {
       position: relative;
-      margin-left: 20px;
       width: calc((100vw - 80px) * 0.25 - 20px);
       height: calc(((100vw - 80px) * 0.25 - 20px) * 1.7);
     }

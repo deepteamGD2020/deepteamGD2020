@@ -116,6 +116,19 @@
 
 
 
+        $(".open-chat").click(function(){
+            $(".chat-showing").show();
+            $(".open-chat").hide();
+        });
+        $(".hide-chat").click(function(){
+            $(".chat-showing").hide();
+            $(".open-chat").show();
+        });
+
+
+
+
+
 
 
 
