@@ -1500,8 +1500,8 @@
 
       $.fancybox.open([
           {
-            src : 'https://www.youtube.com/embed/BYTd1LLBvm8',
-            type : 'iframe'
+            src : 'imgs/guilia/guilia_0.png',
+            opts : {caption : 'First caption',}
           }
       ], {
           padding : 0,
